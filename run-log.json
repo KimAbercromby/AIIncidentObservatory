@@ -1,1 +1,17 @@
-{ "runs": [] }
+{
+  "runs": [
+    {
+      "at": "2026-10-11T17:36:40.906Z",
+      "collect": "collected",
+      "export_file": "AIID_Excel_Export-20261005.xlsx",
+      "incidents": 1711,
+      "new_incidents": 0,
+      "gaps_observed": [
+        "cumulative-population-harm",
+        "workforce-algorithmic-management",
+        "deskilling"
+      ],
+      "note": "First run: existing incidents baselined."
+    }
+  ]
+}

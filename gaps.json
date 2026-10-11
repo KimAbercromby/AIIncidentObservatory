@@ -1,8 +1,14 @@
 {
-  "generated_at": "2026-10-11T17:26:19.387Z",
+  "generated_at": "2026-10-11T17:36:40.906Z",
   "taxonomy_version": "2.0",
   "suite_baseline": "AI Governance Suite v3.9.9 (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
-  "export": null,
+  "export": {
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261005.xlsx",
+    "export_date": "2026-10-05",
+    "file": "AIID_Excel_Export-20261005.xlsx",
+    "sha256": "95c71e26ef379432a9a87934d26854c1a68998ef158a3fc4b247d96afb20c749",
+    "bytes": 2527372
+  },
   "coverage": {
     "collected": [
       "AI Incident Database (weekly Excel export)",
@@ -17,13 +23,38 @@
     "statement": "This observatory reads AI Incident Database (weekly Excel export) and Curated public-sector cases (cases.json). It does not read OECD AI Incidents and Hazards Monitor (excluded); AIAAIC Repository (unverified); Database of AI Litigation (DAIL) (unverified); ICO enforcement action (covered-elsewhere). Counts describe what these sources recorded, not how often failures happen in the world. Media-sourced incidents are allegations unless an authority made a finding."
   },
   "totals": {
-    "incidents": 0,
-    "public_sector": 0,
+    "incidents": 1711,
+    "public_sector": 188,
     "cases": 6,
-    "unclassified": 0,
-    "unclassified_public": 0
+    "unclassified": 562,
+    "unclassified_public": 43
   },
   "modes": [
+    {
+      "id": "performance-drift",
+      "label": "Performance failure or drift",
+      "coverage": "mapped",
+      "coverage_note": "Performance monitoring, drift detection and the Post-Deployment Monitoring Log.",
+      "sections": [
+        "4.3.6",
+        "6.4",
+        "6.5"
+      ],
+      "artefacts": [
+        "AIG-OPS-02",
+        "AIG-AIMS-10"
+      ],
+      "was_gap_in": null,
+      "new_in": null,
+      "global": 343,
+      "public": 59,
+      "cases": 0,
+      "by_basis": {
+        "mit": 305,
+        "text": 74,
+        "llm": 0
+      }
+    },
     {
       "id": "biased-outcome",
       "label": "Biased or discriminatory outcome",
@@ -41,12 +72,83 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 0,
-      "public": 0,
+      "global": 170,
+      "public": 49,
       "cases": 3,
       "by_basis": {
+        "mit": 152,
+        "text": 69,
+        "llm": 0
+      }
+    },
+    {
+      "id": "vulnerable-group-harm",
+      "label": "Harm to vulnerable people",
+      "coverage": "mapped",
+      "coverage_note": "Vulnerable-residents escalation trigger, Human Rights Assessment and the Fundamental Rights Coverage Crosswalk.",
+      "sections": [
+        "4.4.6",
+        "4.6.3"
+      ],
+      "artefacts": [
+        "AIG-ASS-07",
+        "AIG-ASS-12"
+      ],
+      "was_gap_in": null,
+      "new_in": null,
+      "global": 199,
+      "public": 24,
+      "cases": 1,
+      "by_basis": {
         "mit": 0,
-        "text": 0,
+        "text": 199,
+        "llm": 0
+      }
+    },
+    {
+      "id": "unlawful-data-processing",
+      "label": "Unlawful or excessive personal data processing",
+      "coverage": "mapped",
+      "coverage_note": "DPIA per use (UC-ID) before processing starts.",
+      "sections": [
+        "4.3.3",
+        "4.6.1",
+        "5.6.2"
+      ],
+      "artefacts": [
+        "AIG-ASS-05"
+      ],
+      "was_gap_in": null,
+      "new_in": null,
+      "global": 153,
+      "public": 20,
+      "cases": 3,
+      "by_basis": {
+        "mit": 88,
+        "text": 111,
+        "llm": 0
+      }
+    },
+    {
+      "id": "hallucination-misinformation",
+      "label": "Hallucination or false content",
+      "coverage": "mapped",
+      "coverage_note": "Generative AI guidance: human check before release and labelling of AI-generated content.",
+      "sections": [
+        "4.3.7",
+        "5.4.4"
+      ],
+      "artefacts": [
+        "AIG-GOV-02"
+      ],
+      "was_gap_in": null,
+      "new_in": null,
+      "global": 298,
+      "public": 15,
+      "cases": 0,
+      "by_basis": {
+        "mit": 196,
+        "text": 179,
         "llm": 0
       }
     },
@@ -66,36 +168,12 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 0,
-      "public": 0,
+      "global": 15,
+      "public": 8,
       "cases": 1,
       "by_basis": {
-        "mit": 0,
-        "text": 0,
-        "llm": 0
-      }
-    },
-    {
-      "id": "unlawful-data-processing",
-      "label": "Unlawful or excessive personal data processing",
-      "coverage": "mapped",
-      "coverage_note": "DPIA per use (UC-ID) before processing starts.",
-      "sections": [
-        "4.3.3",
-        "4.6.1",
-        "5.6.2"
-      ],
-      "artefacts": [
-        "AIG-ASS-05"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 0,
-      "public": 0,
-      "cases": 3,
-      "by_basis": {
-        "mit": 0,
-        "text": 0,
+        "mit": 5,
+        "text": 13,
         "llm": 0
       }
     },
@@ -113,12 +191,85 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 0,
-      "public": 0,
+      "global": 85,
+      "public": 7,
       "cases": 0,
       "by_basis": {
-        "mit": 0,
-        "text": 0,
+        "mit": 39,
+        "text": 61,
+        "llm": 0
+      }
+    },
+    {
+      "id": "solely-automated-decision",
+      "label": "Solely automated significant decision",
+      "coverage": "mapped",
+      "coverage_note": "Statutory-decision escalation trigger, DPIA covering UK GDPR Articles 22A to 22D, and the Contestability and Redress Control.",
+      "sections": [
+        "4.4.6",
+        "4.6.1"
+      ],
+      "artefacts": [
+        "AIG-ASS-05",
+        "AIG-OPS-04"
+      ],
+      "was_gap_in": null,
+      "new_in": null,
+      "global": 11,
+      "public": 3,
+      "cases": 2,
+      "by_basis": {
+        "mit": 4,
+        "text": 7,
+        "llm": 0
+      }
+    },
+    {
+      "id": "automation-bias",
+      "label": "Automation bias and over-reliance",
+      "coverage": "mapped",
+      "coverage_note": "Human oversight controls and the human accountability principles.",
+      "sections": [
+        "4.3.8",
+        "4.7.7",
+        "7.2.2"
+      ],
+      "artefacts": [
+        "AIG-GOV-02"
+      ],
+      "was_gap_in": null,
+      "new_in": null,
+      "global": 42,
+      "public": 2,
+      "cases": 0,
+      "by_basis": {
+        "mit": 38,
+        "text": 4,
+        "llm": 0
+      }
+    },
+    {
+      "id": "agentic-overreach",
+      "label": "Agent acted beyond its authority",
+      "coverage": "mapped",
+      "coverage_note": "Seventh escalation trigger (action without per-action human review), Agent Record, Authority Graph and Action Decision Record.",
+      "sections": [
+        "4.4.6"
+      ],
+      "artefacts": [
+        "AIG-AGT-01",
+        "AIG-AGT-04",
+        "AIG-AGT-05",
+        "AIG-AGT-06"
+      ],
+      "was_gap_in": null,
+      "new_in": null,
+      "global": 22,
+      "public": 2,
+      "cases": 0,
+      "by_basis": {
+        "mit": 3,
+        "text": 20,
         "llm": 0
       }
     },
@@ -138,132 +289,12 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 0,
-      "public": 0,
+      "global": 17,
+      "public": 2,
       "cases": 0,
       "by_basis": {
         "mit": 0,
-        "text": 0,
-        "llm": 0
-      }
-    },
-    {
-      "id": "performance-drift",
-      "label": "Performance failure or drift",
-      "coverage": "mapped",
-      "coverage_note": "Performance monitoring, drift detection and the Post-Deployment Monitoring Log.",
-      "sections": [
-        "4.3.6",
-        "6.4",
-        "6.5"
-      ],
-      "artefacts": [
-        "AIG-OPS-02",
-        "AIG-AIMS-10"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 0,
-      "public": 0,
-      "cases": 0,
-      "by_basis": {
-        "mit": 0,
-        "text": 0,
-        "llm": 0
-      }
-    },
-    {
-      "id": "hallucination-misinformation",
-      "label": "Hallucination or false content",
-      "coverage": "mapped",
-      "coverage_note": "Generative AI guidance: human check before release and labelling of AI-generated content.",
-      "sections": [
-        "4.3.7",
-        "5.4.4"
-      ],
-      "artefacts": [
-        "AIG-GOV-02"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 0,
-      "public": 0,
-      "cases": 0,
-      "by_basis": {
-        "mit": 0,
-        "text": 0,
-        "llm": 0
-      }
-    },
-    {
-      "id": "automation-bias",
-      "label": "Automation bias and over-reliance",
-      "coverage": "mapped",
-      "coverage_note": "Human oversight controls and the human accountability principles.",
-      "sections": [
-        "4.3.8",
-        "4.7.7",
-        "7.2.2"
-      ],
-      "artefacts": [
-        "AIG-GOV-02"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 0,
-      "public": 0,
-      "cases": 0,
-      "by_basis": {
-        "mit": 0,
-        "text": 0,
-        "llm": 0
-      }
-    },
-    {
-      "id": "accountability-vacuum",
-      "label": "No accountable owner",
-      "coverage": "mapped",
-      "coverage_note": "Named Service Owner per AIR-ID, Terms of Reference and the Governance Decision Record.",
-      "sections": [
-        "3.5",
-        "4.3.9"
-      ],
-      "artefacts": [
-        "AIG-GOV-06",
-        "AIG-INV-04",
-        "AIG-DEC-03"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 0,
-      "public": 0,
-      "cases": 0,
-      "by_basis": {
-        "mit": 0,
-        "text": 0,
-        "llm": 0
-      }
-    },
-    {
-      "id": "supplier-opacity",
-      "label": "Supplier opacity or failure",
-      "coverage": "mapped",
-      "coverage_note": "Procurement and supplier governance policy and the Supplier Due Diligence Questionnaire.",
-      "sections": [
-        "4.3.10",
-        "5.5"
-      ],
-      "artefacts": [
-        "AIG-ASS-08"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 0,
-      "public": 0,
-      "cases": 0,
-      "by_basis": {
-        "mit": 0,
-        "text": 0,
+        "text": 17,
         "llm": 0
       }
     },
@@ -284,12 +315,172 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 0,
+      "global": 19,
       "public": 0,
       "cases": 0,
       "by_basis": {
         "mit": 0,
+        "text": 19,
+        "llm": 0
+      }
+    },
+    {
+      "id": "downstream-reuse",
+      "label": "Reused for a purpose nobody assessed (function creep)",
+      "coverage": "mapped",
+      "coverage_note": "Now covered: every materially distinct use gets its own UC-ID and approval applies only to the scope decided; the Statement of Applicability (A.9.4) requires scope-creep detection and reapproval; AIMS scope assigns downstream-use responsibility when the council provides AI to others.",
+      "sections": [
+        "3.8"
+      ],
+      "artefacts": [
+        "AIG-INV-03",
+        "AIG-INV-04",
+        "AIG-AIMS-02",
+        "AIG-AIMS-01"
+      ],
+      "was_gap_in": "taxonomy 1.0 (July 2026)",
+      "new_in": null,
+      "global": 12,
+      "public": 0,
+      "cases": 0,
+      "by_basis": {
+        "mit": 0,
+        "text": 12,
+        "llm": 0
+      }
+    },
+    {
+      "id": "cumulative-population-harm",
+      "label": "Cumulative harm to the same people",
+      "coverage": "partial",
+      "coverage_note": "Partial: the portfolio view (§4.5.8, Capabilities and System Map, measure M-16) tracks risk concentration on the council's side, such as supplier dependency. It does not look across systems at whether the same residents or communities are carrying the combined burden.",
+      "sections": [
+        "4.5.8"
+      ],
+      "artefacts": [
+        "AIG-INV-05",
+        "AIG-AIMS-10"
+      ],
+      "was_gap_in": null,
+      "new_in": null,
+      "global": 7,
+      "public": 0,
+      "cases": 0,
+      "by_basis": {
+        "mit": 6,
+        "text": 1,
+        "llm": 0
+      }
+    },
+    {
+      "id": "workforce-algorithmic-management",
+      "label": "AI used to monitor or manage staff",
+      "coverage": "unmapped",
+      "coverage_note": "Unmapped: a search of all 52 artefacts found nothing on AI used to monitor or manage council staff. The suite governs AI as it affects residents; the council as employer is not covered.",
+      "sections": [],
+      "artefacts": [],
+      "was_gap_in": null,
+      "new_in": "taxonomy 2.0",
+      "global": 6,
+      "public": 0,
+      "cases": 0,
+      "by_basis": {
+        "mit": 6,
         "text": 0,
+        "llm": 0
+      }
+    },
+    {
+      "id": "deskilling",
+      "label": "Deskilling and lost fallback capability",
+      "coverage": "partial",
+      "coverage_note": "Partial: §4.3.13 names degraded manual fallback as a risk and the Rollout Plan records a fallback, but nothing measures whether staff can still do the work unaided. AIMS-10 measure M-10 covers AIMS role competence only.",
+      "sections": [
+        "4.3.13",
+        "4.3.8"
+      ],
+      "artefacts": [
+        "AIG-OPS-01"
+      ],
+      "was_gap_in": null,
+      "new_in": null,
+      "global": 5,
+      "public": 0,
+      "cases": 0,
+      "by_basis": {
+        "mit": 5,
+        "text": 0,
+        "llm": 0
+      }
+    },
+    {
+      "id": "accountability-vacuum",
+      "label": "No accountable owner",
+      "coverage": "mapped",
+      "coverage_note": "Named Service Owner per AIR-ID, Terms of Reference and the Governance Decision Record.",
+      "sections": [
+        "3.5",
+        "4.3.9"
+      ],
+      "artefacts": [
+        "AIG-GOV-06",
+        "AIG-INV-04",
+        "AIG-DEC-03"
+      ],
+      "was_gap_in": null,
+      "new_in": null,
+      "global": 3,
+      "public": 0,
+      "cases": 0,
+      "by_basis": {
+        "mit": 3,
+        "text": 0,
+        "llm": 0
+      }
+    },
+    {
+      "id": "supplier-opacity",
+      "label": "Supplier opacity or failure",
+      "coverage": "mapped",
+      "coverage_note": "Procurement and supplier governance policy and the Supplier Due Diligence Questionnaire.",
+      "sections": [
+        "4.3.10",
+        "5.5"
+      ],
+      "artefacts": [
+        "AIG-ASS-08"
+      ],
+      "was_gap_in": null,
+      "new_in": null,
+      "global": 2,
+      "public": 0,
+      "cases": 0,
+      "by_basis": {
+        "mit": 0,
+        "text": 2,
+        "llm": 0
+      }
+    },
+    {
+      "id": "redress-failure",
+      "label": "No route to challenge or redress",
+      "coverage": "mapped",
+      "coverage_note": "Now covered: the Contestability and Redress Control applies wherever AI made or materially influenced a decision, routed through the council complaints procedure.",
+      "sections": [
+        "5.7.1",
+        "6.8"
+      ],
+      "artefacts": [
+        "AIG-OPS-04"
+      ],
+      "was_gap_in": "taxonomy 1.0 (July 2026)",
+      "new_in": null,
+      "global": 1,
+      "public": 0,
+      "cases": 1,
+      "by_basis": {
+        "mit": 0,
+        "text": 1,
         "llm": 0
       }
     },
@@ -320,79 +511,6 @@
       }
     },
     {
-      "id": "solely-automated-decision",
-      "label": "Solely automated significant decision",
-      "coverage": "mapped",
-      "coverage_note": "Statutory-decision escalation trigger, DPIA covering UK GDPR Articles 22A to 22D, and the Contestability and Redress Control.",
-      "sections": [
-        "4.4.6",
-        "4.6.1"
-      ],
-      "artefacts": [
-        "AIG-ASS-05",
-        "AIG-OPS-04"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 0,
-      "public": 0,
-      "cases": 2,
-      "by_basis": {
-        "mit": 0,
-        "text": 0,
-        "llm": 0
-      }
-    },
-    {
-      "id": "vulnerable-group-harm",
-      "label": "Harm to vulnerable people",
-      "coverage": "mapped",
-      "coverage_note": "Vulnerable-residents escalation trigger, Human Rights Assessment and the Fundamental Rights Coverage Crosswalk.",
-      "sections": [
-        "4.4.6",
-        "4.6.3"
-      ],
-      "artefacts": [
-        "AIG-ASS-07",
-        "AIG-ASS-12"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 0,
-      "public": 0,
-      "cases": 1,
-      "by_basis": {
-        "mit": 0,
-        "text": 0,
-        "llm": 0
-      }
-    },
-    {
-      "id": "agentic-overreach",
-      "label": "Agent acted beyond its authority",
-      "coverage": "mapped",
-      "coverage_note": "Seventh escalation trigger (action without per-action human review), Agent Record, Authority Graph and Action Decision Record.",
-      "sections": [
-        "4.4.6"
-      ],
-      "artefacts": [
-        "AIG-AGT-01",
-        "AIG-AGT-04",
-        "AIG-AGT-05",
-        "AIG-AGT-06"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 0,
-      "public": 0,
-      "cases": 0,
-      "by_basis": {
-        "mit": 0,
-        "text": 0,
-        "llm": 0
-      }
-    },
-    {
       "id": "vendor-model-substitution",
       "label": "Supplier changed the model underneath",
       "coverage": "mapped",
@@ -415,28 +533,46 @@
         "text": 0,
         "llm": 0
       }
-    },
+    }
+  ],
+  "gap_list": [
     {
-      "id": "downstream-reuse",
-      "label": "Reused for a purpose nobody assessed (function creep)",
-      "coverage": "mapped",
-      "coverage_note": "Now covered: every materially distinct use gets its own UC-ID and approval applies only to the scope decided; the Statement of Applicability (A.9.4) requires scope-creep detection and reapproval; AIMS scope assigns downstream-use responsibility when the council provides AI to others.",
+      "id": "cumulative-population-harm",
+      "label": "Cumulative harm to the same people",
+      "coverage": "partial",
+      "coverage_note": "Partial: the portfolio view (§4.5.8, Capabilities and System Map, measure M-16) tracks risk concentration on the council's side, such as supplier dependency. It does not look across systems at whether the same residents or communities are carrying the combined burden.",
       "sections": [
-        "3.8"
+        "4.5.8"
       ],
       "artefacts": [
-        "AIG-INV-03",
-        "AIG-INV-04",
-        "AIG-AIMS-02",
-        "AIG-AIMS-01"
+        "AIG-INV-05",
+        "AIG-AIMS-10"
       ],
-      "was_gap_in": "taxonomy 1.0 (July 2026)",
+      "was_gap_in": null,
       "new_in": null,
-      "global": 0,
+      "global": 7,
       "public": 0,
       "cases": 0,
       "by_basis": {
-        "mit": 0,
+        "mit": 6,
+        "text": 1,
+        "llm": 0
+      }
+    },
+    {
+      "id": "workforce-algorithmic-management",
+      "label": "AI used to monitor or manage staff",
+      "coverage": "unmapped",
+      "coverage_note": "Unmapped: a search of all 52 artefacts found nothing on AI used to monitor or manage council staff. The suite governs AI as it affects residents; the council as employer is not covered.",
+      "sections": [],
+      "artefacts": [],
+      "was_gap_in": null,
+      "new_in": "taxonomy 2.0",
+      "global": 6,
+      "public": 0,
+      "cases": 0,
+      "by_basis": {
+        "mit": 6,
         "text": 0,
         "llm": 0
       }
@@ -455,180 +591,101 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 0,
+      "global": 5,
       "public": 0,
       "cases": 0,
       "by_basis": {
-        "mit": 0,
-        "text": 0,
-        "llm": 0
-      }
-    },
-    {
-      "id": "cumulative-population-harm",
-      "label": "Cumulative harm to the same people",
-      "coverage": "partial",
-      "coverage_note": "Partial: the portfolio view (§4.5.8, Capabilities and System Map, measure M-16) tracks risk concentration on the council's side, such as supplier dependency. It does not look across systems at whether the same residents or communities are carrying the combined burden.",
-      "sections": [
-        "4.5.8"
-      ],
-      "artefacts": [
-        "AIG-INV-05",
-        "AIG-AIMS-10"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 0,
-      "public": 0,
-      "cases": 0,
-      "by_basis": {
-        "mit": 0,
-        "text": 0,
-        "llm": 0
-      }
-    },
-    {
-      "id": "redress-failure",
-      "label": "No route to challenge or redress",
-      "coverage": "mapped",
-      "coverage_note": "Now covered: the Contestability and Redress Control applies wherever AI made or materially influenced a decision, routed through the council complaints procedure.",
-      "sections": [
-        "5.7.1",
-        "6.8"
-      ],
-      "artefacts": [
-        "AIG-OPS-04"
-      ],
-      "was_gap_in": "taxonomy 1.0 (July 2026)",
-      "new_in": null,
-      "global": 0,
-      "public": 0,
-      "cases": 1,
-      "by_basis": {
-        "mit": 0,
-        "text": 0,
-        "llm": 0
-      }
-    },
-    {
-      "id": "workforce-algorithmic-management",
-      "label": "AI used to monitor or manage staff",
-      "coverage": "unmapped",
-      "coverage_note": "Unmapped: a search of all 52 artefacts found nothing on AI used to monitor or manage council staff. The suite governs AI as it affects residents; the council as employer is not covered.",
-      "sections": [],
-      "artefacts": [],
-      "was_gap_in": null,
-      "new_in": "taxonomy 2.0",
-      "global": 0,
-      "public": 0,
-      "cases": 0,
-      "by_basis": {
-        "mit": 0,
+        "mit": 5,
         "text": 0,
         "llm": 0
       }
     }
   ],
-  "gap_list": [],
-  "unobserved_gaps": [
-    "deskilling",
-    "cumulative-population-harm",
-    "workforce-algorithmic-management"
-  ],
+  "unobserved_gaps": [],
   "unexercised_controls": [
-    "security-compromise",
-    "poor-data-quality",
-    "performance-drift",
-    "hallucination-misinformation",
-    "automation-bias",
-    "accountability-vacuum",
-    "supplier-opacity",
-    "shadow-ai",
-    "agentic-overreach",
-    "vendor-model-substitution",
-    "downstream-reuse"
+    "vendor-model-substitution"
   ],
   "closed_since_july": [
-    "vendor-model-substitution",
     "downstream-reuse",
-    "redress-failure"
+    "redress-failure",
+    "vendor-model-substitution"
   ],
   "remediation": {
-    "none_indicated": 0,
-    "none_indicated_public": 0,
-    "none_indicated_share": null,
-    "none_indicated_public_share": null,
+    "none_indicated": 1570,
+    "none_indicated_public": 170,
+    "none_indicated_share": 91.8,
+    "none_indicated_public_share": 90.4,
     "by_type": [
       {
         "id": "withdrawn",
         "label": "System withdrawn",
-        "indicated": 0,
+        "indicated": 14,
         "documented": 1
       },
       {
         "id": "suspended",
         "label": "Suspended or paused",
-        "indicated": 0,
+        "indicated": 22,
         "documented": 1
       },
       {
         "id": "fixed",
         "label": "Fixed or retrained",
-        "indicated": 0,
+        "indicated": 6,
         "documented": 0
       },
       {
         "id": "human-review-added",
         "label": "Human review added",
-        "indicated": 0,
+        "indicated": 9,
         "documented": 0
       },
       {
         "id": "policy-change",
         "label": "Policy or process changed",
-        "indicated": 0,
+        "indicated": 1,
         "documented": 1
       },
       {
         "id": "redress-compensation",
         "label": "Compensation or redress",
-        "indicated": 0,
+        "indicated": 32,
         "documented": 1
       },
       {
         "id": "apology",
         "label": "Public apology",
-        "indicated": 0,
+        "indicated": 29,
         "documented": 0
       },
       {
         "id": "regulatory-enforcement",
         "label": "Regulatory enforcement",
-        "indicated": 0,
+        "indicated": 20,
         "documented": 1
       },
       {
         "id": "court-ruling",
         "label": "Court ruling",
-        "indicated": 0,
+        "indicated": 17,
         "documented": 2
       },
       {
         "id": "independent-review",
         "label": "Inquiry or independent review",
-        "indicated": 0,
+        "indicated": 6,
         "documented": 1
       },
       {
         "id": "transparency-disclosure",
         "label": "Transparency or disclosure",
-        "indicated": 0,
+        "indicated": 8,
         "documented": 0
       }
     ]
   },
   "determinations": {
-    "alleged": 0,
+    "alleged": 1711,
     "acknowledged": 2,
     "determined": 4
   }
