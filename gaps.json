@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-11T17:36:40.906Z",
-  "taxonomy_version": "2.0",
+  "generated_at": "2026-10-11T17:38:39.762Z",
+  "taxonomy_version": "2.1",
   "suite_baseline": "AI Governance Suite v3.9.9 (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
   "export": {
     "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261005.xlsx",
@@ -26,7 +26,7 @@
     "incidents": 1711,
     "public_sector": 188,
     "cases": 6,
-    "unclassified": 562,
+    "unclassified": 574,
     "unclassified_public": 43
   },
   "modes": [
@@ -350,29 +350,6 @@
       }
     },
     {
-      "id": "cumulative-population-harm",
-      "label": "Cumulative harm to the same people",
-      "coverage": "partial",
-      "coverage_note": "Partial: the portfolio view (§4.5.8, Capabilities and System Map, measure M-16) tracks risk concentration on the council's side, such as supplier dependency. It does not look across systems at whether the same residents or communities are carrying the combined burden.",
-      "sections": [
-        "4.5.8"
-      ],
-      "artefacts": [
-        "AIG-INV-05",
-        "AIG-AIMS-10"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 7,
-      "public": 0,
-      "cases": 0,
-      "by_basis": {
-        "mit": 6,
-        "text": 1,
-        "llm": 0
-      }
-    },
-    {
       "id": "workforce-algorithmic-management",
       "label": "AI used to monitor or manage staff",
       "coverage": "unmapped",
@@ -381,35 +358,12 @@
       "artefacts": [],
       "was_gap_in": null,
       "new_in": "taxonomy 2.0",
-      "global": 6,
+      "global": 4,
       "public": 0,
       "cases": 0,
       "by_basis": {
-        "mit": 6,
-        "text": 0,
-        "llm": 0
-      }
-    },
-    {
-      "id": "deskilling",
-      "label": "Deskilling and lost fallback capability",
-      "coverage": "partial",
-      "coverage_note": "Partial: §4.3.13 names degraded manual fallback as a risk and the Rollout Plan records a fallback, but nothing measures whether staff can still do the work unaided. AIMS-10 measure M-10 covers AIMS role competence only.",
-      "sections": [
-        "4.3.13",
-        "4.3.8"
-      ],
-      "artefacts": [
-        "AIG-OPS-01"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 5,
-      "public": 0,
-      "cases": 0,
-      "by_basis": {
-        "mit": 5,
-        "text": 0,
+        "mit": 0,
+        "text": 4,
         "llm": 0
       }
     },
@@ -533,49 +487,6 @@
         "text": 0,
         "llm": 0
       }
-    }
-  ],
-  "gap_list": [
-    {
-      "id": "cumulative-population-harm",
-      "label": "Cumulative harm to the same people",
-      "coverage": "partial",
-      "coverage_note": "Partial: the portfolio view (§4.5.8, Capabilities and System Map, measure M-16) tracks risk concentration on the council's side, such as supplier dependency. It does not look across systems at whether the same residents or communities are carrying the combined burden.",
-      "sections": [
-        "4.5.8"
-      ],
-      "artefacts": [
-        "AIG-INV-05",
-        "AIG-AIMS-10"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 7,
-      "public": 0,
-      "cases": 0,
-      "by_basis": {
-        "mit": 6,
-        "text": 1,
-        "llm": 0
-      }
-    },
-    {
-      "id": "workforce-algorithmic-management",
-      "label": "AI used to monitor or manage staff",
-      "coverage": "unmapped",
-      "coverage_note": "Unmapped: a search of all 52 artefacts found nothing on AI used to monitor or manage council staff. The suite governs AI as it affects residents; the council as employer is not covered.",
-      "sections": [],
-      "artefacts": [],
-      "was_gap_in": null,
-      "new_in": "taxonomy 2.0",
-      "global": 6,
-      "public": 0,
-      "cases": 0,
-      "by_basis": {
-        "mit": 6,
-        "text": 0,
-        "llm": 0
-      }
     },
     {
       "id": "deskilling",
@@ -591,17 +502,63 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 5,
+      "global": 0,
       "public": 0,
       "cases": 0,
       "by_basis": {
-        "mit": 5,
+        "mit": 0,
+        "text": 0,
+        "llm": 0
+      }
+    },
+    {
+      "id": "cumulative-population-harm",
+      "label": "Cumulative harm to the same people",
+      "coverage": "partial",
+      "coverage_note": "Partial: the portfolio view (§4.5.8, Capabilities and System Map, measure M-16) tracks risk concentration on the council's side, such as supplier dependency. It does not look across systems at whether the same residents or communities are carrying the combined burden.",
+      "sections": [
+        "4.5.8"
+      ],
+      "artefacts": [
+        "AIG-INV-05",
+        "AIG-AIMS-10"
+      ],
+      "was_gap_in": null,
+      "new_in": null,
+      "global": 0,
+      "public": 0,
+      "cases": 0,
+      "by_basis": {
+        "mit": 0,
         "text": 0,
         "llm": 0
       }
     }
   ],
-  "unobserved_gaps": [],
+  "gap_list": [
+    {
+      "id": "workforce-algorithmic-management",
+      "label": "AI used to monitor or manage staff",
+      "coverage": "unmapped",
+      "coverage_note": "Unmapped: a search of all 52 artefacts found nothing on AI used to monitor or manage council staff. The suite governs AI as it affects residents; the council as employer is not covered.",
+      "sections": [],
+      "artefacts": [],
+      "was_gap_in": null,
+      "new_in": "taxonomy 2.0",
+      "global": 4,
+      "public": 0,
+      "cases": 0,
+      "by_basis": {
+        "mit": 0,
+        "text": 4,
+        "llm": 0
+      }
+    }
+  ],
+  "unobserved_gaps": [
+    "deskilling",
+    "cumulative-population-harm"
+  ],
   "unexercised_controls": [
     "vendor-model-substitution"
   ],

@@ -12,6 +12,17 @@
         "deskilling"
       ],
       "note": "First run: existing incidents baselined."
+    },
+    {
+      "at": "2026-10-11T17:38:39.762Z",
+      "collect": "reclassified",
+      "export_file": "AIID_Excel_Export-20261005.xlsx",
+      "incidents": 1711,
+      "new_incidents": 0,
+      "gaps_observed": [
+        "workforce-algorithmic-management"
+      ],
+      "note": "Taxonomy 2.1: re-applied to the existing incidents after a spot check found false gap matches. No download."
     }
   ]
 }

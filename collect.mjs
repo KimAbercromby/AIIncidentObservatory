@@ -1,6 +1,6 @@
 // Weekly collection: find the newest AIID Excel export, download it from the pinned host,
 // parse the Incidents sheet, and classify every incident against the current taxonomy.
-// Usage: node collect.mjs [--force]   (env OBS_EXPORT_URL overrides discovery; OBS_EXPORT_FILE reads a local file)
+// Usage: node collect.mjs [--force | --reclassify]   (env OBS_EXPORT_URL overrides discovery; OBS_EXPORT_FILE reads a local file)
 import { readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import ExcelJS from 'exceljs';
@@ -52,7 +52,12 @@ async function main() {
   let status;
   let exportInfo = state.last_export || null;
 
-  if (process.env.OBS_EXPORT_FILE) {
+  if (process.argv.includes('--reclassify')) {
+    // Re-apply the current taxonomy to the incidents already held, without downloading.
+    if (!prev.incidents.length) throw new Error('--reclassify needs an existing incidents.json');
+    incidents = prev.incidents.map(({ classification, ...rest }) => rest);
+    status = 'reclassified';
+  } else if (process.env.OBS_EXPORT_FILE) {
     incidents = await parseWorkbook(await readFile(process.env.OBS_EXPORT_FILE));
     exportInfo = { file: process.env.OBS_EXPORT_FILE.split('/').pop(), export_date: null, url: null };
     status = 'collected-local-file';

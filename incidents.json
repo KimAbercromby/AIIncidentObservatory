@@ -7,7 +7,7 @@
     "sha256": "95c71e26ef379432a9a87934d26854c1a68998ef158a3fc4b247d96afb20c749",
     "bytes": 2527372
   },
-  "taxonomy_version": "2.0",
+  "taxonomy_version": "2.1",
   "incidents": [
     {
       "id": 1,
@@ -330,7 +330,7 @@
           {
             "id": "workforce-algorithmic-management",
             "basis": [
-              "mit"
+              "text"
             ]
           }
         ],
@@ -3675,7 +3675,7 @@
           {
             "id": "workforce-algorithmic-management",
             "basis": [
-              "mit"
+              "text"
             ]
           }
         ],
@@ -3955,6 +3955,12 @@
             "id": "unlawful-data-processing",
             "basis": [
               "mit",
+              "text"
+            ]
+          },
+          {
+            "id": "workforce-algorithmic-management",
+            "basis": [
               "text"
             ]
           }
@@ -8329,14 +8335,7 @@
       "text_hash": "45e127203be2fdfd",
       "first_seen": "2026-10-11",
       "classification": {
-        "modes": [
-          {
-            "id": "cumulative-population-harm",
-            "basis": [
-              "mit"
-            ]
-          }
-        ],
+        "modes": [],
         "remediation_indicated": [],
         "public_sector": false,
         "public_sector_basis": "no public-sector signal",
@@ -12076,14 +12075,7 @@
       "text_hash": "dcbdc45b8d593d0f",
       "first_seen": "2026-10-11",
       "classification": {
-        "modes": [
-          {
-            "id": "deskilling",
-            "basis": [
-              "mit"
-            ]
-          }
-        ],
+        "modes": [],
         "remediation_indicated": [],
         "public_sector": false,
         "public_sector_basis": "no public-sector signal",
@@ -12109,14 +12101,7 @@
       "text_hash": "6dd16b6963c39a87",
       "first_seen": "2026-10-11",
       "classification": {
-        "modes": [
-          {
-            "id": "cumulative-population-harm",
-            "basis": [
-              "mit"
-            ]
-          }
-        ],
+        "modes": [],
         "remediation_indicated": [
           "regulatory-enforcement"
         ],
@@ -12307,14 +12292,7 @@
       "text_hash": "2cbaa070f4f4be75",
       "first_seen": "2026-10-11",
       "classification": {
-        "modes": [
-          {
-            "id": "workforce-algorithmic-management",
-            "basis": [
-              "mit"
-            ]
-          }
-        ],
+        "modes": [],
         "remediation_indicated": [],
         "public_sector": false,
         "public_sector_basis": "no public-sector signal",
@@ -12548,6 +12526,12 @@
             "id": "automation-bias",
             "basis": [
               "mit"
+            ]
+          },
+          {
+            "id": "workforce-algorithmic-management",
+            "basis": [
+              "text"
             ]
           }
         ],
@@ -13173,14 +13157,7 @@
       "text_hash": "971dbbd2198a4375",
       "first_seen": "2026-10-11",
       "classification": {
-        "modes": [
-          {
-            "id": "cumulative-population-harm",
-            "basis": [
-              "mit"
-            ]
-          }
-        ],
+        "modes": [],
         "remediation_indicated": [],
         "public_sector": false,
         "public_sector_basis": "no public-sector signal",
@@ -14238,14 +14215,7 @@
       "text_hash": "a6fa0589f9c34256",
       "first_seen": "2026-10-11",
       "classification": {
-        "modes": [
-          {
-            "id": "cumulative-population-harm",
-            "basis": [
-              "mit"
-            ]
-          }
-        ],
+        "modes": [],
         "remediation_indicated": [],
         "public_sector": false,
         "public_sector_basis": "AIID editors (CSET: Public Sector Deployment)",
@@ -14304,14 +14274,7 @@
       "text_hash": "d17fac59f08efdac",
       "first_seen": "2026-10-11",
       "classification": {
-        "modes": [
-          {
-            "id": "cumulative-population-harm",
-            "basis": [
-              "mit"
-            ]
-          }
-        ],
+        "modes": [],
         "remediation_indicated": [],
         "public_sector": false,
         "public_sector_basis": "no public-sector signal",
@@ -14686,14 +14649,7 @@
       "text_hash": "e724ebb4e0de3389",
       "first_seen": "2026-10-11",
       "classification": {
-        "modes": [
-          {
-            "id": "workforce-algorithmic-management",
-            "basis": [
-              "mit"
-            ]
-          }
-        ],
+        "modes": [],
         "remediation_indicated": [],
         "public_sector": false,
         "public_sector_basis": "no public-sector signal",
@@ -17795,14 +17751,7 @@
       "text_hash": "0fc7dc3dc3c6d56a",
       "first_seen": "2026-10-11",
       "classification": {
-        "modes": [
-          {
-            "id": "workforce-algorithmic-management",
-            "basis": [
-              "mit"
-            ]
-          }
-        ],
+        "modes": [],
         "remediation_indicated": [],
         "public_sector": false,
         "public_sector_basis": "no public-sector signal",
@@ -20368,12 +20317,6 @@
             "id": "unlawful-data-processing",
             "basis": [
               "text"
-            ]
-          },
-          {
-            "id": "deskilling",
-            "basis": [
-              "mit"
             ]
           }
         ],
@@ -27027,14 +26970,7 @@
       "text_hash": "9a83a0b3e41c2013",
       "first_seen": "2026-10-11",
       "classification": {
-        "modes": [
-          {
-            "id": "workforce-algorithmic-management",
-            "basis": [
-              "mit"
-            ]
-          }
-        ],
+        "modes": [],
         "remediation_indicated": [],
         "public_sector": false,
         "public_sector_basis": "no public-sector signal",
@@ -32354,14 +32290,7 @@
       "text_hash": "cca09c8e391264d5",
       "first_seen": "2026-10-11",
       "classification": {
-        "modes": [
-          {
-            "id": "cumulative-population-harm",
-            "basis": [
-              "mit"
-            ]
-          }
-        ],
+        "modes": [],
         "remediation_indicated": [],
         "public_sector": false,
         "public_sector_basis": "no public-sector signal",
@@ -36142,12 +36071,6 @@
         "modes": [
           {
             "id": "vulnerable-group-harm",
-            "basis": [
-              "text"
-            ]
-          },
-          {
-            "id": "cumulative-population-harm",
             "basis": [
               "text"
             ]
@@ -41188,14 +41111,7 @@
       "text_hash": "dac3586ba52edd5a",
       "first_seen": "2026-10-11",
       "classification": {
-        "modes": [
-          {
-            "id": "deskilling",
-            "basis": [
-              "mit"
-            ]
-          }
-        ],
+        "modes": [],
         "remediation_indicated": [],
         "public_sector": false,
         "public_sector_basis": "no public-sector signal",
@@ -41562,12 +41478,6 @@
             "id": "shadow-ai",
             "basis": [
               "text"
-            ]
-          },
-          {
-            "id": "deskilling",
-            "basis": [
-              "mit"
             ]
           }
         ],
@@ -44231,12 +44141,6 @@
             "id": "shadow-ai",
             "basis": [
               "text"
-            ]
-          },
-          {
-            "id": "deskilling",
-            "basis": [
-              "mit"
             ]
           }
         ],

@@ -24,7 +24,7 @@ This tool is separate from the [regulatory horizon scanner](https://github.com/K
 | `analyse.mjs` | Builds `gaps.json` (the gap analysis) and `coverage.json`, and appends to `run-log.json`. |
 | `lib.mjs` | Shared logic (pure functions, fully tested). |
 | `index.html` | The viewer, served by GitHub Pages. |
-| `observatory.test.mjs` | 15 tests. They run before every collection. |
+| `observatory.test.mjs` | 16 tests. They run before every collection. |
 | `.github/workflows/observatory.yml` | Runs weekly (Tuesdays 06:17 UTC) and on demand. |
 
 ## Taxonomy 2.0: what changed since July 2026
@@ -67,3 +67,9 @@ Add an entry to `cases.json` following the existing ones. Every fact needs a `so
 ## Licence
 
 Incident data comes from the [AI Incident Database](https://incidentdatabase.ai/) (Responsible AI Collaborative), licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Report text is not collected because it is not covered by that licence. The derived data in this repository (`incidents.json`, `gaps.json`) is shared under CC BY-SA 4.0.
+
+## Re-applying the taxonomy without downloading
+
+After editing `taxonomy.json`, run `node collect.mjs --reclassify && node analyse.mjs` to re-classify the incidents already held. The weekly run also re-applies the current taxonomy every time.
+
+**Taxonomy 2.1 (11 Oct 2026).** The first real collection showed that the MIT risk tags nearest to three gaps meant something else: "devaluation of human effort" covers creative and copyright cases, "power centralisation" covers market competition, and "employment quality" covers labour markets generally. Those tags no longer count for deskilling, cumulative harm or staff monitoring; only specific wording does. Every incident behind those three gaps was checked by hand.

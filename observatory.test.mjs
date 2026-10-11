@@ -161,3 +161,13 @@ test('coverage statement names what is and is not read', () => {
   assert.match(c.statement, /does not read .*OECD/);
   assert.match(c.statement, /allegations/);
 });
+
+test('false-positive guard: creative-work and market-competition incidents do not count as gaps', () => {
+  const art = classifyIncident({ title: 'GAN artwork won first place at state fair', description: 'An AI-generated image won an art prize.', mit_subdomain: '6.3 Economic and cultural devaluation of human effort' }, ctax);
+  const mkt = classifyIncident({ title: 'Retailer tweaked search algorithm to boost own products', description: 'Self-preferencing in search results.', mit_subdomain: '6.1 Power centralization and unfair distribution of benefits' }, ctax);
+  const rent = classifyIncident({ title: 'Rent pricing algorithm inflated rents', description: 'Landlords used shared software.', mit_subdomain: '6.2 Increased inequality and decline in employment quality' }, ctax);
+  const ids = [...art.modes, ...mkt.modes, ...rent.modes].map((m) => m.id);
+  for (const gap of ['deskilling', 'cumulative-population-harm', 'workforce-algorithmic-management']) assert.ok(!ids.includes(gap), gap);
+  const flex = classifyIncident({ title: 'Delivery drivers allegedly fired via automated employee evaluations', description: '' }, ctax);
+  assert.ok(flex.modes.some((m) => m.id === 'workforce-algorithmic-management'));
+});
