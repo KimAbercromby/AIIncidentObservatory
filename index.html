@@ -98,7 +98,7 @@ footer a{color:#fff}
 <a class="skip" href="#main">Skip to content</a>
 <header class="mast">
   <div class="wrap">
-    <a class="back" href="https://kimabercromby.github.io/">&larr; All AI governance tools</a>
+    <a class="back" href="https://kimabercromby.github.io/">&larr; All AI governance tools</a> <span class="back" aria-hidden="true">&middot;</span> <a class="back" href="https://kimabercromby.github.io/AIGovernanceSuiteTools/suite-map.html">Suite Map</a>
     <h1>AI Incident Observatory</h1>
     <p class="sub">What goes wrong with AI around the world, what was done afterwards, and where the AI Governance Suite has no control that would have caught it first.</p>
     <div class="coverage" id="coverage" role="note"><strong>Coverage.</strong> Loading…</div>
@@ -237,10 +237,13 @@ footer a{color:#fff}
   }
   function tile(n, l, warn){ return '<div class="tile' + (warn ? ' warn' : '') + '"><div class="n">' + n + '</div><div class="l">' + esc(l) + '</div></div>'; }
 
+  var SUITE_DOCS = 'https://kimabercromby.github.io/AIGovernanceSuiteTools/docs/';
+  function artLink(a){ return '<a href="' + SUITE_DOCS + encodeURIComponent(a) + '.pdf" rel="noopener" title="Open ' + esc(a) + ' (PDF)">' + esc(a) + '</a>'; }
+  // Returns HTML: the Playbook links to its PDF, each artefact code to its own PDF on the suite site.
   function controls(m){
     var parts = [];
-    if (m.sections && m.sections.length) parts.push('Playbook §' + m.sections.join(', §'));
-    if (m.artefacts && m.artefacts.length) parts.push(m.artefacts.join(', '));
+    if (m.sections && m.sections.length) parts.push('<a href="' + SUITE_DOCS + 'AIG-GOV-02.pdf" rel="noopener" title="Open the Playbook (PDF)">Playbook</a> §' + m.sections.map(esc).join(', §'));
+    if (m.artefacts && m.artefacts.length) parts.push(m.artefacts.map(artLink).join(', '));
     return parts.join(' · ') || 'Nothing in the suite';
   }
 
@@ -249,6 +252,7 @@ footer a{color:#fff}
       return '<article class="card"><h3>' + esc(m.label) + '</h3>' + pill(m.coverage, covLabel(m.coverage)) + (m.new_in ? ' ' + pill('closed', 'New in ' + m.new_in) : '') +
         '<div class="counts"><span><b>' + fmt(m.public) + '</b> public sector</span><span><b>' + fmt(m.global) + '</b> all</span><span><b>' + fmt(m.cases) + '</b> cases</span></div>' +
         '<p>' + esc(m.coverage_note) + '</p>' +
+        (m.artefacts.length || m.sections.length ? '<p class="small">Suite: ' + controls(m) + '</p>' : '') +
         '<p><button class="linkish" type="button" data-mode="' + esc(m.id) + '">See these incidents</button></p></article>';
     });
     if (g.unobserved_gaps.length){
@@ -269,7 +273,7 @@ footer a{color:#fff}
         '<td>' + pill(m.coverage, covLabel(m.coverage)) + '</td>' +
         '<td class="num">' + fmt(m.public) + '<div class="bar" aria-hidden="true"><span style="width:' + (100 * m.public / maxP).toFixed(1) + '%"></span></div></td>' +
         '<td class="num">' + fmt(m.global) + '<div class="bar" aria-hidden="true"><span style="width:' + (100 * m.global / max).toFixed(1) + '%"></span></div></td>' +
-        '<td class="num hide-sm">' + fmt(m.cases) + '</td><td class="num hide-sm">' + fmt(m.court) + '</td><td class="small hide-sm">' + esc(controls(m)) + '</td></tr>';
+        '<td class="num hide-sm">' + fmt(m.cases) + '</td><td class="num hide-sm">' + fmt(m.court) + '</td><td class="small hide-sm">' + controls(m) + '</td></tr>';
     }).join('');
     bindModeLinks($('modeTable'));
   }
@@ -297,7 +301,7 @@ footer a{color:#fff}
         '<div class="finding"><strong>' + esc(d.by) + (d.date ? ', ' + esc(d.date) : '') + '.</strong> ' + esc(d.finding) + (d.reference ? ' <span class="small">(' + esc(d.reference) + ')</span>' : '') + '</div>' +
         '<strong style="font-size:13px">What was done</strong><ul>' + c.remediation.map(function(r){ return '<li>' + esc((S.remById[r.type] || {}).label || r.type) + ' (' + esc(r.date) + '): ' + esc(r.what) + '</li>'; }).join('') + '</ul>' +
         '<div class="chips">' + modes.map(function(m){ return '<span class="chip">' + esc(m.label) + '</span>'; }).join('') + '</div>' +
-        '<p class="controls">Suite controls that apply: ' + esc(modes.map(controls).join(' | ')) + '</p>' +
+        '<p class="controls">Suite controls that apply: ' + modes.map(controls).join(' | ') + '</p>' +
         '<p class="small">Sources: ' + c.sources.map(function(s){ return '<a href="' + esc(s.url) + '" rel="noopener">' + esc(s.title) + '</a>'; }).join('; ') + '</p></article>';
     }).join('') || '<p class="empty">No curated cases.</p>';
   }
