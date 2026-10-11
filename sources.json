@@ -29,6 +29,33 @@
       "verify_note": "Each case carries its sources. Add a case only with a source for every fact, and state the determination level honestly."
     },
     {
+      "id": "find-case-law",
+      "name": "Find Case Law (UK court judgments)",
+      "publisher": "The National Archives",
+      "status": "licence-required",
+      "collected": false,
+      "licence": {
+        "granted": false,
+        "reference": null,
+        "note": "Automated identification or classification of judgments is computational analysis, which the Open Justice Licence excludes. A free computational analysis licence is required. Set granted to true and add the reference only once the licence is issued."
+      },
+      "feed": "https://caselaw.nationalarchives.gov.uk/atom.xml",
+      "queries": [
+        "\"artificial intelligence\"",
+        "ChatGPT",
+        "\"generative AI\"",
+        "\"facial recognition\"",
+        "\"automated decision\"",
+        "\"machine learning\"",
+        "\"large language model\"",
+        "algorithmic"
+      ],
+      "rate_limit": "1,000 requests per rolling five minutes per IP (documented). The collector waits 1 second between requests and fetches at most 300 judgments per run.",
+      "determination": "determined (a court or tribunal made findings; the AI element may be incidental to the case)",
+      "attribution": "Contains public sector information licensed under the Open Justice Licence v1.0.",
+      "verify_note": "Endpoint and parameters taken from the published OpenAPI spec (nationalarchives/ds-find-caselaw-docs, public_api.yml). Under the nine principles, no judgment text is stored or published: only case metadata, a link to the authoritative version, and the failure-mode labels the classifier assigned."
+    },
+    {
       "id": "oecd-aim",
       "name": "OECD AI Incidents and Hazards Monitor",
       "publisher": "OECD",

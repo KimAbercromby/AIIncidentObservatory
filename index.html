@@ -107,7 +107,7 @@ footer a{color:#fff}
 </header>
 <nav class="jump" aria-label="Sections">
   <div class="wrap">
-    <a href="#gaps">Gap list</a><a href="#modes">Failure modes</a><a href="#remediation">Remediation</a><a href="#cases">Cases</a><a href="#incidents">Incidents</a><a href="#runs">Run log</a>
+    <a href="#gaps">Gap list</a><a href="#modes">Failure modes</a><a href="#remediation">Remediation</a><a href="#cases">Cases</a><a href="#judgments" id="navJudg" hidden>Court judgments</a><a href="#incidents">Incidents</a><a href="#runs">Run log</a>
   </div>
 </nav>
 <main id="main">
@@ -130,7 +130,7 @@ footer a{color:#fff}
     <h2 id="h-modes">Failure modes</h2>
     <p class="lede">All 21 failure modes, ranked by how often they appear in public-sector incidents. Select a mode to see its incidents. Counts include a mode wherever the AIID editors' risk tag or the incident text matches it, so one incident can count under several modes.</p>
     <div class="table-scroll"><table id="modeTable"><thead><tr>
-      <th scope="col">Failure mode</th><th scope="col">Suite coverage</th><th scope="col" class="num">Public sector</th><th scope="col" class="num">All incidents</th><th scope="col" class="num hide-sm">Cases</th><th scope="col" class="hide-sm">Where the suite covers it</th>
+      <th scope="col">Failure mode</th><th scope="col">Suite coverage</th><th scope="col" class="num">Public sector</th><th scope="col" class="num">All incidents</th><th scope="col" class="num hide-sm">Cases</th><th scope="col" class="num hide-sm">Court</th><th scope="col" class="hide-sm">Where the suite covers it</th>
     </tr></thead><tbody></tbody></table></div>
   </section>
 
@@ -147,6 +147,15 @@ footer a{color:#fff}
     <h2 id="h-cases">Curated public-sector cases</h2>
     <p class="lede">Well-documented cases where a court, regulator or inquiry made a finding, or the deployer withdrew the system. Every fact has a source. The determination badge shows the highest level actually reached.</p>
     <div class="cards" id="caseCards"></div>
+  </section>
+
+  <section id="judgments" aria-labelledby="h-judg" hidden>
+    <h2 id="h-judg">Court judgments</h2>
+    <p class="lede">UK court and tribunal judgments that discuss AI, from Find Case Law. Every one is a court's finding, but the AI element may be incidental to the case. No judgment text is held here: each title links to the authoritative, current version.</p>
+    <div class="table-scroll"><table id="judgTable"><thead><tr>
+      <th scope="col">Judgment</th><th scope="col" class="hide-sm">Court</th><th scope="col">Date</th><th scope="col">Failure modes matched</th>
+    </tr></thead><tbody></tbody></table></div>
+    <p class="small" id="judgMore"></p>
   </section>
 
   <section id="incidents" aria-labelledby="h-inc">
@@ -176,6 +185,7 @@ footer a{color:#fff}
 <footer>
   <div class="wrap">
     <p>Incident data: <a href="https://incidentdatabase.ai/">AI Incident Database</a>, Responsible AI Collaborative, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Titles and descriptions are AIID editors' text. Classification, gap analysis and curated cases are this tool's, and are shared under the same licence.</p>
+    <p id="ojl" hidden>Court judgments: contains public sector information licensed under the <a href="https://caselaw.nationalarchives.gov.uk/open-justice-licence">Open Justice Licence v1.0</a>, used under a computational analysis licence from The National Archives.</p>
     <p>Suite mappings are to the AI Governance Suite as designed. Its controls are design-stage: none is evidenced until operated. A mapping says a control exists on paper, not that it works.</p>
   </div>
 </footer>
@@ -193,8 +203,9 @@ footer a{color:#fff}
 
   Promise.all([
     get('gaps.json', null), get('incidents.json', {incidents:[]}), get('cases.json', {cases:[]}),
-    get('taxonomy.json', null), get('run-log.json', {runs:[]})
+    get('taxonomy.json', null), get('run-log.json', {runs:[]}), get('judgments.json', {judgments:[]})
   ]).then(function(r){
+    S.judg = (r[5] && r[5].judgments) || [];
     S.gaps = r[0]; S.inc = (r[1] && r[1].incidents) || []; S.exp = r[1] && r[1].export; S.cases = r[2].cases || []; S.tax = r[3]; S.runs = r[4].runs || [];
     S.modeById = {}; (S.tax ? S.tax.failure_modes : []).forEach(function(m){ S.modeById[m.id] = m; });
     S.remById = {}; (S.tax ? S.tax.remediation_types : []).forEach(function(m){ S.remById[m.id] = m; });
@@ -222,7 +233,7 @@ footer a{color:#fff}
       tile(fmt(g.gap_list.length), 'failure modes seen in the world with a partial or no control', g.gap_list.length > 0),
       tile(rem.none_indicated_share == null ? '—' : rem.none_indicated_share + '%', 'incidents with no remediation recorded')
     ].join('');
-    renderGaps(); renderModes(); renderRem(); renderCases(); setupFilters(); renderIncidents(); renderRuns();
+    renderGaps(); renderModes(); renderRem(); renderCases(); renderJudgments(); setupFilters(); renderIncidents(); renderRuns();
   }
   function tile(n, l, warn){ return '<div class="tile' + (warn ? ' warn' : '') + '"><div class="n">' + n + '</div><div class="l">' + esc(l) + '</div></div>'; }
 
@@ -258,7 +269,7 @@ footer a{color:#fff}
         '<td>' + pill(m.coverage, covLabel(m.coverage)) + '</td>' +
         '<td class="num">' + fmt(m.public) + '<div class="bar" aria-hidden="true"><span style="width:' + (100 * m.public / maxP).toFixed(1) + '%"></span></div></td>' +
         '<td class="num">' + fmt(m.global) + '<div class="bar" aria-hidden="true"><span style="width:' + (100 * m.global / max).toFixed(1) + '%"></span></div></td>' +
-        '<td class="num hide-sm">' + fmt(m.cases) + '</td><td class="small hide-sm">' + esc(controls(m)) + '</td></tr>';
+        '<td class="num hide-sm">' + fmt(m.cases) + '</td><td class="num hide-sm">' + fmt(m.court) + '</td><td class="small hide-sm">' + esc(controls(m)) + '</td></tr>';
     }).join('');
     bindModeLinks($('modeTable'));
   }
@@ -334,6 +345,18 @@ footer a{color:#fff}
     }).join('') || '<p class="empty">Nothing matches these filters.</p>';
     $('pageInfo').textContent = 'Page ' + (S.page + 1) + ' of ' + pages;
     $('prev').disabled = S.page === 0; $('next').disabled = S.page >= pages - 1;
+  }
+
+  function renderJudgments(){
+    if (!S.judg.length) return;
+    $('judgments').hidden = false; $('navJudg').hidden = false; $('ojl').hidden = false;
+    var rows = S.judg.slice(0, 150);
+    $('judgTable').tBodies[0].innerHTML = rows.map(function(j){
+      var modes = j.classification.modes.map(function(m){ return '<span class="chip">' + esc((S.modeById[m.id] || {}).label || m.id) + '</span>'; }).join('');
+      return '<tr><td><a href="' + esc(j.url) + '" rel="noopener">' + esc(j.title) + '</a>' + (j.citation ? ' <span class="small">' + esc(j.citation) + '</span>' : '') +
+        (j.classification.public_sector ? ' ' + pill('closed', 'Public body') : '') + '</td><td class="small hide-sm">' + esc(j.court) + '</td><td class="small">' + esc(j.published || '') + '</td><td><div class="chips">' + (modes || '<span class="small">None matched</span>') + '</div></td></tr>';
+    }).join('');
+    $('judgMore').textContent = S.judg.length > rows.length ? 'Showing the latest ' + rows.length + ' of ' + fmt(S.judg.length) + '.' : '';
   }
 
   function renderRuns(){

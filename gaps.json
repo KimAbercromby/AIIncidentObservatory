@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T17:38:39.762Z",
+  "generated_at": "2026-10-11T17:59:15.468Z",
   "taxonomy_version": "2.1",
   "suite_baseline": "AI Governance Suite v3.9.9 (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
   "export": {
@@ -15,17 +15,20 @@
       "Curated public-sector cases (cases.json)"
     ],
     "not_collected": [
+      "Find Case Law (UK court judgments) (licence-required)",
       "OECD AI Incidents and Hazards Monitor (excluded)",
       "AIAAIC Repository (unverified)",
       "Database of AI Litigation (DAIL) (unverified)",
       "ICO enforcement action (covered-elsewhere)"
     ],
-    "statement": "This observatory reads AI Incident Database (weekly Excel export) and Curated public-sector cases (cases.json). It does not read OECD AI Incidents and Hazards Monitor (excluded); AIAAIC Repository (unverified); Database of AI Litigation (DAIL) (unverified); ICO enforcement action (covered-elsewhere). Counts describe what these sources recorded, not how often failures happen in the world. Media-sourced incidents are allegations unless an authority made a finding."
+    "statement": "This observatory reads AI Incident Database (weekly Excel export) and Curated public-sector cases (cases.json). It does not read Find Case Law (UK court judgments) (licence-required); OECD AI Incidents and Hazards Monitor (excluded); AIAAIC Repository (unverified); Database of AI Litigation (DAIL) (unverified); ICO enforcement action (covered-elsewhere). Counts describe what these sources recorded, not how often failures happen in the world. Media-sourced incidents are allegations unless an authority made a finding."
   },
   "totals": {
     "incidents": 1711,
     "public_sector": 188,
-    "cases": 6,
+    "cases": 9,
+    "judgments": 0,
+    "judgments_public": 0,
     "unclassified": 574,
     "unclassified_public": 43
   },
@@ -49,6 +52,7 @@
       "global": 343,
       "public": 59,
       "cases": 0,
+      "court": 0,
       "by_basis": {
         "mit": 305,
         "text": 74,
@@ -74,7 +78,8 @@
       "new_in": null,
       "global": 170,
       "public": 49,
-      "cases": 3,
+      "cases": 4,
+      "court": 0,
       "by_basis": {
         "mit": 152,
         "text": 69,
@@ -99,6 +104,7 @@
       "global": 199,
       "public": 24,
       "cases": 1,
+      "court": 0,
       "by_basis": {
         "mit": 0,
         "text": 199,
@@ -122,7 +128,8 @@
       "new_in": null,
       "global": 153,
       "public": 20,
-      "cases": 3,
+      "cases": 4,
+      "court": 0,
       "by_basis": {
         "mit": 88,
         "text": 111,
@@ -145,7 +152,8 @@
       "new_in": null,
       "global": 298,
       "public": 15,
-      "cases": 0,
+      "cases": 1,
+      "court": 0,
       "by_basis": {
         "mit": 196,
         "text": 179,
@@ -171,6 +179,7 @@
       "global": 15,
       "public": 8,
       "cases": 1,
+      "court": 0,
       "by_basis": {
         "mit": 5,
         "text": 13,
@@ -194,6 +203,7 @@
       "global": 85,
       "public": 7,
       "cases": 0,
+      "court": 0,
       "by_basis": {
         "mit": 39,
         "text": 61,
@@ -218,6 +228,7 @@
       "global": 11,
       "public": 3,
       "cases": 2,
+      "court": 0,
       "by_basis": {
         "mit": 4,
         "text": 7,
@@ -241,7 +252,8 @@
       "new_in": null,
       "global": 42,
       "public": 2,
-      "cases": 0,
+      "cases": 1,
+      "court": 0,
       "by_basis": {
         "mit": 38,
         "text": 4,
@@ -267,6 +279,7 @@
       "global": 22,
       "public": 2,
       "cases": 0,
+      "court": 0,
       "by_basis": {
         "mit": 3,
         "text": 20,
@@ -292,6 +305,7 @@
       "global": 17,
       "public": 2,
       "cases": 0,
+      "court": 0,
       "by_basis": {
         "mit": 0,
         "text": 17,
@@ -318,6 +332,7 @@
       "global": 19,
       "public": 0,
       "cases": 0,
+      "court": 0,
       "by_basis": {
         "mit": 0,
         "text": 19,
@@ -343,6 +358,7 @@
       "global": 12,
       "public": 0,
       "cases": 0,
+      "court": 0,
       "by_basis": {
         "mit": 0,
         "text": 12,
@@ -360,7 +376,8 @@
       "new_in": "taxonomy 2.0",
       "global": 4,
       "public": 0,
-      "cases": 0,
+      "cases": 1,
+      "court": 0,
       "by_basis": {
         "mit": 0,
         "text": 4,
@@ -386,6 +403,7 @@
       "global": 3,
       "public": 0,
       "cases": 0,
+      "court": 0,
       "by_basis": {
         "mit": 3,
         "text": 0,
@@ -409,6 +427,7 @@
       "global": 2,
       "public": 0,
       "cases": 0,
+      "court": 0,
       "by_basis": {
         "mit": 0,
         "text": 2,
@@ -432,6 +451,7 @@
       "global": 1,
       "public": 0,
       "cases": 1,
+      "court": 0,
       "by_basis": {
         "mit": 0,
         "text": 1,
@@ -458,6 +478,7 @@
       "global": 0,
       "public": 0,
       "cases": 1,
+      "court": 0,
       "by_basis": {
         "mit": 0,
         "text": 0,
@@ -482,6 +503,7 @@
       "global": 0,
       "public": 0,
       "cases": 0,
+      "court": 0,
       "by_basis": {
         "mit": 0,
         "text": 0,
@@ -505,6 +527,7 @@
       "global": 0,
       "public": 0,
       "cases": 0,
+      "court": 0,
       "by_basis": {
         "mit": 0,
         "text": 0,
@@ -528,6 +551,7 @@
       "global": 0,
       "public": 0,
       "cases": 0,
+      "court": 0,
       "by_basis": {
         "mit": 0,
         "text": 0,
@@ -547,7 +571,8 @@
       "new_in": "taxonomy 2.0",
       "global": 4,
       "public": 0,
-      "cases": 0,
+      "cases": 1,
+      "court": 0,
       "by_basis": {
         "mit": 0,
         "text": 4,
@@ -589,7 +614,7 @@
         "id": "fixed",
         "label": "Fixed or retrained",
         "indicated": 6,
-        "documented": 0
+        "documented": 1
       },
       {
         "id": "human-review-added",
@@ -601,7 +626,7 @@
         "id": "policy-change",
         "label": "Policy or process changed",
         "indicated": 1,
-        "documented": 1
+        "documented": 2
       },
       {
         "id": "redress-compensation",
@@ -619,13 +644,13 @@
         "id": "regulatory-enforcement",
         "label": "Regulatory enforcement",
         "indicated": 20,
-        "documented": 1
+        "documented": 2
       },
       {
         "id": "court-ruling",
         "label": "Court ruling",
         "indicated": 17,
-        "documented": 2
+        "documented": 3
       },
       {
         "id": "independent-review",
@@ -637,13 +662,13 @@
         "id": "transparency-disclosure",
         "label": "Transparency or disclosure",
         "indicated": 8,
-        "documented": 0
+        "documented": 1
       }
     ]
   },
   "determinations": {
     "alleged": 1711,
-    "acknowledged": 2,
-    "determined": 4
+    "acknowledged": 3,
+    "determined": 6
   }
 }

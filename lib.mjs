@@ -153,8 +153,9 @@ export function sanitiseLlm(raw, currentDetermination, tax) {
 
 export function analyse(incidents, cases, tax, opts = {}) {
   const sinceYear = opts.sinceYear ?? null;
+  const judgments = opts.judgments || [];
   const pool = sinceYear ? incidents.filter((i) => i.date && Number(i.date.slice(0, 4)) >= sinceYear) : incidents;
-  const modeCounts = new Map(tax.failure_modes.map((m) => [m.id, { global: 0, public: 0, cases: 0, by_basis: { mit: 0, text: 0, llm: 0 } }]));
+  const modeCounts = new Map(tax.failure_modes.map((m) => [m.id, { global: 0, public: 0, cases: 0, court: 0, by_basis: { mit: 0, text: 0, llm: 0 } }]));
   let unclassified = 0;
   let unclassifiedPublic = 0;
   for (const inc of pool) {
@@ -172,6 +173,7 @@ export function analyse(incidents, cases, tax, opts = {}) {
     }
   }
   for (const cs of cases) for (const id of cs.failure_modes) if (modeCounts.has(id)) modeCounts.get(id).cases++;
+  for (const j of judgments) for (const m of j.classification.modes) if (modeCounts.has(m.id)) modeCounts.get(m.id).court++;
 
   const modes = tax.failure_modes.map((m) => ({
     id: m.id,
@@ -185,7 +187,7 @@ export function analyse(incidents, cases, tax, opts = {}) {
     ...modeCounts.get(m.id),
   })).sort((a, b) => b.public - a.public || b.global - a.global);
 
-  const observed = (m) => m.global + m.cases > 0;
+  const observed = (m) => m.global + m.cases + m.court > 0;
   const gap_list = modes.filter((m) => m.coverage !== 'mapped' && observed(m));
   const unobserved_gaps = modes.filter((m) => m.coverage !== 'mapped' && !observed(m)).map((m) => m.id);
   const unexercised_controls = modes.filter((m) => m.coverage === 'mapped' && !observed(m)).map((m) => m.id);
@@ -213,6 +215,8 @@ export function analyse(incidents, cases, tax, opts = {}) {
       incidents: pool.length,
       public_sector: publicTotal,
       cases: cases.length,
+      judgments: judgments.length,
+      judgments_public: judgments.filter((j) => j.classification.public_sector).length,
       unclassified,
       unclassified_public: unclassifiedPublic,
     },

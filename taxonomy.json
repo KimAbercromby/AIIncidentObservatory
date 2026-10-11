@@ -683,7 +683,15 @@
     "centrelink",
     "belastingdienst",
     "dwp",
-    "hmrc"
+    "hmrc",
+    "secretary of state",
+    "chief constable",
+    "revenue and customs",
+    "constabulary",
+    "borough",
+    "commissioner",
+    "ofsted",
+    "tribunal service"
   ],
   "mit_note": "MIT risk tags are not used for deskilling, cumulative harm or staff monitoring: the nearest MIT categories (devaluation of human effort, power centralisation, employment quality) cover creative-work, market-competition and labour-market incidents, which are different failures. Checked against the first real collection on 11 Oct 2026."
 }

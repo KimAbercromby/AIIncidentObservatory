@@ -4,12 +4,17 @@
   "private": true,
   "type": "module",
   "description": "Global AI incident pattern library and gap analysis against the AI Governance Suite",
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "collect": "node collect.mjs",
     "llm": "node llm.mjs",
     "analyse": "node analyse.mjs",
     "test": "node --test observatory.test.mjs"
   },
-  "dependencies": { "exceljs": "4.4.0" }
+  "dependencies": {
+    "exceljs": "4.4.0",
+    "fast-xml-parser": "4.5.0"
+  }
 }

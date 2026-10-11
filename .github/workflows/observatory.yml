@@ -36,6 +36,10 @@ jobs:
         continue-on-error: true
         run: node collect.mjs ${{ inputs.force && '--force' || '' }}
 
+      - name: Court judgments (Find Case Law; does nothing until the licence is recorded)
+        continue-on-error: true
+        run: node judgments.mjs
+
       - name: Machine classification (optional, needs ANTHROPIC_API_KEY secret)
         if: steps.collect.outcome == 'success'
         continue-on-error: true
@@ -52,7 +56,7 @@ jobs:
         run: |
           git config user.name "observatory-bot"
           git config user.email "observatory-bot@users.noreply.github.com"
-          git add incidents.json state.json gaps.json coverage.json run-log.json
+          git add incidents.json judgments.json state.json gaps.json coverage.json run-log.json
           git commit -m "observatory: $(date -u +%F)"
           git push
 

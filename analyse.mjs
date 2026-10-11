@@ -17,7 +17,8 @@ async function main() {
   const log = await readJson('run-log.json', { runs: [] });
   const collectOutcome = process.env.COLLECT_OUTCOME || 'success';
 
-  const result = analyse(data.incidents, cases, tax);
+  const { judgments = [] } = await readJson('judgments.json', { judgments: [] });
+  const result = analyse(data.incidents, cases, tax, { judgments });
   const coverage = coverageStatement(sources);
   const now = new Date().toISOString();
 

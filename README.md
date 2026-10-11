@@ -24,7 +24,8 @@ This tool is separate from the [regulatory horizon scanner](https://github.com/K
 | `analyse.mjs` | Builds `gaps.json` (the gap analysis) and `coverage.json`, and appends to `run-log.json`. |
 | `lib.mjs` | Shared logic (pure functions, fully tested). |
 | `index.html` | The viewer, served by GitHub Pages. |
-| `observatory.test.mjs` | 16 tests. They run before every collection. |
+| `judgments.mjs` | Find Case Law connector. **Switched off** until a computational analysis licence is recorded in `sources.json`. |
+| `observatory.test.mjs` | 21 tests. They run before every collection. |
 | `.github/workflows/observatory.yml` | Runs weekly (Tuesdays 06:17 UTC) and on demand. |
 
 ## Taxonomy 2.0: what changed since July 2026
@@ -48,6 +49,7 @@ Controls are design-stage. A mapping says a control exists on paper, not that it
 | --- | --- | --- |
 | AI Incident Database, weekly Excel export | form-verified, **collected** | The July design used AIID's GraphQL API, which **now requires a logged-in account**. The project points bulk users to this export instead. The workbook layout was taken from AIID's own export pipeline. The parser finds the header row by name and fails loudly if the layout changes. |
 | Curated cases (`cases.json`) | verified, **collected** | Every fact is sourced. |
+| Find Case Law (UK judgments) | **licence required**, built and switched off | Automated classification of judgments needs a free computational analysis licence from The National Archives. The connector reads the documented Atom feed, fetches each new or changed judgment once, keeps only judgments whose text actually discusses AI, and stores **no judgment text** (only metadata, a link and the labels). Withdrawn judgments are removed in a monthly re-check. |
 | OECD AI Incidents Monitor | **excluded** | No API or bulk download, and its terms do not grant reuse of the underlying news material. Read it by hand. |
 | AIAAIC Repository | unverified | No documented download or licence found. Ask AIAAIC before connecting it. |
 | Database of AI Litigation (GWU) | unverified | Most valuable missing source, because litigation records carry remediation. Needs its own fetcher. |
@@ -73,3 +75,7 @@ Incident data comes from the [AI Incident Database](https://incidentdatabase.ai/
 After editing `taxonomy.json`, run `node collect.mjs --reclassify && node analyse.mjs` to re-classify the incidents already held. The weekly run also re-applies the current taxonomy every time.
 
 **Taxonomy 2.1 (11 Oct 2026).** The first real collection showed that the MIT risk tags nearest to three gaps meant something else: "devaluation of human effort" covers creative and copyright cases, "power centralisation" covers market competition, and "employment quality" covers labour markets generally. Those tags no longer count for deskilling, cumulative harm or staff monitoring; only specific wording does. Every incident behind those three gaps was checked by hand.
+
+## Switching on court judgments
+
+When The National Archives issues the computational analysis licence, edit `sources.json` and, under `find-case-law`, set `"licence": {"granted": true, "reference": "<your licence reference>"}` and `"collected": true`. The next weekly run starts reading judgments. The first runs fetch at most 300 judgments each, so the backlog builds over a few weeks. The page's Court judgments section and the Open Justice Licence attribution appear automatically once judgments exist.

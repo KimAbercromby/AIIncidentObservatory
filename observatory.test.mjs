@@ -158,6 +158,7 @@ test('analysis: gap list holds observed partial/unmapped modes; unexercised cont
 test('coverage statement names what is and is not read', () => {
   const c = coverageStatement(sources);
   assert.ok(c.collected.length === 2);
+  assert.match(c.statement, /Find Case Law/);
   assert.match(c.statement, /does not read .*OECD/);
   assert.match(c.statement, /allegations/);
 });
@@ -170,4 +171,73 @@ test('false-positive guard: creative-work and market-competition incidents do no
   for (const gap of ['deskilling', 'cumulative-population-harm', 'workforce-algorithmic-management']) assert.ok(!ids.includes(gap), gap);
   const flex = classifyIncident({ title: 'Delivery drivers allegedly fired via automated employee evaluations', description: '' }, ctax);
   assert.ok(flex.modes.some((m) => m.id === 'workforce-algorithmic-management'));
+});
+
+// ---------- Find Case Law connector ----------
+import { licenceAllows, parseFeed, bodyText, aiPassages, classifyJudgment } from './judgments.mjs';
+
+const FEED = `<?xml version="1.0" encoding="utf-8"?>
+<feed xml:lang="en-us" xmlns="http://www.w3.org/2005/Atom" xmlns:tna="https://caselaw.nationalarchives.gov.uk">
+  <title>Latest documents</title>
+  <link href="https://caselaw.nationalarchives.gov.uk/atom.xml?page=2" rel="next"/>
+  <entry>
+    <title>Ayinde, R (on the application of) v London Borough of Haringey</title>
+    <link href="https://caselaw.nationalarchives.gov.uk/ewhc/admin/2025/1383" rel="alternate"/>
+    <published>2025-06-06T00:00:00+00:00</published><updated>2025-06-06T09:54:24+00:00</updated>
+    <author><name>High Court (Administrative Court)</name></author>
+    <tna:contenthash>abc123</tna:contenthash>
+    <link href="https://caselaw.nationalarchives.gov.uk/ewhc/admin/2025/1383/data.xml" rel="alternate" type="application/akn+xml"/>
+    <tna:uri>d-1111</tna:uri>
+    <tna:identifier slug="ewhc/admin/2025/1383" type="ukncn">[2025] EWHC 1383 (Admin)</tna:identifier>
+    <tna:identifier slug="tna.x1" type="fclid">x1</tna:identifier>
+  </entry>
+</feed>`;
+
+test('judgments: connector is off unless a licence is granted AND referenced', () => {
+  assert.equal(licenceAllows({ licence: { granted: false, reference: null } }), false);
+  assert.equal(licenceAllows({ licence: { granted: true, reference: '' } }), false);
+  assert.equal(licenceAllows({ licence: { granted: true, reference: 'CAL-123' } }), true);
+  const src = sources.find((s) => s.id === 'find-case-law');
+  assert.equal(licenceAllows(src), false, 'must ship switched off');
+  assert.equal(src.collected, false);
+});
+
+test('judgments: parses the documented Atom shape', () => {
+  const { entries, next } = parseFeed(FEED);
+  assert.equal(next, 'https://caselaw.nationalarchives.gov.uk/atom.xml?page=2');
+  assert.equal(entries.length, 1);
+  const e = entries[0];
+  assert.equal(e.citation, '[2025] EWHC 1383 (Admin)');
+  assert.equal(e.fclid, 'x1');
+  assert.equal(e.published, '2025-06-06');
+  assert.equal(e.xml_url, 'https://caselaw.nationalarchives.gov.uk/ewhc/admin/2025/1383/data.xml');
+  assert.equal(e.url, 'https://caselaw.nationalarchives.gov.uk/ewhc/admin/2025/1383');
+});
+
+test('judgments: AI gate drops judgments that do not discuss AI; classification uses only AI passages', () => {
+  const e = parseFeed(FEED).entries[0];
+  assert.equal(classifyJudgment(e, bodyText('<akomaNtoso><p>A planning dispute about a fence.</p></akomaNtoso>'), ctax), null);
+  const text = bodyText('<akomaNtoso><header>x</header><p>The grounds cited five fictitious cases, apparently produced with a generative AI tool, and fake citations were put before the court.</p></akomaNtoso>');
+  const c = classifyJudgment(e, text, ctax);
+  assert.ok(c.modes.some((m) => m.id === 'hallucination-misinformation'));
+  assert.equal(c.determination, 'determined');
+  assert.equal(c.public_sector, true);
+  assert.ok(c.ai_terms.includes('generative AI'));
+  assert.ok(aiPassages(text).length >= 1);
+});
+
+test('judgments: nothing stored carries judgment text', () => {
+  const e = parseFeed(FEED).entries[0];
+  const c = classifyJudgment(e, 'A generative AI tool produced fictitious cases.', ctax);
+  const record = { ...e, classification: c };
+  assert.ok(!JSON.stringify(record).includes('produced fictitious cases'));
+});
+
+test('analysis counts court judgments per mode and in totals', () => {
+  const j = [{ uri: 'd-1', classification: { modes: [{ id: 'workforce-algorithmic-management', basis: ['text'] }], public_sector: true } }];
+  const r = analyse([], [], tax, { judgments: j });
+  assert.equal(r.totals.judgments, 1);
+  assert.equal(r.totals.judgments_public, 1);
+  assert.equal(r.modes.find((m) => m.id === 'workforce-algorithmic-management').court, 1);
+  assert.ok(r.gap_list.some((g) => g.id === 'workforce-algorithmic-management'));
 });
