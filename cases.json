@@ -1,0 +1,152 @@
+{
+  "cases_version": "1.0",
+  "curation_rule": "Every fact needs a source. Summaries are in our own words. Record the highest determination actually reached, never a higher one.",
+  "cases": [
+    {
+      "id": "CASE-001",
+      "title": "SyRI welfare fraud risk system",
+      "country": "NL",
+      "year": 2020,
+      "deployer": "Dutch government (Ministry of Social Affairs and Employment)",
+      "public_sector": true,
+      "summary": "SyRI linked government data sets to score people for welfare fraud risk. Civil society groups challenged the law that allowed it.",
+      "failure_modes": ["opaque-decision", "unlawful-data-processing"],
+      "determination": {
+        "level": "determined",
+        "by": "The Hague District Court",
+        "date": "2020-02-05",
+        "reference": "ECLI:NL:RBDHA:2020:1878",
+        "finding": "The SyRI legislation breached Article 8 ECHR (private life). The court found its use insufficiently transparent and verifiable and declared the legislation to have no binding effect."
+      },
+      "remediation": [
+        {"type": "court-ruling", "date": "2020-02-05", "what": "Legislation declared to have no binding effect."}
+      ],
+      "sources": [
+        {"title": "Rechtspraak: SyRI legislation in breach of European Convention on Human Rights", "url": "https://www.rechtspraak.nl/organisatie-en-contact/organisatie/rechtbanken/rechtbank-den-haag/nieuws/2020/02/syri-legislation-in-breach-of-european-convention-on-human-rights"},
+        {"title": "ASIL: Netherlands district court rules benefits fraud detection tool violates human rights", "url": "https://www.asil.org/ILIB/netherlands-district-court-rules-benefits-fraud-detection-tool-violates-human-rights"}
+      ]
+    },
+    {
+      "id": "CASE-002",
+      "title": "South Wales Police live facial recognition (Bridges)",
+      "country": "GB",
+      "year": 2020,
+      "deployer": "South Wales Police",
+      "public_sector": true,
+      "summary": "Police used automated facial recognition in public places to match faces against watchlists. A member of the public challenged its use.",
+      "failure_modes": ["unassessed-deployment", "unlawful-data-processing"],
+      "determination": {
+        "level": "determined",
+        "by": "Court of Appeal of England and Wales",
+        "date": "2020-08-11",
+        "reference": "[2020] EWCA Civ 1058",
+        "finding": "Use was not 'in accordance with the law' under Article 8 because too much was left to individual officers' discretion about who went on a watchlist and where it was deployed. The DPIA failed properly to assess the risks to data subjects. The court also held the force had not done enough to meet the public sector equality duty."
+      },
+      "remediation": [
+        {"type": "court-ruling", "date": "2020-08-11", "what": "Appeal allowed; deployments held unlawful."}
+      ],
+      "sources": [
+        {"title": "Bridges v South Wales Police [2020] EWCA Civ 1058 (National Archives)", "url": "https://caselaw.nationalarchives.gov.uk/ewca/civ/2020/1058"},
+        {"title": "Judiciary press summary", "url": "https://www.judiciary.uk/wp-content/uploads/2022/07/R-Bridges-v-CC-South-Wales-ors-Press-Summary-1.pdf"}
+      ]
+    },
+    {
+      "id": "CASE-003",
+      "title": "Home Office visa application streaming tool",
+      "country": "GB",
+      "year": 2020,
+      "deployer": "Home Office",
+      "public_sector": true,
+      "summary": "An algorithm sorted visa applications into risk streams, with nationality among its inputs. JCWI and Foxglove brought a judicial review in June 2020, alleging it was discriminatory.",
+      "failure_modes": ["biased-outcome"],
+      "determination": {
+        "level": "acknowledged",
+        "by": "Home Office (withdrew before any hearing)",
+        "date": "2020-08-07",
+        "reference": null,
+        "finding": "No court finding. The Home Office suspended the tool pending a redesign and said it would consider the points raised, including unconscious bias and the use of nationality."
+      },
+      "remediation": [
+        {"type": "suspended", "date": "2020-08-07", "what": "Tool suspended pending redesign."},
+        {"type": "policy-change", "date": "2020-08-07", "what": "Interim process removed nationality as a streaming factor."}
+      ],
+      "sources": [
+        {"title": "Civil Service World: Home Office halts use of visa algorithm after legal challenge", "url": "https://www.civilserviceworld.com/professions/article/home-office-halts-use-of-visa-algorithm-after-legal-challenge-to-racist-system"},
+        {"title": "UK Human Rights Blog: Government scraps immigration streaming tool before judicial review", "url": "https://ukhumanrightsblog.com/2020/08/06/government-scraps-immigration-streaming-tool-before-judicial-review/"}
+      ]
+    },
+    {
+      "id": "CASE-004",
+      "title": "2020 exam grading algorithm (England)",
+      "country": "GB",
+      "year": 2020,
+      "deployer": "Ofqual and Department for Education",
+      "public_sector": true,
+      "summary": "With exams cancelled, a statistical model standardised teacher-assessed A-level grades using schools' past results. Many students were downgraded, and the model was criticised for disadvantaging students at some schools.",
+      "failure_modes": ["biased-outcome", "solely-automated-decision"],
+      "determination": {
+        "level": "acknowledged",
+        "by": "Ofqual and the Government (reversal)",
+        "date": "2020-08-17",
+        "reference": null,
+        "finding": "No court finding. Grades reverted to centre assessment grades."
+      },
+      "remediation": [
+        {"type": "withdrawn", "date": "2020-08-17", "what": "Model-standardised grades replaced by centre assessment grades."}
+      ],
+      "sources": [
+        {"title": "Leigh Day: Government announces u-turn over A-level grading", "url": "https://www.leighday.co.uk/news/news/2020-news/government-announces-u-turn-over-a-level-grading"},
+        {"title": "HEPI: The exams catastrophe, 16 questions that must still be answered", "url": "https://www.hepi.ac.uk/2020/09/02/the-exams-catastrophe-16-questions-that-must-be-answered/"}
+      ]
+    },
+    {
+      "id": "CASE-005",
+      "title": "Dutch childcare benefits: nationality data in fraud checks",
+      "country": "NL",
+      "year": 2021,
+      "deployer": "Dutch Tax and Customs Administration (Belastingdienst)",
+      "public_sector": true,
+      "summary": "In checking childcare allowance applications, the tax administration processed applicants' dual nationality data, including in a risk-classification model.",
+      "failure_modes": ["biased-outcome", "unlawful-data-processing"],
+      "determination": {
+        "level": "determined",
+        "by": "Dutch Data Protection Authority (Autoriteit Persoonsgegevens)",
+        "date": "2021-12",
+        "reference": null,
+        "finding": "Processing of dual nationality data was unlawful, discriminatory and therefore improper, and the data should have been erased. Fined €2.75 million."
+      },
+      "remediation": [
+        {"type": "regulatory-enforcement", "date": "2021-12", "what": "€2.75 million fine."}
+      ],
+      "sources": [
+        {"title": "IAPP: Dutch DPA fines tax authority 2.75M euros", "url": "https://iapp.org/news/a/dutch-dpa-fines-tax-authority-2-75m-euros"},
+        {"title": "Pinsent Masons Out-Law: Dutch tax authority record fine for discriminatory data processing", "url": "https://www.pinsentmasons.com/out-law/news/dutch-tax-authority-record-fine-discriminatory-data-processing"}
+      ]
+    },
+    {
+      "id": "CASE-006",
+      "title": "Robodebt automated welfare debt recovery",
+      "country": "AU",
+      "year": 2023,
+      "deployer": "Australian Government (Centrelink / Department of Human Services)",
+      "public_sector": true,
+      "summary": "An automated scheme raised welfare overpayment debts by averaging annual tax office income across fortnights, and left recipients to disprove the debts.",
+      "failure_modes": ["solely-automated-decision", "vulnerable-group-harm", "redress-failure"],
+      "determination": {
+        "level": "determined",
+        "by": "Royal Commission into the Robodebt Scheme",
+        "date": "2023-07-07",
+        "reference": null,
+        "finding": "Final report delivered 7 July 2023. Separately, the Federal Court approved a class action settlement in June 2021."
+      },
+      "remediation": [
+        {"type": "redress-compensation", "date": "2021-06-11", "what": "Class action settlement approved by the Federal Court: about A$1.2 billion in total, including A$112 million compensation."},
+        {"type": "independent-review", "date": "2023-07-07", "what": "Royal Commission final report and recommendations."}
+      ],
+      "sources": [
+        {"title": "Royal Commission into the Robodebt Scheme", "url": "https://robodebt.royalcommission.gov.au/"},
+        {"title": "HRLC: Federal Court approves $112 million settlement for the failures of the Robodebt system", "url": "https://www.hrlc.org.au/human-rights-case-summaries/2021/9/30/the-federal-court-approves-a-112-million-settlement-for-the-failures-of-the-robodebt-system"}
+      ]
+    }
+  ]
+}

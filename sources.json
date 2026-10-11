@@ -1,0 +1,64 @@
+{
+  "register_version": "2.0",
+  "checked_on": "2026-10-11",
+  "sources": [
+    {
+      "id": "aiid-excel-export",
+      "name": "AI Incident Database (weekly Excel export)",
+      "publisher": "Responsible AI Collaborative",
+      "status": "form-verified",
+      "collected": true,
+      "listing_url": "https://incidentdatabase.ai/research/snapshots/",
+      "download_host": "pub-72b2b2fc36ec423189843747af98f80e.r2.dev",
+      "file_pattern": "AIID_Excel_Export-YYYYMMDD.xlsx",
+      "cadence": "Weekly (published Mondays)",
+      "licence": "Incidents, classifications and entities are CC BY-SA 4.0. Report text is not licensed and is not collected.",
+      "determination": "alleged",
+      "verify_note": "Workbook layout read from the project's own export pipeline (site/excel-export-pipeline: Incidents sheet, banner rows 1-2, headers on row 3). The listing page showed AIID_Excel_Export-20261005.xlsx on 11 Oct 2026. The parser finds the header row by name rather than trusting row 3, and the run fails loudly if the required columns are missing.",
+      "change_since_july": "The read-only GraphQL endpoint the July design used now requires a logged-in account (HTTP 401, API_LOGIN_REQUIRED). The project points bulk users to this export instead."
+    },
+    {
+      "id": "curated-cases",
+      "name": "Curated public-sector cases (cases.json)",
+      "publisher": "Kim Abercromby (maintained by hand)",
+      "status": "verified",
+      "collected": true,
+      "cadence": "Edited by hand",
+      "licence": "Facts summarised in own words, with links to primary or reputable sources.",
+      "determination": "per case",
+      "verify_note": "Each case carries its sources. Add a case only with a source for every fact, and state the determination level honestly."
+    },
+    {
+      "id": "oecd-aim",
+      "name": "OECD AI Incidents and Hazards Monitor",
+      "publisher": "OECD",
+      "status": "excluded",
+      "collected": false,
+      "verify_note": "No API or bulk download is offered. The terms say the OECD cannot grant rights to reuse the underlying news material, and the site is marked all rights reserved. Read it by hand; do not scrape it."
+    },
+    {
+      "id": "aiaaic",
+      "name": "AIAAIC Repository",
+      "publisher": "AIAAIC",
+      "status": "unverified",
+      "collected": false,
+      "verify_note": "Public website listing. No documented download or licence found on 11 Oct 2026. Ask AIAAIC about reuse terms before connecting it."
+    },
+    {
+      "id": "dail",
+      "name": "Database of AI Litigation (DAIL)",
+      "publisher": "George Washington University Law School",
+      "status": "unverified",
+      "collected": false,
+      "verify_note": "Highest-value missing source: litigation records carry what happened afterwards. Data access route not yet confirmed; needs its own fetcher."
+    },
+    {
+      "id": "ico-enforcement",
+      "name": "ICO enforcement action",
+      "publisher": "Information Commissioner's Office",
+      "status": "covered-elsewhere",
+      "collected": false,
+      "verify_note": "The enforcement listing loads its results in the browser and the ICO has withdrawn its RSS feeds. Regulator output belongs in the regulatory horizon scanner (AIRegScanner), which keeps authoritative publishers separate from journalism by design."
+    }
+  ]
+}

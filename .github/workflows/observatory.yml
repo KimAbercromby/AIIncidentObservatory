@@ -1,0 +1,63 @@
+name: Observatory
+
+on:
+  schedule:
+    # Tuesdays 06:17 UTC. AIID publishes its export on Mondays, so this collects it the morning after.
+    - cron: '17 6 * * 2'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Re-download even if this export was already collected'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: observatory
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm test
+
+      - name: Collect
+        id: collect
+        continue-on-error: true
+        run: node collect.mjs ${{ inputs.force && '--force' || '' }}
+
+      - name: Machine classification (optional, needs ANTHROPIC_API_KEY secret)
+        if: steps.collect.outcome == 'success'
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node llm.mjs
+
+      - name: Analyse and log the run
+        env:
+          COLLECT_OUTCOME: ${{ steps.collect.outcome }}
+        run: node analyse.mjs
+
+      - name: Commit results (every run commits, which keeps the schedule alive)
+        run: |
+          git config user.name "observatory-bot"
+          git config user.email "observatory-bot@users.noreply.github.com"
+          git add incidents.json state.json gaps.json coverage.json run-log.json
+          git commit -m "observatory: $(date -u +%F)"
+          git push
+
+      - name: Fail the run if collection failed
+        if: steps.collect.outcome != 'success'
+        run: |
+          echo "::error::Collection failed. Previous data was kept and the failure is in run-log.json. Check the Collect step above."
+          exit 1

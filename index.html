@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Incident Observatory</title>
+<meta name="description" content="Global AI incident patterns, what was done afterwards, and where the AI Governance Suite has no control.">
+<style>
+:root{
+  --navy:#122C47; --navy-2:#1F3B5C; --gold:#C8AB36; --gold-soft:#F4EDD2;
+  --ink:#1B2430; --muted:#5A6573; --line:#D9DEE4; --bg:#F6F7F9; --card:#FFFFFF;
+  --mapped:#2F6B4F; --mapped-bg:#E3F0E8; --partial:#8A5A00; --partial-bg:#FBEFD5; --unmapped:#A12E2E; --unmapped-bg:#F8E1E1;
+  --alleged:#5A6573; --acknowledged:#8A5A00; --determined:#2F6B4F;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 Arial,Helvetica,sans-serif}
+a{color:var(--navy-2)}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;background:#fff;padding:6px 10px;z-index:9}
+header.mast{background:var(--navy);color:#fff;border-bottom:4px solid var(--gold)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+.mast .wrap{padding-top:22px;padding-bottom:18px}
+.mast h1{margin:0;font-size:26px;letter-spacing:.2px}
+.mast .sub{margin:4px 0 14px;color:#C9D3DF;max-width:760px}
+.coverage{background:rgba(255,255,255,.08);border-left:3px solid var(--gold);padding:10px 12px;font-size:13.5px;color:#E7ECF2;max-width:900px}
+.coverage strong{color:#fff}
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;font-size:12.5px;color:#B8C4D2}
+nav.jump{background:var(--navy-2)}
+nav.jump .wrap{display:flex;flex-wrap:wrap;gap:4px 18px;padding-top:8px;padding-bottom:8px}
+nav.jump a{color:#fff;text-decoration:none;font-size:13.5px}
+nav.jump a:hover{text-decoration:underline}
+main .wrap{padding-top:22px;padding-bottom:40px}
+section{margin-bottom:34px}
+h2{font-size:19px;color:var(--navy);margin:0 0 4px;padding-bottom:6px;border-bottom:2px solid var(--gold);display:inline-block}
+.lede{color:var(--muted);margin:8px 0 14px;max-width:860px}
+.banner{background:var(--gold-soft);border:1px solid var(--gold);padding:12px 14px;margin-bottom:22px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.tile{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--navy);padding:12px 14px}
+.tile .n{font-size:28px;font-weight:bold;color:var(--navy);line-height:1.1}
+.tile .l{font-size:13px;color:var(--muted);margin-top:4px}
+.tile.warn{border-top-color:var(--unmapped)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);padding:14px}
+.card h3{margin:0 0 6px;font-size:16px;color:var(--navy)}
+.card p{margin:6px 0}
+.pill{display:inline-block;font-size:11.5px;font-weight:bold;padding:2px 8px;border-radius:10px;letter-spacing:.2px;white-space:nowrap}
+.pill.mapped{background:var(--mapped-bg);color:var(--mapped)}
+.pill.partial{background:var(--partial-bg);color:var(--partial)}
+.pill.unmapped{background:var(--unmapped-bg);color:var(--unmapped)}
+.pill.alleged{background:#ECEFF2;color:var(--alleged)}
+.pill.acknowledged{background:var(--partial-bg);color:var(--acknowledged)}
+.pill.determined{background:var(--mapped-bg);color:var(--determined)}
+.pill.closed{background:#E4ECF5;color:var(--navy-2)}
+.small{font-size:12.5px;color:var(--muted)}
+.counts{display:flex;gap:14px;font-size:13px;margin:8px 0}
+.counts b{color:var(--navy)}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line)}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;font-size:13.5px}
+th{background:#EEF1F5;color:var(--navy);font-size:12.5px;text-transform:uppercase;letter-spacing:.4px}
+td.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bar{height:8px;background:#E6EAEF;margin-top:5px;min-width:60px}
+.bar span{display:block;height:100%;background:var(--navy-2)}
+.table-scroll{overflow-x:auto}
+button.linkish{background:none;border:0;padding:0;color:var(--navy-2);text-decoration:underline;cursor:pointer;font:inherit;text-align:left}
+.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:end;margin:10px 0 12px}
+.filters label{display:flex;flex-direction:column;font-size:12px;color:var(--muted);gap:3px}
+.filters input,.filters select{font:inherit;font-size:14px;padding:6px 8px;border:1px solid #B9C2CC;background:#fff;min-width:170px}
+.filters input[type=search]{min-width:240px}
+.inc{background:var(--card);border:1px solid var(--line);padding:10px 12px;margin-bottom:8px}
+.inc .t{font-weight:bold;color:var(--navy)}
+.inc .d{margin:4px 0;color:#2E3946;font-size:13.5px}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.chip{font-size:11.5px;background:#EEF1F5;border:1px solid #D5DBE2;padding:1px 7px;border-radius:9px}
+.chip.llm{border-style:dashed}
+.chip.rem{background:var(--mapped-bg);border-color:#C3DDCC}
+.pager{display:flex;gap:10px;align-items:center;margin-top:10px}
+.pager button{font:inherit;padding:5px 12px;border:1px solid var(--navy);background:#fff;color:var(--navy);cursor:pointer}
+.pager button:disabled{opacity:.4;cursor:default}
+.case .finding{border-left:3px solid var(--gold);padding-left:10px;margin:8px 0;font-size:13.5px}
+.case ul{margin:6px 0;padding-left:18px;font-size:13.5px}
+.case .controls{font-size:12.5px;color:var(--muted)}
+footer{background:var(--navy);color:#C9D3DF;font-size:12.5px}
+footer .wrap{padding-top:16px;padding-bottom:20px}
+footer a{color:#fff}
+.empty{color:var(--muted);font-style:italic}
+@media (max-width:760px){
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .mast h1{font-size:22px}
+  .filters input[type=search],.filters input,.filters select{min-width:0;width:100%}
+  .filters label{flex:1 1 140px}
+  th.hide-sm,td.hide-sm{display:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast">
+  <div class="wrap">
+    <h1>AI Incident Observatory</h1>
+    <p class="sub">What goes wrong with AI around the world, what was done afterwards, and where the AI Governance Suite has no control that would have caught it first.</p>
+    <div class="coverage" id="coverage" role="note"><strong>Coverage.</strong> Loading…</div>
+    <div class="meta" id="meta" aria-live="polite"></div>
+  </div>
+</header>
+<nav class="jump" aria-label="Sections">
+  <div class="wrap">
+    <a href="#gaps">Gap list</a><a href="#modes">Failure modes</a><a href="#remediation">Remediation</a><a href="#cases">Cases</a><a href="#incidents">Incidents</a><a href="#runs">Run log</a>
+  </div>
+</nav>
+<main id="main">
+<div class="wrap">
+  <div id="notice"></div>
+
+  <section aria-labelledby="h-summary">
+    <h2 id="h-summary" class="visually-hidden" style="position:absolute;left:-999px">Summary</h2>
+    <div class="tiles" id="tiles"></div>
+  </section>
+
+  <section id="gaps" aria-labelledby="h-gaps">
+    <h2 id="h-gaps">Gap list</h2>
+    <p class="lede">Failure modes seen in the world that the suite only partly covers or does not cover at all. These are the findings for the board: each one is evidence from real incidents that a control is missing.</p>
+    <div class="cards" id="gapCards"></div>
+    <p class="small" id="closedNote"></p>
+  </section>
+
+  <section id="modes" aria-labelledby="h-modes">
+    <h2 id="h-modes">Failure modes</h2>
+    <p class="lede">All 21 failure modes, ranked by how often they appear in public-sector incidents. Select a mode to see its incidents. Counts include a mode wherever the AIID editors' risk tag or the incident text matches it, so one incident can count under several modes.</p>
+    <div class="table-scroll"><table id="modeTable"><thead><tr>
+      <th scope="col">Failure mode</th><th scope="col">Suite coverage</th><th scope="col" class="num">Public sector</th><th scope="col" class="num">All incidents</th><th scope="col" class="num hide-sm">Cases</th><th scope="col" class="hide-sm">Where the suite covers it</th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section id="remediation" aria-labelledby="h-rem">
+    <h2 id="h-rem">Remediation picture</h2>
+    <p class="lede">Incident databases record harms. Almost nothing records what was done afterwards, so "no remediation recorded" is expected to be the biggest category. That is a gap in the discipline, not in this tool. For incidents, remediation is <em>indicated</em> by wording in the description and is unverified. For curated cases, it is <em>documented</em> with sources.</p>
+    <div class="tiles" id="remTiles" style="margin-bottom:12px"></div>
+    <div class="table-scroll"><table id="remTable"><thead><tr>
+      <th scope="col">Remediation type</th><th scope="col" class="num">Indicated in incidents</th><th scope="col" class="num">Documented in cases</th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+
+  <section id="cases" aria-labelledby="h-cases">
+    <h2 id="h-cases">Curated public-sector cases</h2>
+    <p class="lede">Well-documented cases where a court, regulator or inquiry made a finding, or the deployer withdrew the system. Every fact has a source. The determination badge shows the highest level actually reached.</p>
+    <div class="cards" id="caseCards"></div>
+  </section>
+
+  <section id="incidents" aria-labelledby="h-inc">
+    <h2 id="h-inc">Incidents</h2>
+    <p class="lede">Every AI Incident Database record is an <strong>allegation</strong> unless an authority made a finding. Chips show matched failure modes; a dashed chip is a machine suggestion. Green chips are remediation indicated by the text.</p>
+    <div class="filters" role="search">
+      <label>Search<input type="search" id="q" placeholder="Title, description or deployer"></label>
+      <label>Sector<select id="fSector"><option value="">All</option><option value="public">Public sector only</option></select></label>
+      <label>Failure mode<select id="fMode"><option value="">Any</option><option value="__none">Unclassified</option></select></label>
+      <label>Coverage<select id="fCov"><option value="">Any</option><option value="unmapped">Unmapped</option><option value="partial">Partial</option><option value="mapped">Mapped</option></select></label>
+      <label>Remediation<select id="fRem"><option value="">Any</option><option value="none">None indicated</option><option value="some">Some indicated</option></select></label>
+    </div>
+    <p class="small" id="incCount" aria-live="polite"></p>
+    <div id="incList"></div>
+    <div class="pager"><button id="prev" type="button">Previous</button><span id="pageInfo" class="small"></span><button id="next" type="button">Next</button></div>
+  </section>
+
+  <section id="runs" aria-labelledby="h-runs">
+    <h2 id="h-runs">Run log</h2>
+    <p class="lede">Every weekly run is logged, including runs that found nothing new. That is the record that monitoring actually happened.</p>
+    <div class="table-scroll"><table id="runTable"><thead><tr>
+      <th scope="col">Run</th><th scope="col">Collection</th><th scope="col">Export</th><th scope="col" class="num">Incidents</th><th scope="col">Note</th>
+    </tr></thead><tbody></tbody></table></div>
+  </section>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <p>Incident data: <a href="https://incidentdatabase.ai/">AI Incident Database</a>, Responsible AI Collaborative, licensed <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Titles and descriptions are AIID editors' text. Classification, gap analysis and curated cases are this tool's, and are shared under the same licence.</p>
+    <p>Suite mappings are to the AI Governance Suite as designed. Its controls are design-stage: none is evidenced until operated. A mapping says a control exists on paper, not that it works.</p>
+  </div>
+</footer>
+<script>
+(function(){
+  'use strict';
+  var PAGE = 40;
+  var S = { gaps:null, inc:[], cases:[], tax:null, runs:[], page:0 };
+  var $ = function(id){ return document.getElementById(id); };
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  function fmt(n){ return n == null ? '—' : Number(n).toLocaleString('en-GB'); }
+  function get(url, fallback){ return fetch(url, {cache:'no-store'}).then(function(r){ return r.ok ? r.json() : fallback; }).catch(function(){ return fallback; }); }
+  function pill(cls, text){ return '<span class="pill ' + cls + '">' + esc(text) + '</span>'; }
+  function covLabel(c){ return c === 'mapped' ? 'Mapped' : c === 'partial' ? 'Partial' : 'Unmapped'; }
+
+  Promise.all([
+    get('gaps.json', null), get('incidents.json', {incidents:[]}), get('cases.json', {cases:[]}),
+    get('taxonomy.json', null), get('run-log.json', {runs:[]})
+  ]).then(function(r){
+    S.gaps = r[0]; S.inc = (r[1] && r[1].incidents) || []; S.exp = r[1] && r[1].export; S.cases = r[2].cases || []; S.tax = r[3]; S.runs = r[4].runs || [];
+    S.modeById = {}; (S.tax ? S.tax.failure_modes : []).forEach(function(m){ S.modeById[m.id] = m; });
+    S.remById = {}; (S.tax ? S.tax.remediation_types : []).forEach(function(m){ S.remById[m.id] = m; });
+    render();
+  });
+
+  function render(){
+    var g = S.gaps;
+    if (!g){ $('coverage').innerHTML = '<strong>Coverage.</strong> gaps.json could not be loaded.'; return; }
+    $('coverage').innerHTML = '<strong>Coverage.</strong> ' + esc(g.coverage.statement);
+    var last = S.runs.length ? S.runs[S.runs.length - 1] : null;
+    $('meta').innerHTML = [
+      'Suite baseline: ' + esc(g.suite_baseline),
+      'Taxonomy ' + esc(g.taxonomy_version),
+      S.exp && S.exp.file ? 'Data: ' + esc(S.exp.file) : 'Data: no export collected yet',
+      last ? 'Last run: ' + esc(last.at.slice(0,10)) : 'Last run: none yet'
+    ].map(function(x){ return '<span>' + x + '</span>'; }).join('');
+    if (!S.inc.length){
+      $('notice').innerHTML = '<div class="banner"><strong>No incidents collected yet.</strong> The gap list below shows only the curated cases and the suite mapping. Incident counts appear after the first weekly collection runs (or run the "Observatory" workflow by hand from the Actions tab).</div>';
+    }
+    var t = g.totals, rem = g.remediation;
+    $('tiles').innerHTML = [
+      tile(fmt(t.incidents), 'incidents analysed'),
+      tile(fmt(t.public_sector), 'public-sector incidents'),
+      tile(fmt(g.gap_list.length), 'failure modes seen in the world with a partial or no control', g.gap_list.length > 0),
+      tile(rem.none_indicated_share == null ? '—' : rem.none_indicated_share + '%', 'incidents with no remediation recorded')
+    ].join('');
+    renderGaps(); renderModes(); renderRem(); renderCases(); setupFilters(); renderIncidents(); renderRuns();
+  }
+  function tile(n, l, warn){ return '<div class="tile' + (warn ? ' warn' : '') + '"><div class="n">' + n + '</div><div class="l">' + esc(l) + '</div></div>'; }
+
+  function controls(m){
+    var parts = [];
+    if (m.sections && m.sections.length) parts.push('Playbook §' + m.sections.join(', §'));
+    if (m.artefacts && m.artefacts.length) parts.push(m.artefacts.join(', '));
+    return parts.join(' · ') || 'Nothing in the suite';
+  }
+
+  function renderGaps(){
+    var g = S.gaps, out = g.gap_list.map(function(m){
+      return '<article class="card"><h3>' + esc(m.label) + '</h3>' + pill(m.coverage, covLabel(m.coverage)) + (m.new_in ? ' ' + pill('closed', 'New in ' + m.new_in) : '') +
+        '<div class="counts"><span><b>' + fmt(m.public) + '</b> public sector</span><span><b>' + fmt(m.global) + '</b> all</span><span><b>' + fmt(m.cases) + '</b> cases</span></div>' +
+        '<p>' + esc(m.coverage_note) + '</p>' +
+        '<p><button class="linkish" type="button" data-mode="' + esc(m.id) + '">See these incidents</button></p></article>';
+    });
+    if (g.unobserved_gaps.length){
+      out.push('<article class="card"><h3>Not yet seen in the data</h3><p class="small">These gaps exist in the suite but no collected incident or case shows them yet:</p><ul>' +
+        g.unobserved_gaps.map(function(id){ var m = S.modeById[id]; return '<li>' + esc(m ? m.label : id) + ' ' + pill(m.coverage, covLabel(m.coverage)) + '</li>'; }).join('') + '</ul></article>');
+    }
+    $('gapCards').innerHTML = out.join('') || '<p class="empty">No partial or unmapped failure mode has been observed yet.</p>';
+    $('closedNote').innerHTML = g.closed_since_july.length ? '<strong>Closed since July 2026:</strong> ' + g.closed_since_july.map(function(id){ return esc(S.modeById[id].label); }).join('; ') + '. These were deliberate gaps in the first taxonomy; the suite now has designed controls for them. Their notes in the table below say what residual risk remains.' : '';
+    bindModeLinks($('gapCards'));
+  }
+
+  function renderModes(){
+    var g = S.gaps, max = Math.max(1, Math.max.apply(null, g.modes.map(function(m){ return m.global; })));
+    var maxP = Math.max(1, Math.max.apply(null, g.modes.map(function(m){ return m.public; })));
+    $('modeTable').tBodies[0].innerHTML = g.modes.map(function(m){
+      return '<tr><td><button class="linkish" type="button" data-mode="' + esc(m.id) + '">' + esc(m.label) + '</button>' +
+        (m.was_gap_in ? ' ' + pill('closed', 'Closed since July') : '') + '<div class="small">' + esc(m.coverage_note) + '</div></td>' +
+        '<td>' + pill(m.coverage, covLabel(m.coverage)) + '</td>' +
+        '<td class="num">' + fmt(m.public) + '<div class="bar" aria-hidden="true"><span style="width:' + (100 * m.public / maxP).toFixed(1) + '%"></span></div></td>' +
+        '<td class="num">' + fmt(m.global) + '<div class="bar" aria-hidden="true"><span style="width:' + (100 * m.global / max).toFixed(1) + '%"></span></div></td>' +
+        '<td class="num hide-sm">' + fmt(m.cases) + '</td><td class="small hide-sm">' + esc(controls(m)) + '</td></tr>';
+    }).join('');
+    bindModeLinks($('modeTable'));
+  }
+
+  function renderRem(){
+    var r = S.gaps.remediation, t = S.gaps.totals, d = S.gaps.determinations;
+    $('remTiles').innerHTML = [
+      tile(r.none_indicated_share == null ? '—' : r.none_indicated_share + '%', 'of all incidents: no remediation indicated', true),
+      tile(r.none_indicated_public_share == null ? '—' : r.none_indicated_public_share + '%', 'of public-sector incidents: no remediation indicated', true),
+      tile(fmt(d.determined), 'records with a finding by a court, regulator or inquiry'),
+      tile(fmt(d.alleged), 'records that remain allegations')
+    ].join('');
+    $('remTable').tBodies[0].innerHTML = r.by_type.slice().sort(function(a,b){ return (b.indicated + b.documented) - (a.indicated + a.documented); }).map(function(x){
+      return '<tr><td>' + esc(x.label) + '</td><td class="num">' + fmt(x.indicated) + '</td><td class="num">' + fmt(x.documented) + '</td></tr>';
+    }).join('');
+  }
+
+  function renderCases(){
+    $('caseCards').innerHTML = S.cases.map(function(c){
+      var d = c.determination;
+      var modes = c.failure_modes.map(function(id){ var m = S.modeById[id]; return m ? m : {id:id,label:id,artefacts:[],sections:[]}; });
+      return '<article class="card case"><h3>' + esc(c.title) + '</h3>' +
+        pill(d.level, d.level.charAt(0).toUpperCase() + d.level.slice(1)) + ' <span class="small">' + esc(c.country) + ' · ' + esc(c.deployer) + '</span>' +
+        '<p>' + esc(c.summary) + '</p>' +
+        '<div class="finding"><strong>' + esc(d.by) + (d.date ? ', ' + esc(d.date) : '') + '.</strong> ' + esc(d.finding) + (d.reference ? ' <span class="small">(' + esc(d.reference) + ')</span>' : '') + '</div>' +
+        '<strong style="font-size:13px">What was done</strong><ul>' + c.remediation.map(function(r){ return '<li>' + esc((S.remById[r.type] || {}).label || r.type) + ' (' + esc(r.date) + '): ' + esc(r.what) + '</li>'; }).join('') + '</ul>' +
+        '<div class="chips">' + modes.map(function(m){ return '<span class="chip">' + esc(m.label) + '</span>'; }).join('') + '</div>' +
+        '<p class="controls">Suite controls that apply: ' + esc(modes.map(controls).join(' | ')) + '</p>' +
+        '<p class="small">Sources: ' + c.sources.map(function(s){ return '<a href="' + esc(s.url) + '" rel="noopener">' + esc(s.title) + '</a>'; }).join('; ') + '</p></article>';
+    }).join('') || '<p class="empty">No curated cases.</p>';
+  }
+
+  function setupFilters(){
+    var sel = $('fMode');
+    if (sel.options.length <= 2 && S.tax) S.tax.failure_modes.forEach(function(m){ var o = document.createElement('option'); o.value = m.id; o.textContent = m.label; sel.appendChild(o); });
+    ['q','fSector','fMode','fCov','fRem'].forEach(function(id){ $(id).addEventListener('input', function(){ S.page = 0; renderIncidents(); }); });
+    $('prev').addEventListener('click', function(){ S.page--; renderIncidents(); });
+    $('next').addEventListener('click', function(){ S.page++; renderIncidents(); });
+  }
+
+  function modeIds(c){ var s = {}; c.modes.forEach(function(m){ s[m.id] = 1; }); (c.llm_modes || []).forEach(function(id){ s[id] = 1; }); return Object.keys(s); }
+  function remIds(c){ var s = {}; (c.remediation_indicated || []).forEach(function(id){ s[id] = 1; }); (c.llm_remediation || []).forEach(function(id){ s[id] = 1; }); return Object.keys(s); }
+
+  function filtered(){
+    var q = $('q').value.trim().toLowerCase(), sec = $('fSector').value, mode = $('fMode').value, cov = $('fCov').value, rem = $('fRem').value;
+    return S.inc.filter(function(i){
+      var c = i.classification, ids = modeIds(c);
+      if (sec === 'public' && !c.public_sector) return false;
+      if (mode === '__none' && ids.length) return false;
+      if (mode && mode !== '__none' && ids.indexOf(mode) === -1) return false;
+      if (cov && !ids.some(function(id){ return S.modeById[id] && S.modeById[id].coverage === cov; })) return false;
+      var r = remIds(c);
+      if (rem === 'none' && r.length) return false;
+      if (rem === 'some' && !r.length) return false;
+      if (q && (i.title + ' ' + i.description + ' ' + i.deployer).toLowerCase().indexOf(q) === -1) return false;
+      return true;
+    }).sort(function(a,b){ return (b.date || '').localeCompare(a.date || ''); });
+  }
+
+  function renderIncidents(){
+    if (!S.inc.length){ $('incList').innerHTML = '<p class="empty">No incidents collected yet.</p>'; $('incCount').textContent = ''; $('prev').disabled = $('next').disabled = true; $('pageInfo').textContent = ''; return; }
+    var list = filtered(), pages = Math.max(1, Math.ceil(list.length / PAGE));
+    S.page = Math.min(Math.max(0, S.page), pages - 1);
+    $('incCount').textContent = fmt(list.length) + ' of ' + fmt(S.inc.length) + ' incidents match.';
+    $('incList').innerHTML = list.slice(S.page * PAGE, (S.page + 1) * PAGE).map(function(i){
+      var c = i.classification, llm = c.llm_modes || [];
+      var chips = c.modes.map(function(m){ return '<span class="chip" title="Matched by: ' + esc(m.basis.join(' and ')) + '">' + esc((S.modeById[m.id] || {}).label || m.id) + '</span>'; });
+      llm.forEach(function(id){ if (!c.modes.some(function(m){ return m.id === id; })) chips.push('<span class="chip llm" title="Machine suggestion">' + esc((S.modeById[id] || {}).label || id) + '</span>'); });
+      remIds(c).forEach(function(id){ chips.push('<span class="chip rem" title="Indicated by the text; unverified">' + esc((S.remById[id] || {}).label || id) + '</span>'); });
+      return '<article class="inc"><div class="t"><a href="' + esc(i.url) + '" rel="noopener">' + esc(i.title) + '</a></div>' +
+        '<div class="small">' + esc(i.date || 'date unknown') + (i.deployer ? ' · ' + esc(i.deployer) : '') + (i.country ? ' · ' + esc(i.country) : '') + ' · ' + pill(c.determination, c.determination) + (c.public_sector ? ' ' + pill('closed', 'Public sector') : '') + '</div>' +
+        '<div class="d">' + esc(i.description) + '</div><div class="chips">' + (chips.join('') || '<span class="small">No failure mode matched</span>') + '</div></article>';
+    }).join('') || '<p class="empty">Nothing matches these filters.</p>';
+    $('pageInfo').textContent = 'Page ' + (S.page + 1) + ' of ' + pages;
+    $('prev').disabled = S.page === 0; $('next').disabled = S.page >= pages - 1;
+  }
+
+  function renderRuns(){
+    var rows = S.runs.slice(-12).reverse();
+    $('runTable').tBodies[0].innerHTML = rows.map(function(r){
+      return '<tr><td>' + esc(r.at.slice(0,16).replace('T',' ')) + '</td><td>' + esc(r.collect) + '</td><td class="small">' + esc(r.export_file || '—') + '</td><td class="num">' + fmt(r.incidents) + '</td><td>' + esc(r.note) + '</td></tr>';
+    }).join('') || '<tr><td colspan="5" class="empty">No runs yet.</td></tr>';
+  }
+
+  function bindModeLinks(root){
+    root.querySelectorAll('[data-mode]').forEach(function(b){
+      b.addEventListener('click', function(){
+        $('fMode').value = b.getAttribute('data-mode'); $('fSector').value = ''; $('fCov').value = ''; $('fRem').value = ''; $('q').value = '';
+        S.page = 0; renderIncidents(); document.getElementById('incidents').scrollIntoView({behavior:'smooth'});
+      });
+    });
+  }
+})();
+</script>
+</body>
+</html>

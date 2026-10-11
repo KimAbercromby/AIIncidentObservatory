@@ -1,0 +1,262 @@
+{
+  "taxonomy_version": "2.0",
+  "suite_baseline": "AI Governance Suite v3.9.9 (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
+  "mapped_on": "2026-10-11",
+  "mapping_basis": "Each mapping was checked against the full text of the 52-artefact suite uploaded on 11 October 2026. 'mapped' means the suite contains a designed control that would have caught the failure before harm; 'partial' means the risk is named but no control or measure acts on it; 'unmapped' means no artefact addresses it. All controls are design-stage: nothing is evidenced until operated.",
+  "determination_levels": {
+    "alleged": "Reported by media or a database; no authority has made a finding. Default for every AI Incident Database record.",
+    "acknowledged": "The deployer admitted the failure or withdrew the system, but no court, regulator or ombudsman made a finding.",
+    "determined": "A court, regulator or ombudsman made a finding."
+  },
+  "failure_modes": [
+    {
+      "id": "biased-outcome",
+      "label": "Biased or discriminatory outcome",
+      "description": "The system produced outcomes that disadvantaged people by a protected characteristic or a proxy for one.",
+      "mit_cues": ["unfair discrimination", "unequal performance across groups"],
+      "text_cues": ["discriminat\\w*", "racis[mt]\\w*", "sexis[mt]\\w*", "racial bias", "gender bias", "biased against", "disproportionately (flagged|targeted|affected)"],
+      "coverage": "mapped",
+      "sections": ["4.3.1", "4.6.2", "4.7.10"],
+      "artefacts": ["AIG-ASS-06", "AIG-ASS-04", "AIG-OPS-02"],
+      "coverage_note": "Equality Impact Assessment before approval; bias and fairness monitoring after go-live."
+    },
+    {
+      "id": "opaque-decision",
+      "label": "Opaque decision nobody could explain",
+      "description": "People affected could not find out that AI was used or why it reached its output.",
+      "mit_cues": ["lack of transparency or interpretability"],
+      "text_cues": ["black[- ]box", "could not explain", "unable to explain", "secret algorithm", "no explanation", "lack of transparency", "opaque"],
+      "coverage": "mapped",
+      "sections": ["4.3.2", "5.7", "5.7.4"],
+      "artefacts": ["AIG-ASS-10", "AIG-ASS-09"],
+      "coverage_note": "Transparency Policy, ATRS Record and Model Card."
+    },
+    {
+      "id": "unlawful-data-processing",
+      "label": "Unlawful or excessive personal data processing",
+      "description": "Personal data was collected, inferred, kept or shared without a lawful basis or beyond what was needed.",
+      "mit_cues": ["compromise of privacy"],
+      "text_cues": ["privacy", "personal data", "gdpr", "data protection", "without (their )?consent", "data leak\\w*", "leaked", "sensitive (personal )?information"],
+      "coverage": "mapped",
+      "sections": ["4.3.3", "4.6.1", "5.6.2"],
+      "artefacts": ["AIG-ASS-05"],
+      "coverage_note": "DPIA per use (UC-ID) before processing starts."
+    },
+    {
+      "id": "security-compromise",
+      "label": "Security compromise of or through the AI",
+      "description": "The system was attacked, manipulated or used to leak data: prompt injection, jailbreak, poisoning or model theft.",
+      "mit_cues": ["security vulnerabilities and attacks", "cyberattacks"],
+      "text_cues": ["prompt injection", "jailbr[eo]\\w*", "hack(ed|ers?)", "security (flaw|breach|vulnerabilit\\w*)", "exploit(ed)?", "data poisoning"],
+      "coverage": "mapped",
+      "sections": ["4.3.4", "4.7.12"],
+      "artefacts": ["AIG-ASS-11"],
+      "coverage_note": "Security Review Checklist including agent threats; logging and incident detection controls."
+    },
+    {
+      "id": "poor-data-quality",
+      "label": "Poor or unsuitable data",
+      "description": "Training or input data was wrong, outdated, unrepresentative or not fit for the purpose.",
+      "mit_cues": [],
+      "text_cues": ["training data", "data quality", "outdated data", "incorrect data", "inaccurate data", "mislabell?ed", "unrepresentative"],
+      "coverage": "mapped",
+      "sections": ["4.3.5", "5.6.1", "A.2"],
+      "artefacts": ["AIG-AIMS-13", "AIG-ASS-09"],
+      "coverage_note": "Data quality requirements, data lineage standard and the Source Assurance and Traceability Register."
+    },
+    {
+      "id": "performance-drift",
+      "label": "Performance failure or drift",
+      "description": "The system did not work reliably, or got worse over time, and nobody noticed in time.",
+      "mit_cues": ["lack of capability or robustness"],
+      "text_cues": ["malfunction\\w*", "error rate", "inaccura(te|cy)", "drift", "degrad\\w*", "failed to (detect|recogni[sz]e|identify)", "false positives?", "false negatives?"],
+      "coverage": "mapped",
+      "sections": ["4.3.6", "6.4", "6.5"],
+      "artefacts": ["AIG-OPS-02", "AIG-AIMS-10"],
+      "coverage_note": "Performance monitoring, drift detection and the Post-Deployment Monitoring Log."
+    },
+    {
+      "id": "hallucination-misinformation",
+      "label": "Hallucination or false content",
+      "description": "Generative output presented as fact was invented or wrong, and reached people or official records.",
+      "mit_cues": ["false or misleading information", "pollution of information ecosystem"],
+      "text_cues": ["hallucinat\\w*", "fabricat\\w*", "made[- ]up", "fake (citations?|cases?|quotes?)", "false information", "misinformation", "incorrect (advice|answer|information)"],
+      "coverage": "mapped",
+      "sections": ["4.3.7", "5.4.4"],
+      "artefacts": ["AIG-GOV-02"],
+      "coverage_note": "Generative AI guidance: human check before release and labelling of AI-generated content."
+    },
+    {
+      "id": "automation-bias",
+      "label": "Automation bias and over-reliance",
+      "description": "People deferred to the AI output instead of exercising their own judgement.",
+      "mit_cues": ["overreliance and unsafe use"],
+      "text_cues": ["over-?relian\\w*", "relied (on|upon) the (system|algorithm|tool|software)", "rubber[- ]stamp\\w*", "blindly (trusted|followed)", "without (any )?human review"],
+      "coverage": "mapped",
+      "sections": ["4.3.8", "4.7.7", "7.2.2"],
+      "artefacts": ["AIG-GOV-02"],
+      "coverage_note": "Human oversight controls and the human accountability principles."
+    },
+    {
+      "id": "accountability-vacuum",
+      "label": "No accountable owner",
+      "description": "No one was clearly responsible for the system, its outcomes or stopping it.",
+      "mit_cues": ["governance failure"],
+      "text_cues": ["no one (was )?(held )?(responsible|accountable)", "nobody (was )?(responsible|accountable)", "lack of (oversight|accountability)", "accountability gap"],
+      "coverage": "mapped",
+      "sections": ["3.5", "4.3.9"],
+      "artefacts": ["AIG-GOV-06", "AIG-INV-04", "AIG-DEC-03"],
+      "coverage_note": "Named Service Owner per AIR-ID, Terms of Reference and the Governance Decision Record."
+    },
+    {
+      "id": "supplier-opacity",
+      "label": "Supplier opacity or failure",
+      "description": "A third-party supplier's system failed, or the supplier would not disclose how it worked.",
+      "mit_cues": [],
+      "text_cues": ["(vendor|supplier|contractor) (refused|declined|would not|failed)", "trade secrets?", "proprietary (algorithm|system|software|model)", "third[- ]party (software|system|provider|vendor)"],
+      "coverage": "mapped",
+      "sections": ["4.3.10", "5.5"],
+      "artefacts": ["AIG-ASS-08"],
+      "coverage_note": "Procurement and supplier governance policy and the Supplier Due Diligence Questionnaire."
+    },
+    {
+      "id": "shadow-ai",
+      "label": "Unregistered or unauthorised use (shadow AI)",
+      "description": "Staff used AI tools the organisation did not know about or had not approved.",
+      "mit_cues": [],
+      "text_cues": ["shadow ai", "unauthori[sz]ed (use|tool)", "without (permission|approval|authori[sz]ation)", "(staff|employees|workers) (used|uploaded|pasted)", "uploaded confidential"],
+      "coverage": "mapped",
+      "sections": ["2.4", "5.4.2", "3.8"],
+      "artefacts": ["AIG-INV-01", "AIG-INV-02", "AIG-INV-04"],
+      "coverage_note": "Staff Guide, low-friction disclosure, retrospective intake and the AI Register."
+    },
+    {
+      "id": "unassessed-deployment",
+      "label": "Deployed without assessment",
+      "description": "The system went live before its risks and impacts were assessed or tested.",
+      "mit_cues": [],
+      "text_cues": ["without (an? )?(impact )?assessment", "without (proper |adequate )?testing", "not (properly )?tested", "rushed (out|into)", "before (it was|being) (tested|evaluated)"],
+      "coverage": "mapped",
+      "sections": ["3.6", "3.8", "3.10.1"],
+      "artefacts": ["AIG-DEC-01", "AIG-DEC-04", "AIG-ASS-04"],
+      "coverage_note": "Gate Map and Gate Log: no use proceeds without intake and the required delegated decision."
+    },
+    {
+      "id": "solely-automated-decision",
+      "label": "Solely automated significant decision",
+      "description": "A decision with legal or similarly significant effect on a person was made by the system without meaningful human involvement.",
+      "mit_cues": ["loss of human agency and autonomy"],
+      "text_cues": ["automated decision", "automatically (denied|rejected|refused|cut|flagged|terminated|suspended)", "algorithm (decided|determined|denied|flagged)", "wrongly (flagged|accused)", "(benefits?|welfare) (were |was )?(cut|stopped|withdrawn)"],
+      "coverage": "mapped",
+      "sections": ["4.4.6", "4.6.1"],
+      "artefacts": ["AIG-ASS-05", "AIG-OPS-04"],
+      "coverage_note": "Statutory-decision escalation trigger, DPIA covering UK GDPR Articles 22A to 22D, and the Contestability and Redress Control."
+    },
+    {
+      "id": "vulnerable-group-harm",
+      "label": "Harm to vulnerable people",
+      "description": "Children, disabled people, older people, claimants, tenants, patients or others in a vulnerable position were harmed.",
+      "mit_cues": [],
+      "text_cues": ["child(ren)?", "minors?", "teenagers?", "elderly", "disabled", "disabilit\\w*", "vulnerable", "benefit claimants?", "welfare recipients?", "homeless", "tenants?", "patients?", "asylum", "refugees?"],
+      "coverage": "mapped",
+      "sections": ["4.4.6", "4.6.3"],
+      "artefacts": ["AIG-ASS-07", "AIG-ASS-12"],
+      "coverage_note": "Vulnerable-residents escalation trigger, Human Rights Assessment and the Fundamental Rights Coverage Crosswalk."
+    },
+    {
+      "id": "agentic-overreach",
+      "label": "Agent acted beyond its authority",
+      "description": "An AI agent took actions (sending, deleting, buying, changing records) beyond what anyone approved.",
+      "mit_cues": ["multi-agent risks", "pursuing its own goals"],
+      "text_cues": ["ai agents?", "agentic", "autonomous agents?", "agent (deleted|sent|purchased|executed|booked)"],
+      "coverage": "mapped",
+      "sections": ["4.4.6"],
+      "artefacts": ["AIG-AGT-01", "AIG-AGT-04", "AIG-AGT-05", "AIG-AGT-06"],
+      "coverage_note": "Seventh escalation trigger (action without per-action human review), Agent Record, Authority Graph and Action Decision Record."
+    },
+    {
+      "id": "vendor-model-substitution",
+      "label": "Supplier changed the model underneath",
+      "description": "A supplier updated or swapped the underlying model and behaviour changed without the deploying organisation reassessing it.",
+      "mit_cues": [],
+      "text_cues": ["model update", "updated (the |its )?model", "new (model )?version", "switched (to a new|models?)", "changed the (underlying )?model", "after an update"],
+      "coverage": "mapped",
+      "was_gap_in": "taxonomy 1.0 (July 2026)",
+      "sections": ["4.4.6"],
+      "artefacts": ["AIG-ASS-08", "AIG-ASS-09", "AIG-ASS-02"],
+      "coverage_note": "Now covered: material supplier or model change is an escalation trigger (minimum High), the Supplier DDQ asks how changes will be notified (Q7.1 and change-control annex), and the Model Card keeps a change history. Residual risk: detection still relies on the supplier telling the council; a silent change is only caught if post-deployment monitoring notices the behaviour shift."
+    },
+    {
+      "id": "downstream-reuse",
+      "label": "Reused for a purpose nobody assessed (function creep)",
+      "description": "A system approved for one purpose was quietly used for another, or its outputs were shared onward.",
+      "mit_cues": [],
+      "text_cues": ["repurpos\\w*", "function creep", "mission creep", "(used|reused) for (a )?(different|another|new) purpose", "secondary use", "shared (the data |it )?with (the )?police"],
+      "coverage": "mapped",
+      "was_gap_in": "taxonomy 1.0 (July 2026)",
+      "sections": ["3.8"],
+      "artefacts": ["AIG-INV-03", "AIG-INV-04", "AIG-AIMS-02", "AIG-AIMS-01"],
+      "coverage_note": "Now covered: every materially distinct use gets its own UC-ID and approval applies only to the scope decided; the Statement of Applicability (A.9.4) requires scope-creep detection and reapproval; AIMS scope assigns downstream-use responsibility when the council provides AI to others."
+    },
+    {
+      "id": "deskilling",
+      "label": "Deskilling and lost fallback capability",
+      "description": "Staff lost the skill or capacity to do the work without the AI, so failure or withdrawal left no safe fallback.",
+      "mit_cues": ["devaluation of human effort"],
+      "text_cues": ["deskill\\w*", "de-skill\\w*", "lost the (ability|skills?)", "no longer (able|trained)", "manual (process|fallback) (was )?(abandoned|lost|degraded)", "skills? (fade|erosion|atrophy)"],
+      "coverage": "partial",
+      "sections": ["4.3.13", "4.3.8"],
+      "artefacts": ["AIG-OPS-01"],
+      "coverage_note": "Partial: §4.3.13 names degraded manual fallback as a risk and the Rollout Plan records a fallback, but nothing measures whether staff can still do the work unaided. AIMS-10 measure M-10 covers AIMS role competence only."
+    },
+    {
+      "id": "cumulative-population-harm",
+      "label": "Cumulative harm to the same people",
+      "description": "Several individually acceptable systems combined to burden the same residents or communities.",
+      "mit_cues": ["power centralization", "power centralisation"],
+      "text_cues": ["cumulative", "compounding", "multiple (systems|algorithms)", "same (families|households|communities) (were )?(repeatedly )?(targeted|flagged)", "repeatedly (targeted|flagged)"],
+      "coverage": "partial",
+      "sections": ["4.5.8"],
+      "artefacts": ["AIG-INV-05", "AIG-AIMS-10"],
+      "coverage_note": "Partial: the portfolio view (§4.5.8, Capabilities and System Map, measure M-16) tracks risk concentration on the council's side, such as supplier dependency. It does not look across systems at whether the same residents or communities are carrying the combined burden."
+    },
+    {
+      "id": "redress-failure",
+      "label": "No route to challenge or redress",
+      "description": "People harmed had no effective way to contest the outcome, get it corrected or be compensated.",
+      "mit_cues": [],
+      "text_cues": ["(could not|unable to|no way to) (challenge|appeal|contest)", "no (right of )?appeal", "complaints? (were )?ignored", "denied (an )?appeal", "redress"],
+      "coverage": "mapped",
+      "was_gap_in": "taxonomy 1.0 (July 2026)",
+      "sections": ["5.7.1", "6.8"],
+      "artefacts": ["AIG-OPS-04"],
+      "coverage_note": "Now covered: the Contestability and Redress Control applies wherever AI made or materially influenced a decision, routed through the council complaints procedure."
+    },
+    {
+      "id": "workforce-algorithmic-management",
+      "label": "AI used to monitor or manage staff",
+      "description": "AI monitored, scored, scheduled or disciplined workers, with harm to them as employees rather than as service users.",
+      "mit_cues": ["decline in employment quality"],
+      "text_cues": ["employee monitoring", "worker surveillance", "workplace surveillance", "productivity (score|tracking|monitoring)", "algorithmic management", "fired by (an )?algorithm", "monitor(ed|ing)? (staff|employees|workers)"],
+      "coverage": "unmapped",
+      "new_in": "taxonomy 2.0",
+      "sections": [],
+      "artefacts": [],
+      "coverage_note": "Unmapped: a search of all 52 artefacts found nothing on AI used to monitor or manage council staff. The suite governs AI as it affects residents; the council as employer is not covered."
+    }
+  ],
+  "remediation_types": [
+    {"id": "withdrawn", "label": "System withdrawn", "text_cues": ["scrapped", "withdr[ae]wn?", "abandoned", "discontinued", "shut (it )?down", "pulled (the |its )?", "decommissioned", "stopped using"]},
+    {"id": "suspended", "label": "Suspended or paused", "text_cues": ["suspended", "paused", "halted"]},
+    {"id": "fixed", "label": "Fixed or retrained", "text_cues": ["fixed (the|a) (bug|issue|problem)", "patched", "retrained", "corrected the"]},
+    {"id": "human-review-added", "label": "Human review added", "text_cues": ["human review", "manual review", "human oversight"]},
+    {"id": "policy-change", "label": "Policy or process changed", "text_cues": ["new (policy|policies|guidelines|safeguards)", "changed (its|their) polic(y|ies)", "updated (its|their) polic(y|ies)", "introduced safeguards"]},
+    {"id": "redress-compensation", "label": "Compensation or redress", "text_cues": ["compensat\\w*", "refund\\w*", "settlement", "settled", "reimburs\\w*"]},
+    {"id": "apology", "label": "Public apology", "text_cues": ["apologi[sz]\\w*", "apology"]},
+    {"id": "regulatory-enforcement", "label": "Regulatory enforcement", "text_cues": ["fined", "penalty", "enforcement notice", "reprimand\\w*", "regulator (ordered|found)"]},
+    {"id": "court-ruling", "label": "Court ruling", "text_cues": ["court (ruled|found|held)", "ruled (it |that it was )?unlawful", "judgment", "judge ruled"]},
+    {"id": "independent-review", "label": "Inquiry or independent review", "text_cues": ["inquiry", "royal commission", "independent review", "investigation (was )?(launched|opened)", "audit (was )?commissioned"]},
+    {"id": "transparency-disclosure", "label": "Transparency or disclosure", "text_cues": ["published (the|its) (algorithm|code|criteria)", "disclosed (the|how)", "made public"]}
+  ],
+  "public_sector_cues": ["government", "council", "police", "department", "ministry", "agency", "authority", "nhs", "city of", "county", "municipal", "public sector", "state of", "home office", "ofqual", "centrelink", "belastingdienst", "dwp", "hmrc"]
+}
