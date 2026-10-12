@@ -1,8 +1,8 @@
 {
   "taxonomy_version": "2.1",
-  "suite_baseline": "AI Governance Suite v3.9.9 (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
-  "mapped_on": "2026-10-11",
-  "mapping_basis": "Each mapping was checked against the full text of the 52-artefact suite uploaded on 11 October 2026. 'mapped' means the suite contains a designed control that would have caught the failure before harm; 'partial' means the risk is named but no control or measure acts on it; 'unmapped' means no artefact addresses it. All controls are design-stage: nothing is evidenced until operated.",
+  "suite_baseline": "AI Governance Suite v3.9.10 (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
+  "mapped_on": "2026-10-12",
+  "mapping_basis": "Each mapping was checked against the full text of the 52-artefact suite uploaded on 11 October 2026 and updated for suite v3.9.10 (12 October 2026 data governance links). 'mapped' means the suite contains a designed control that would have caught the failure before harm; 'partial' means the risk is named but no control or measure acts on it; 'unmapped' means no artefact addresses it. All controls are design-stage: nothing is evidenced until operated.",
   "determination_levels": {
     "alleged": "Reported by media or a database; no authority has made a finding. Default for every AI Incident Database record.",
     "acknowledged": "The deployer admitted the failure or withdrew the system, but no court, regulator or ombudsman made a finding.",
@@ -91,9 +91,10 @@
         "5.6.2"
       ],
       "artefacts": [
-        "AIG-ASS-05"
+        "AIG-ASS-05",
+        "AIG-INV-03"
       ],
-      "coverage_note": "DPIA per use (UC-ID) before processing starts."
+      "coverage_note": "DPIA per use (UC-ID) before processing starts. Since v3.9.10 the DPIA and the Intake Form both record the record of processing (ROPA) reference."
     },
     {
       "id": "security-compromise",
@@ -143,9 +144,12 @@
       ],
       "artefacts": [
         "AIG-AIMS-13",
-        "AIG-ASS-09"
+        "AIG-ASS-09",
+        "AIG-AIMS-04",
+        "AIG-INV-04",
+        "AIG-AIMS-05"
       ],
-      "coverage_note": "Data quality requirements, data lineage standard and the Source Assurance and Traceability Register."
+      "coverage_note": "Data quality requirements, data lineage standard and the Source Assurance and Traceability Register. Since v3.9.10 a Data Steward (AIG-AIMS-04 ROL-20) looks after data quality and lineage for each AI system, the AI Register links each system to its Information Asset Register entry (AIG-INV-04 column AA), and ISO/IEC 5259 and DAMA-DMBOK are recorded as voluntary references (AIG-AIMS-05 REQ-057, REQ-058)."
     },
     {
       "id": "performance-drift",

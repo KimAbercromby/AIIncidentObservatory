@@ -74,6 +74,8 @@ Incident data comes from the [AI Incident Database](https://incidentdatabase.ai/
 
 After editing `taxonomy.json`, run `node collect.mjs --reclassify && node analyse.mjs` to re-classify the incidents already held. The weekly run also re-applies the current taxonomy every time.
 
+**Suite v3.9.10 (12 Oct 2026).** The data governance links are now part of the mapping. Poor or unsuitable data also points to the Data Steward role (AIG-AIMS-04 ROL-20), the AI Register's link to the Information Asset Register (AIG-INV-04 column AA) and the ISO/IEC 5259 and DAMA-DMBOK references (AIG-AIMS-05 REQ-057, REQ-058). Unlawful data processing also points to the record of processing (ROPA) reference now on the Intake Form (AIG-INV-03). Coverage levels are unchanged: both were already mapped.
+
 **Taxonomy 2.1 (11 Oct 2026).** The first real collection showed that the MIT risk tags nearest to three gaps meant something else: "devaluation of human effort" covers creative and copyright cases, "power centralisation" covers market competition, and "employment quality" covers labour markets generally. Those tags no longer count for deskilling, cumulative harm or staff monitoring; only specific wording does. Every incident behind those three gaps was checked by hand.
 
 ## Switching on court judgments

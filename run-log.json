@@ -23,6 +23,17 @@
         "workforce-algorithmic-management"
       ],
       "note": "Taxonomy 2.1: re-applied to the existing incidents after a spot check found false gap matches. No download."
+    },
+    {
+      "at": "2026-10-12T11:31:42.609Z",
+      "collect": "reclassified",
+      "export_file": "AIID_Excel_Export-20261005.xlsx",
+      "incidents": 1711,
+      "new_incidents": 0,
+      "gaps_observed": [
+        "workforce-algorithmic-management"
+      ],
+      "note": "Monitored. No new incidents."
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-11T17:59:15.468Z",
+  "generated_at": "2026-10-12T11:31:42.609Z",
   "taxonomy_version": "2.1",
-  "suite_baseline": "AI Governance Suite v3.9.9 (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
+  "suite_baseline": "AI Governance Suite v3.9.10 (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
   "export": {
     "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261005.xlsx",
     "export_date": "2026-10-05",
@@ -115,14 +115,15 @@
       "id": "unlawful-data-processing",
       "label": "Unlawful or excessive personal data processing",
       "coverage": "mapped",
-      "coverage_note": "DPIA per use (UC-ID) before processing starts.",
+      "coverage_note": "DPIA per use (UC-ID) before processing starts. Since v3.9.10 the DPIA and the Intake Form both record the record of processing (ROPA) reference.",
       "sections": [
         "4.3.3",
         "4.6.1",
         "5.6.2"
       ],
       "artefacts": [
-        "AIG-ASS-05"
+        "AIG-ASS-05",
+        "AIG-INV-03"
       ],
       "was_gap_in": null,
       "new_in": null,
@@ -290,7 +291,7 @@
       "id": "poor-data-quality",
       "label": "Poor or unsuitable data",
       "coverage": "mapped",
-      "coverage_note": "Data quality requirements, data lineage standard and the Source Assurance and Traceability Register.",
+      "coverage_note": "Data quality requirements, data lineage standard and the Source Assurance and Traceability Register. Since v3.9.10 a Data Steward (AIG-AIMS-04 ROL-20) looks after data quality and lineage for each AI system, the AI Register links each system to its Information Asset Register entry (AIG-INV-04 column AA), and ISO/IEC 5259 and DAMA-DMBOK are recorded as voluntary references (AIG-AIMS-05 REQ-057, REQ-058).",
       "sections": [
         "4.3.5",
         "5.6.1",
@@ -298,7 +299,10 @@
       ],
       "artefacts": [
         "AIG-AIMS-13",
-        "AIG-ASS-09"
+        "AIG-ASS-09",
+        "AIG-AIMS-04",
+        "AIG-INV-04",
+        "AIG-AIMS-05"
       ],
       "was_gap_in": null,
       "new_in": null,
