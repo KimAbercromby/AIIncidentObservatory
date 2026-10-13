@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-12T11:31:42.609Z",
+  "generated_at": "2026-10-13T14:21:39.228Z",
   "taxonomy_version": "2.1",
   "suite_baseline": "AI Governance Suite v3.9.10 (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
   "export": {
-    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261005.xlsx",
-    "export_date": "2026-10-05",
-    "file": "AIID_Excel_Export-20261005.xlsx",
-    "sha256": "95c71e26ef379432a9a87934d26854c1a68998ef158a3fc4b247d96afb20c749",
-    "bytes": 2527372
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261012.xlsx",
+    "export_date": "2026-10-12",
+    "file": "AIID_Excel_Export-20261012.xlsx",
+    "sha256": "1fbf053dd14f896ccd8bd2c5357fae5838adf9d00e7144d75b295da12552f8a0",
+    "bytes": 2556570
   },
   "coverage": {
     "collected": [
@@ -24,12 +24,12 @@
     "statement": "This observatory reads AI Incident Database (weekly Excel export) and Curated public-sector cases (cases.json). It does not read Find Case Law (UK court judgments) (licence-required); OECD AI Incidents and Hazards Monitor (excluded); AIAAIC Repository (unverified); Database of AI Litigation (DAIL) (unverified); ICO enforcement action (covered-elsewhere). Counts describe what these sources recorded, not how often failures happen in the world. Media-sourced incidents are allegations unless an authority made a finding."
   },
   "totals": {
-    "incidents": 1711,
-    "public_sector": 188,
+    "incidents": 1734,
+    "public_sector": 189,
     "cases": 9,
     "judgments": 0,
     "judgments_public": 0,
-    "unclassified": 574,
+    "unclassified": 594,
     "unclassified_public": 43
   },
   "modes": [
@@ -101,13 +101,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 199,
-      "public": 24,
+      "global": 201,
+      "public": 25,
       "cases": 1,
       "court": 0,
       "by_basis": {
         "mit": 0,
-        "text": 199,
+        "text": 201,
         "llm": 0
       }
     },
@@ -277,13 +277,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 22,
+      "global": 23,
       "public": 2,
       "cases": 0,
       "court": 0,
       "by_basis": {
         "mit": 3,
-        "text": 20,
+        "text": 21,
         "llm": 0
       }
     },
@@ -597,10 +597,10 @@
     "vendor-model-substitution"
   ],
   "remediation": {
-    "none_indicated": 1570,
-    "none_indicated_public": 170,
-    "none_indicated_share": 91.8,
-    "none_indicated_public_share": 90.4,
+    "none_indicated": 1590,
+    "none_indicated_public": 171,
+    "none_indicated_share": 91.7,
+    "none_indicated_public_share": 90.5,
     "by_type": [
       {
         "id": "withdrawn",
@@ -641,19 +641,19 @@
       {
         "id": "apology",
         "label": "Public apology",
-        "indicated": 29,
+        "indicated": 30,
         "documented": 0
       },
       {
         "id": "regulatory-enforcement",
         "label": "Regulatory enforcement",
-        "indicated": 20,
+        "indicated": 21,
         "documented": 2
       },
       {
         "id": "court-ruling",
         "label": "Court ruling",
-        "indicated": 17,
+        "indicated": 19,
         "documented": 3
       },
       {
@@ -671,7 +671,7 @@
     ]
   },
   "determinations": {
-    "alleged": 1711,
+    "alleged": 1734,
     "acknowledged": 3,
     "determined": 6
   }
