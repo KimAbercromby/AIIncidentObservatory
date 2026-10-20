@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-13T14:21:39.228Z",
+  "generated_at": "2026-10-20T11:48:45.138Z",
   "taxonomy_version": "2.1",
   "suite_baseline": "AI Governance Suite v3.9.10 (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
   "export": {
-    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261012.xlsx",
-    "export_date": "2026-10-12",
-    "file": "AIID_Excel_Export-20261012.xlsx",
-    "sha256": "1fbf053dd14f896ccd8bd2c5357fae5838adf9d00e7144d75b295da12552f8a0",
-    "bytes": 2556570
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261019.xlsx",
+    "export_date": "2026-10-19",
+    "file": "AIID_Excel_Export-20261019.xlsx",
+    "sha256": "41758b56b948f62f75385108977f58af8e1faefad03bb0203cda03b889660ae2",
+    "bytes": 2573292
   },
   "coverage": {
     "collected": [
@@ -24,13 +24,13 @@
     "statement": "This observatory reads AI Incident Database (weekly Excel export) and Curated public-sector cases (cases.json). It does not read Find Case Law (UK court judgments) (licence-required); OECD AI Incidents and Hazards Monitor (excluded); AIAAIC Repository (unverified); Database of AI Litigation (DAIL) (unverified); ICO enforcement action (covered-elsewhere). Counts describe what these sources recorded, not how often failures happen in the world. Media-sourced incidents are allegations unless an authority made a finding."
   },
   "totals": {
-    "incidents": 1734,
-    "public_sector": 189,
+    "incidents": 1749,
+    "public_sector": 191,
     "cases": 9,
     "judgments": 0,
     "judgments_public": 0,
-    "unclassified": 594,
-    "unclassified_public": 43
+    "unclassified": 605,
+    "unclassified_public": 44
   },
   "modes": [
     {
@@ -101,13 +101,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 201,
-      "public": 25,
+      "global": 203,
+      "public": 26,
       "cases": 1,
       "court": 0,
       "by_basis": {
         "mit": 0,
-        "text": 201,
+        "text": 203,
         "llm": 0
       }
     },
@@ -127,13 +127,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 153,
+      "global": 155,
       "public": 20,
       "cases": 4,
       "court": 0,
       "by_basis": {
         "mit": 88,
-        "text": 111,
+        "text": 113,
         "llm": 0
       }
     },
@@ -151,13 +151,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 298,
+      "global": 299,
       "public": 15,
       "cases": 1,
       "court": 0,
       "by_basis": {
         "mit": 196,
-        "text": 179,
+        "text": 180,
         "llm": 0
       }
     },
@@ -277,13 +277,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 23,
+      "global": 24,
       "public": 2,
       "cases": 0,
       "court": 0,
       "by_basis": {
         "mit": 3,
-        "text": 21,
+        "text": 22,
         "llm": 0
       }
     },
@@ -597,10 +597,10 @@
     "vendor-model-substitution"
   ],
   "remediation": {
-    "none_indicated": 1590,
-    "none_indicated_public": 171,
-    "none_indicated_share": 91.7,
-    "none_indicated_public_share": 90.5,
+    "none_indicated": 1601,
+    "none_indicated_public": 172,
+    "none_indicated_share": 91.5,
+    "none_indicated_public_share": 90.1,
     "by_type": [
       {
         "id": "withdrawn",
@@ -611,7 +611,7 @@
       {
         "id": "suspended",
         "label": "Suspended or paused",
-        "indicated": 22,
+        "indicated": 23,
         "documented": 1
       },
       {
@@ -659,19 +659,19 @@
       {
         "id": "independent-review",
         "label": "Inquiry or independent review",
-        "indicated": 6,
+        "indicated": 8,
         "documented": 1
       },
       {
         "id": "transparency-disclosure",
         "label": "Transparency or disclosure",
-        "indicated": 8,
+        "indicated": 9,
         "documented": 1
       }
     ]
   },
   "determinations": {
-    "alleged": 1734,
+    "alleged": 1749,
     "acknowledged": 3,
     "determined": 6
   }

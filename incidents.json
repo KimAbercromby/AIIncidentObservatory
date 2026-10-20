@@ -1,11 +1,11 @@
 {
   "source": "AI Incident Database weekly Excel export (CC BY-SA 4.0). Titles and descriptions are AIID editors' text; classification is this tool's.",
   "export": {
-    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261012.xlsx",
-    "export_date": "2026-10-12",
-    "file": "AIID_Excel_Export-20261012.xlsx",
-    "sha256": "1fbf053dd14f896ccd8bd2c5357fae5838adf9d00e7144d75b295da12552f8a0",
-    "bytes": 2556570
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261019.xlsx",
+    "export_date": "2026-10-19",
+    "file": "AIID_Excel_Export-20261019.xlsx",
+    "sha256": "41758b56b948f62f75385108977f58af8e1faefad03bb0203cda03b889660ae2",
+    "bytes": 2573292
   },
   "taxonomy_version": "2.1",
   "incidents": [
@@ -40327,7 +40327,7 @@
       "public_sector_field": "",
       "sector": "",
       "country": "",
-      "report_count": 3,
+      "report_count": 4,
       "url": "https://incidentdatabase.ai/cite/1258/",
       "text_hash": "a060818193ad683c",
       "first_seen": "2026-10-11",
@@ -42031,7 +42031,7 @@
       "public_sector_field": "",
       "sector": "",
       "country": "",
-      "report_count": 1,
+      "report_count": 2,
       "url": "https://incidentdatabase.ai/cite/1311/",
       "text_hash": "62aac8a7330c0049",
       "first_seen": "2026-10-11",
@@ -55160,6 +55160,444 @@
       "url": "https://incidentdatabase.ai/cite/1747/",
       "text_hash": "61312db30ad48725",
       "first_seen": "2026-10-13",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1748,
+      "date": "2026-09-18",
+      "title": "Fraud Ring in Greece Allegedly Used AI-Cloned Relatives' Voices to Steal Money and Valuables",
+      "description": "Greek police alleged that a fraud ring used AI-cloned voices of victims' relatives to validate calls impersonating utility and telecom workers, persuading victims to surrender money and valuables. Police arrested two alleged collectors in Nea Ionia, Attica, after a theft of valuables worth €30,000, and estimated the organization's total illicit proceeds at over €1 million.",
+      "deployer": "Voice Cloning Fraud Ring In Attica Greece, Voice Cloning Impersonation Scammers, Scammers, Impersonation Scammers, Deepfake Creators, Synthetic Media Creators",
+      "developer": "Synthetic Audio Generation Technology Developers, Voice Cloning Technology Developers, Synthetic Media Generation Technology Developers, Deepfake Technology Developers",
+      "harmed": "Victims Of The Voice Cloning Fraud Ring In Attica Greece, Victims Of Voice Cloning Impersonation Scams, Victims Of Deepfake Enabled Fraud, Financial Scam Victims, Epistemic Integrity, Privacy",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1748/",
+      "text_hash": "0fe790c4977e4f3b",
+      "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1749,
+      "date": "2026-02-23",
+      "title": "Scammers Allegedly Used an AI-Cloned Lawyer's Voice to Defraud Italian Private Bank Fideuram",
+      "description": "Scammers allegedly used an AI-cloned lawyer's voice to validate a WhatsApp request impersonating the CEO of Italian bank Intesa Sanpaolo. Fideuram, its private-banking subsidiary, reportedly transferred about €95 million overseas after its chairman accepted the instructions. Part of the money was recovered, but tens of millions reportedly remained missing. Milan prosecutors opened a fraud investigation.",
+      "deployer": "Scammers Targeting Fideuram, Voice Cloning Impersonation Scammers, Scammers, Impersonation Scammers, Synthetic Media Creators, Deepfake Creators",
+      "developer": "Deepfake Technology Developers, Synthetic Media Generation Technology Developers, Synthetic Audio Generation Technology Developers, Voice Cloning Technology Developers",
+      "harmed": "Fideuram, Banks, Financial Scam Victims, Victims Of Voice Cloning Impersonation Scams, Victims Of Impersonation Scams, Intesa Sanpaolo, Paolo Molesini, Paolo Nastasi, Lawyers, Epistemic Integrity, Privacy",
+      "editor_notes": "02/23/2026: Initial fraudulent contact began, according to the judicial reconstruction cited in reporting. 03/12/2026: Fideuram's chairman resigned, with the bank citing personal reasons. 09/25/2026: Public reporting described the fraud and the ongoing Milan investigation, months after the underlying events. 10/13/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1749/",
+      "text_hash": "cb5798f17ffd3ef9",
+      "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1750,
+      "date": "2026-10-06",
+      "title": "Zimbabwean Author's Prize-Winning Short Story Faced Investigation Over Disputed AI-Writing Allegations",
+      "description": "Zimbabwean writer Simbarashe Steyn Kundizeza's \"The Blue Fighter\" won the £10,000 Caine Prize for African Writing, which excludes AI-generated fiction. Allegations of largely AI-generated writing called the story's eligibility and the award's integrity into question. A journalist's inquiry citing the Pangram AI text detector's assessment prompted an investigation. Kundizeza denied using generative AI and remained listed as the winner.",
+      "deployer": "Simbarashe Steyn Kundizeza, Authors, Short Story Writers, Chatbot Users, Writers",
+      "developer": "Large Language Model Developers, Chatbot Developers",
+      "harmed": "Caine Prize For African Writing, Literary Prize Organizers, Readers, Publishers, Epistemic Integrity",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1750/",
+      "text_hash": "76e732e6ef0f4c66",
+      "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [
+          "independent-review"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1751,
+      "date": "2026-07-18",
+      "title": "Anthropic AI Agent Reportedly Submitted a Fabricated Homicide Tip to Police in Philadelphia",
+      "description": "During an evaluation by AI developer Anthropic, a Claude Haiku 4.5 AI agent reportedly submitted fabricated eyewitness information about an unsolved homicide through a police tip form in Philadelphia. The submission entered the website's tip records, creating a risk of misleading investigators, but police said its email was flagged as spam and never forwarded for investigative review.",
+      "deployer": "Anthropic, Ai Evaluation Organizations, Ai Agent System Deployers",
+      "developer": "Large Language Model Developers, Anthropic, Ai Agent System Developers",
+      "harmed": "Police Departments, Philadelphia Police Department, Law Enforcement, Epistemic Integrity",
+      "editor_notes": "07/18/2026: An Anthropic AI agent reportedly submitted a fabricated homicide tip through Philadelphia police's public tip form; it was flagged as spam. 09/28/2026: Anthropic discovered the false-tip submission. 10/07/2026: Anthropic notified police; company representatives met with the department on 10/08/2026. 10/09/2026: Police publicly disclosed the episode, and Anthropic published its findings and remediation measures. 10/14/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 5,
+      "url": "https://incidentdatabase.ai/cite/1751/",
+      "text_hash": "57c2822b5bece45a",
+      "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [
+          {
+            "id": "hallucination-misinformation",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [
+          "transparency-disclosure"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1752,
+      "date": "2024-01-08",
+      "title": "AI Was Reportedly Used to Create a Nonconsensual Pornographic Video Depicting a Bhutanese Woman in New Zealand",
+      "description": "A pornographic video with the face of a Bhutanese woman living in New Zealand superimposed using AI was reportedly posted online without her consent. She described embarrassment and psychological distress. After contacting police in Bhutan and New Zealand, she said she used StopNCII.org, a service for limiting nonconsensual intimate-image sharing, and could no longer find the video online.",
+      "deployer": "Synthetic Media Creators, Deepfake Creators",
+      "developer": "Synthetic Media Technology Developers, Deepfake Technology Developers",
+      "harmed": "Women And Girls, Women, Unnamed Woman From Bhutan Living In New Zealand, Privacy, People Depicted In Non Consensual Intimate Imagery",
+      "editor_notes": "01/08/2024 is the incident ID date; the ID was created 10/14/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1752/",
+      "text_hash": "5a085d5aa9e3e816",
+      "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1753,
+      "date": "2024-01-27",
+      "title": "Scammers Reportedly Used Deepfake Videos to Blackmail a TikTok User Posting About Bhutan",
+      "description": "A TikTok user who posted about missing Bhutan while living abroad reportedly faced blackmail involving manipulated videos described as deepfakes. Scammers allegedly sent the videos to some of his contacts after he initially dismissed their threats. The episode reportedly caused distress. The AI tool and his country of residence were not identified.",
+      "deployer": "Synthetic Media Creators, Scammers, Extortionists, Deepfake Creators",
+      "developer": "Synthetic Video Generation Technology Developers, Synthetic Media Generation Technology Developers, Deepfake Technology Developers",
+      "harmed": "Victims Of Extortion, Victims Of Deepfake Abuse, Tiktok Users, Sonumbtopguy, Social Media Users, Privacy, Epistemic Integrity",
+      "editor_notes": "The incident ID date is marked as 01/27/2024; the ID itself was created 10/14/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1753/",
+      "text_hash": "40fba78b73d4bd60",
+      "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1754,
+      "date": "2025-11-26",
+      "title": "California Health System Allegedly Used an AI Medical Scribe to Record Patients Without Consent",
+      "description": "A proposed class-action lawsuit alleged that Sharp HealthCare, a California health system, used Abridge, an AI medical scribe, to record patient-clinician conversations without notice or consent and send sensitive audio to the vendor. The documentation workflow allegedly inserted false statements that patients had been informed and consented. Patient Jose Saucedo said he discovered the recording through his medical notes.",
+      "deployer": "Sharp Rees Stealy Medical Group, Sharp Healthcare, Medical Personnel, Healthcare Institutions",
+      "developer": "Ai Transcription Technology Developers, Ai Enabled Healthcare System Developers, Abridge",
+      "harmed": "Sharp Healthcare Patients, Privacy, People Recorded Without Consent, Patients, Jose A. Saucedo, Epistemic Integrity",
+      "editor_notes": "Around 04/2025: Alleged recording practice began; exact onset date not established. 07/2025: Named plaintiff's appointment; exact day not established. 11/26/2025: Complaint filed; used as the incident-date fallback. Incident ID created 10/15/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1754/",
+      "text_hash": "378c790bbaaba756",
+      "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [
+          {
+            "id": "unlawful-data-processing",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "vulnerable-group-harm",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1755,
+      "date": "2026-07-12",
+      "title": "Woman in Kyrgyzstan Alleged a Former Classmate Used an AI Bot to Create a Nude Image From Her Instagram Photo",
+      "description": "A 23-year-old woman in Kyrgyzstan said a former classmate used a Telegram AI bot to create a nude image from her Instagram photo without consent; it reached his contacts. She reported reputational and psychological harm. He acknowledged bot use but attributed circulation to a hack of his Telegram account. Creation timing and responsibility for sharing remain disputed.",
+      "deployer": "Deepfake Creators, Synthetic Media Creators, Chynybek Aaliev",
+      "developer": "Deepfake Technology Developers, Synthetic Image Generation Technology Developers, Synthetic Media Generation Technology Developers",
+      "harmed": "Women, Women And Girls, Victims Of Non Consensual Deepfakes, Privacy, Epistemic Integrity, Aima Yunusbaeva",
+      "editor_notes": "May-June 2022: Creation period claimed by former classmate; disputed. 07/12/2026: Circulation date in his written account (Bishkek time). 07/19/2026: Woman said he notified her. 07/21/2026: Woman filed police complaint. 10/09/2026: Baseline report published. 10/15/2026: Incident ID date created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1755/",
+      "text_hash": "66de78a34474d97a",
+      "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [
+          {
+            "id": "unlawful-data-processing",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1756,
+      "date": "2025-09-24",
+      "title": "Sixt's AI Rental-Car Inspection Reportedly Led to a £1,659 Bill for Pre-Existing Damage in Manchester, England",
+      "description": "A renter at Manchester Airport, England, reportedly received a £1,659 bill after Sixt's Car Gate AI scanner missed existing scratches at pickup but flagged them at return. Sixt pursued payment for eight weeks and threatened collections and legal action despite scans reportedly showing the damage predated the rental. The company canceled the damage entry and bill after an ombudsman intervened.",
+      "deployer": "Sixt, Car Rental Companies",
+      "developer": "Ai Vehicle Inspection System Developers",
+      "harmed": "Car Rental Customers, John Stachura, Epistemic Integrity",
+      "editor_notes": "09/24/2025: Pickup/exit scan dated in the published images. Within 24 hours: Car returned. Two days after return: First £1,659 payment demand.\nFollowing eight weeks: Payment demands and collections/legal threats. Before 01/08/2026: Ombudsman intervened; Sixt canceled damage entry and bill. 10/15/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1756/",
+      "text_hash": "f33b558ef81486ac",
+      "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1757,
+      "date": "2026-07-10",
+      "title": "Students Allegedly Used AI to Create and Share Fake Nude Images of Classmates in Puente Alto, Chile",
+      "description": "Students at Colegio Alicante del Sol, a school in Puente Alto, Chile, allegedly used AI tools to turn female classmates' Instagram photos into fake nude images and circulated them among other students. Families reported panic attacks among affected girls. The school suspended implicated students, and Chile's education oversight authority opened an investigation into its response.",
+      "deployer": "Students Implicated In The Colegio Alicante Del Sol Image Abuse Case, Students, Deepfake Creators, Synthetic Media Creators, Adolescents, High School Students, Minors",
+      "developer": "Deepfake Technology Developers, Synthetic Media Generation Technology Developers, Synthetic Image Generation Technology Developers",
+      "harmed": "Epistemic Integrity, Privacy, Minors, Women And Girls, Girls, High School Students, Adolescents, Adolescent Girls, Educational Communities, Female Students At Colegio Alicante Del Sol",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1757/",
+      "text_hash": "9a1c7276d38643f6",
+      "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [
+          "suspended"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1758,
+      "date": "2026-07-21",
+      "title": "Scammers Reportedly Used AI Images of Former Papua New Guinea Television Host in Sexualized Posts and Fake Giveaways",
+      "description": "Scammers reportedly used AI-altered photos of former Papua New Guinea television host Jennifer Baing to depict her in lingerie and handing out cash, and used her likeness on Facebook to promote fake giveaways soliciting money. Baing described reputational harm and concerns about her safety. She said impersonating accounts remained online despite her reports to the platform.",
+      "deployer": "Scammers, Scammers In Papua New Guinea, Synthetic Media Creators, Deepfake Creators, Cybercriminals, Scammers Impersonating Jennifer Baing, Impersonation Scammers",
+      "developer": "Synthetic Media Technology Developers, Deepfake Technology Developers, Synthetic Image Generation Technology Developers",
+      "harmed": "Jennifer Baing, General Public, General Public Of Papua New Guinea, Impersonated Public Figures, Public Figures, Victims Of Deepfake Abuse, Epistemic Integrity, Privacy, Women, Women And Girls",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1758/",
+      "text_hash": "1905dff3d90243d8",
+      "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1759,
+      "date": "2026-10-07",
+      "title": "Purportedly AI-Generated Video Depicting a Police Officer Punching a Person Was Reportedly Shared as Footage from French Student Protests",
+      "description": "A purportedly AI-generated video depicting a police officer punching a person against a wall was reportedly shared on Facebook and X as footage of police violence during student protests in France. Activist Nathalie Yamb used it to condemn French authorities and call for international intervention. The clip predated the protests, and its creator acknowledged generating it with AI. One X post reportedly received more than 650,000 views.",
+      "deployer": "Synthetic Media Creators, Information Manipulation Actors, Nathalie Yamb",
+      "developer": "Synthetic Media Generation Technology Developers, Synthetic Image Generation Technology Developers, Google",
+      "harmed": "Epistemic Integrity, Social Media Users, Facebook Users, X (Twitter) Users, Law Enforcement Agencies, Police Departments, French Police, Government Of France, Governments",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 4,
+      "url": "https://incidentdatabase.ai/cite/1759/",
+      "text_hash": "b66759f0de6b4dcd",
+      "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1760,
+      "date": "2025-11-19",
+      "title": "Braselton, Georgia, Police Chief Allegedly Used Flock License-Plate Reader System to Stalk and Harass Multiple People",
+      "description": "Michael Steffman, then police chief of Braselton, Georgia, allegedly used Flock automated license plate readers to stalk and harass multiple people. One woman said he used the cameras to track her location. The Georgia Bureau of Investigation arrested him on charges including stalking and misuse of the systems after an investigation lasting several months. He resigned from the department.",
+      "deployer": "Stalkers, Police Officers, Police Departments In The United States, Michael Steffman, Law Enforcement, Braselton Police Department (Georgia)",
+      "developer": "Surveillance Technology Developers, Flock Safety, Automated License Plate Reader (Alpr) Developers",
+      "harmed": "Women And Girls, Women, Victims Of Stalking, Privacy, Individuals Whose License Plate Data Were Accessed For Non Law Enforcement Purposes",
+      "editor_notes": "Incident ID date marked 11/19/2025; ID created 10/18/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1760/",
+      "text_hash": "3ac4b44713533436",
+      "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": true,
+        "public_sector_basis": "deployer name",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1761,
+      "date": "2026-08-10",
+      "title": "Haines City, Florida, Police Officer Allegedly Used Flock License-Plate Reader System to Track Estranged Wife",
+      "description": "Police officer Christopher Goodson of Haines City, Florida, allegedly used Flock's automated license plate reader records to track his estranged wife's vehicle through 717 searches. Investigators said the searches had no legitimate law-enforcement purpose. He reportedly said he wanted to locate his children while they were with her. He was arrested, and the department announced audits, case-number requirements, and annual training.",
+      "deployer": "Stalkers, Police Officers, Police Departments In The United States, Police Departments, Law Enforcement, Christopher Goodson",
+      "developer": "Surveillance Technology Developers, Flock Safety, Automated License Plate Reader (Alpr) Developers",
+      "harmed": "Women And Girls, Women, Victims Of Stalking, Privacy, Individuals Whose License Plate Data Were Accessed For Non Law Enforcement Purposes",
+      "editor_notes": "09/01/2024-06/30/2026: Reviewed search window containing 717 inquiries about the Goodson's wife's vehicle; exact first misuse date unestablished. 08/10/2026: Marked as incident ID date as Goodson disclosed searches to a supervisor; a criminal investigation opened and he was placed on paid leave. 08/11/2026: Arrest and charges reported. 10/18/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 4,
+      "url": "https://incidentdatabase.ai/cite/1761/",
+      "text_hash": "62a07b5dd6221470",
+      "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [
+          {
+            "id": "vulnerable-group-harm",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [
+          "independent-review"
+        ],
+        "public_sector": true,
+        "public_sector_basis": "deployer name",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1762,
+      "date": "2026-02-16",
+      "title": "Man in Touba, Senegal, Allegedly Used AI Voice Alteration to Impersonate a Woman and Collect Intimate Images",
+      "description": "Police in Touba, Senegal, alleged that a man used his former sister-in-law's WhatsApp photos and videos in false profiles and altered his voice with AI during calls. Posing as a woman, he reportedly drew people into explicit video calls, collected intimate images and solicited money or phone credit. He allegedly misused victims' likenesses and caused reputational harm. Police reportedly arrested him, and he allegedly admitted the conduct.",
+      "deployer": "Synthetic Media Creators, Scammers In Senegal, Scammers, Online Impersonators, Extortionists, Deepfake Creators, Cybercriminals",
+      "developer": "Synthetic Media Generation Technology Developers, Synthetic Audio Generation Technology Developers, Deepfake Technology Developers, Ai Voice Conversion Technology Developers",
+      "harmed": "Women And Girls, Women, Victims Of Impersonation Scams, Victims Of Deepfake Abuse, Privacy, Men And Boys, Men, Identity Theft Victims, Epistemic Integrity",
+      "editor_notes": "Incident ID date marked 02/16/2026; ID created 10/18/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1762/",
+      "text_hash": "171493cb1ce86ec9",
+      "first_seen": "2026-10-20",
       "classification": {
         "modes": [],
         "remediation_indicated": [],

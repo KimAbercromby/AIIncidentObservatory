@@ -1,16 +1,16 @@
 {
   "last_export": {
-    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261012.xlsx",
-    "export_date": "2026-10-12",
-    "file": "AIID_Excel_Export-20261012.xlsx",
-    "sha256": "1fbf053dd14f896ccd8bd2c5357fae5838adf9d00e7144d75b295da12552f8a0",
-    "bytes": 2556570
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261019.xlsx",
+    "export_date": "2026-10-19",
+    "file": "AIID_Excel_Export-20261019.xlsx",
+    "sha256": "41758b56b948f62f75385108977f58af8e1faefad03bb0203cda03b889660ae2",
+    "bytes": 2573292
   },
   "last_run": {
-    "at": "2026-10-13T14:21:39.049Z",
+    "at": "2026-10-20T11:48:44.920Z",
     "status": "collected",
-    "incidents": 1734,
-    "new_incidents": 23,
+    "incidents": 1749,
+    "new_incidents": 15,
     "baseline": false
   }
 }
