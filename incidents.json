@@ -1,11 +1,11 @@
 {
   "source": "AI Incident Database weekly Excel export (CC BY-SA 4.0). Titles and descriptions are AIID editors' text; classification is this tool's.",
   "export": {
-    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261019.xlsx",
-    "export_date": "2026-10-19",
-    "file": "AIID_Excel_Export-20261019.xlsx",
-    "sha256": "41758b56b948f62f75385108977f58af8e1faefad03bb0203cda03b889660ae2",
-    "bytes": 2573292
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261026.xlsx",
+    "export_date": "2026-10-26",
+    "file": "AIID_Excel_Export-20261026.xlsx",
+    "sha256": "bb6168db872882b295252b6ed75da56ffe50cd54be02e0bfabd670410b488c98",
+    "bytes": 2603378
   },
   "taxonomy_version": "2.1",
   "incidents": [
@@ -42594,7 +42594,7 @@
       "public_sector_field": "",
       "sector": "",
       "country": "",
-      "report_count": 28,
+      "report_count": 29,
       "url": "https://incidentdatabase.ai/cite/1329/",
       "text_hash": "3718e7b1d445c813",
       "first_seen": "2026-10-11",
@@ -55598,6 +55598,816 @@
       "url": "https://incidentdatabase.ai/cite/1762/",
       "text_hash": "171493cb1ce86ec9",
       "first_seen": "2026-10-20",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1763,
+      "date": "2026-06-06",
+      "title": "Purportedly AI-Assisted Hospital-Bed Prioritization Allegedly Delayed Intensive Care Before a Patient's Death in Minas Gerais, Brazil",
+      "description": "The family of a 32-year-old patient in Minas Gerais, Brazil, alleged that Core-MG, an AI-assisted hospital-bed allocation system, understated her condition and delayed intensive care. Her sister said the severity score impeded reprioritization. The patient died hours after transfer. The state health department denied a system failure in her case and said physicians assessed patients according to clinical need and bed availability.",
+      "deployer": "Minas Gerais State Health Department (Ses Mg), Government Agencies, Government Of Brazil, Governments, Hospitals",
+      "developer": "Laboratorio De Inovacao Tecnologica Em Saude (Laisufrn), Ai Enabled Healthcare System Developers",
+      "harmed": "Emergency Medical Patients, Patients, Women, Women And Girls, Rebeca Cardoso Tenente Molina",
+      "editor_notes": "Incident ID date marked 06/06/2026; ID created 10/19/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1763/",
+      "text_hash": "0bfb75c448b50541",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "vulnerable-group-harm",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": true,
+        "public_sector_basis": "deployer name",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1764,
+      "date": "2026-10-11",
+      "title": "Purportedly AI-Enhanced Arrest Image Reportedly Led Viewers to Mistake a Girl for a Boy in Metz, France",
+      "description": "A purportedly clearer, AI-modified frame from an arrest video in Metz, France, reportedly showed additional facial and body hair and a different shirt pattern. Viewers cited it as evidence that the arrested person was a boy, although she was a 14-year-old girl. The altered image allegedly distorted public interpretation of the arrest footage.",
+      "deployer": "Synthetic Media Creators, Social Media Users",
+      "developer": "Synthetic Media Generation Technology Developers, Synthetic Image Generation Technology Developers, Ai Image Enhancement System Developers",
+      "harmed": "Women And Girls, Girls, Adolescents, Adolescent Girls, Minors, Epistemic Integrity, Social Media Users",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1764/",
+      "text_hash": "e557f889aa4c9968",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1765,
+      "date": "2026-10-15",
+      "title": "Fin AI Support Chatbot Deployed by Anthropic Reportedly Prolonged a Canadian Engineering Firm's $3,500 Billing Dispute",
+      "description": "An executive at a Canadian engineering firm alleged that Anthropic's Fin AI support chatbot kept him in circular conversations for weeks while he sought a refund for a $3,500 duplicate Claude AI subscription charge. He later sought a chargeback; Anthropic reportedly canceled the working team account, disrupting work and requiring another subscription purchase. The report does not establish that AI caused the charge or cancellation.",
+      "deployer": "Anthropic",
+      "developer": "Fin, Chatbot Developers, Ai Customer Support System Developers",
+      "harmed": "Engineering Firms, Companies, Claude Users, Ai Customer Support System Users",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1765/",
+      "text_hash": "84e696004b1f212c",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [
+          "redress-compensation"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1766,
+      "date": "2026-09-25",
+      "title": "Cybercriminal Reportedly Used Cairn AI Agents to Breach More Than 100 Company Websites",
+      "description": "An operator using Chinese-language instructions reportedly directed Cairn, an AI agent framework, to breach more than 100 company websites. The campaign targeted sites in the U.S., Canada, Australia, and Japan. Researchers verified unauthorized access tools on victim servers. Reuters identified websites belonging to farm equipment maker Deere and appliance maker SharkNinja; the extent of data theft remained unclear.",
+      "deployer": "Hackers, Cybercriminals, Aia0001, Ai Agent System Deployers",
+      "developer": "Le1Xia0, Large Language Model Developers, Deepseek, Ai Agent System Developers",
+      "harmed": "Sharkninja, Privacy, Information Security, Deere, Cummins, Companies",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1766/",
+      "text_hash": "264784b774c309a5",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1767,
+      "date": "2026-10-09",
+      "title": "Purportedly AI-Generated Woman in Videos Reportedly Led Brazilian Bricklayer to Travel Over 2,000km and Become Stranded in Belo Horizonte, Brazil",
+      "description": "A Brazilian bricklayer reportedly traveled over 2,000km from Imperatriz, Maranhão, to Belo Horizonte, Minas Gerais, after believing videos of a purportedly AI-generated woman offering a relationship and life on a farm. He exhausted his money on lodging and needed municipal help to return home. The profile operator later denied having private conversations with him. The identity of the operator and the generation tool were not established.",
+      "deployer": "Synthetic Media Creators, Scammers In Brazil, Scammers, Romance Scammers",
+      "developer": "Synthetic Video Generation Technology Developers, Synthetic Media Generation Technology Developers",
+      "harmed": "Victims Of Romance Scams In Brazil, Victims Of Romance Scams, Social Media Users, Men And Boys, Men, Epistemic Integrity, Edimar Rocha Martins, Construction Workers",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1767/",
+      "text_hash": "aa1c01f7734d09fb",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1768,
+      "date": "2024-10-01",
+      "title": "Kenya's AI Health Insurance Means Test Reportedly Overcharged Poor Households and Obstructed Care",
+      "description": "Kenya's Social Health Authority reportedly used a machine-learning means test to set health insurance premiums. Investigators alleged that income overestimation burdened poor households with unaffordable charges. A Nairobi laundry worker was reportedly sent home before surgery and could not afford follow-up care. The technical audit used a reconstruction; the exact deployed model and implementation of proposed changes were not confirmed. SHA defended the model as equitable.",
+      "deployer": "Social Health Authority (Kenya), Governments, Government Of Kenya, Ministry Of Health (Kenya), Government Agencies",
+      "developer": "Ministry Of Health (Kenya), Governments, Government Agencies, Government Of Kenya, Palladium, Healthcare Administrative Ai Developers, David Khaoya, Idinsight",
+      "harmed": "Economically Vulnerable Patients, Patients, Low Income Households In Kenya, General Public, General Public Of Kenya, Peris Nduta, Florence Atieno",
+      "editor_notes": "10/01/2024: National SHA rollout began; used as the deployment-period anchor, not a verified first harmful assessment. 08/2025: Africa Uncensored requested model details. 11/2025: SHA disclosed the formula and variables. 05/04/2026: Joint investigation and technical methodology published. 05/06/2026: The Elephant republished the investigation; SHA defended the tool. 05/07/2026: Investigators said key questions remained unanswered. 10/19/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1768/",
+      "text_hash": "89d912a1118aa10c",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [
+          "transparency-disclosure"
+        ],
+        "public_sector": true,
+        "public_sector_basis": "deployer name",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1769,
+      "date": "2026-10-16",
+      "title": "Man Allegedly Used AI-Altered Gun Photograph to Threaten Former Partner in Santa Helena de Goiás, Brazil",
+      "description": "A man allegedly used an AI-altered photograph of himself holding a pistol to threaten his former partner and her father in Santa Helena de Goiás, Brazil. Police reportedly arrested him in nearby Rio Verde after the woman sought help. He reportedly said he used AI to simulate a weapon; a local report said police had not confirmed his explanation. Searches reportedly found no firearm.",
+      "deployer": "Domestic Abuse Perpetrators, Synthetic Media Creators, Men, Men And Boys",
+      "developer": "Synthetic Image Generation Technology Developers, Synthetic Media Technology Developers",
+      "harmed": "Domestic Violence Victims, Women, Women And Girls, Family Members Of Domestic Violence Victims, Epistemic Integrity",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1769/",
+      "text_hash": "17d6cf97d56de098",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1770,
+      "date": "2025-09-15",
+      "title": "Kenya's Public Broadcaster Violated Employees' Privacy with Mandatory Facial Recognition Attendance, Court Found",
+      "description": "Kenya's High Court found that the state-owned Kenya Broadcasting Corporation unlawfully collected employees' facial biometrics for mandatory attendance without informed consent or a prior data protection impact assessment. The broadcaster conceded the union's case. The court quashed the rollout and ordered deletion of collected data under regulatory supervision, including measures to ensure third parties retained no copies.",
+      "deployer": "Kenya Broadcasting Corporation, Facial Recognition System Deployers, Employers",
+      "developer": "Facial Recognition System Developers",
+      "harmed": "Kenya Broadcasting Corporation Employees, Journalists, Biometric Data Subjects, Privacy",
+      "editor_notes": "07/03/2025: Union raised concerns. 09/09/2025: Staff memo announced system use from 09/15/2025, used as the rollout-date anchor; exact first collection is unreported. 10/13/2025: Union requested suspension. 11/25/2025: High Court declared the rollout unlawful and ordered deletion. 10/20/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1770/",
+      "text_hash": "05f3e40201d87943",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "unlawful-data-processing",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [
+          "court-ruling"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1771,
+      "date": "2025-09-02",
+      "title": "AI Claims System at Kenya's Public Health Insurer Reportedly Rejected Legitimate Hospital Claims as Fraudulent",
+      "description": "Kenya's parliamentary health committee reported that the Social Health Authority, the country's public health insurer, used AI that wrongly flagged legitimate hospital claims as fraudulent. The findings included Matata Nursing Home in Homa Bay County. The committee linked unjust AI-driven denials to financial strain on facilities and recommended mandatory human review of flagged claims.",
+      "deployer": "Social Health Authority (Kenya), Healthcare Organizations, Governments, Government Of Kenya, Government Agencies",
+      "developer": "Healthcare Administrative Ai Developers",
+      "harmed": "Patients, Matata Nursing Home, Hospitals",
+      "editor_notes": "09/02/2025-09/05/2025: Committee conducted hospital visits documenting wrongful AI claim flags. Exact denial dates are unreported. 10/20/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 4,
+      "url": "https://incidentdatabase.ai/cite/1771/",
+      "text_hash": "7d00a2b2cc592386",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "solely-automated-decision",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [
+          "human-review-added"
+        ],
+        "public_sector": true,
+        "public_sector_basis": "deployer name",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1772,
+      "date": "2026-06-11",
+      "title": "AI Chatbot at BMW Dealership in Toronto, Canada, Reportedly Made Erroneous Buyback Offer, Prompting Customer Dispute",
+      "description": "BMW Toronto, a car dealership in Toronto, Canada, said its AI chatbot Quinn misread a customer's loan balance as a C$27,162.79 buyback offer following human miscommunication. A salesperson withdrew the offer and quoted at most C$20,000, prompting a dispute. After a news inquiry, the dealer reinstated the higher offer, which the customer accepted, and said actual people would present future offers.",
+      "deployer": "Car Dealerships, Bmw Toronto, Bmw",
+      "developer": "Chatbot Developers, Ai Customer Support System Developers",
+      "harmed": "Zack Giacomelli, Vehicle Owners, Customers, Car Dealerships, Bmw Toronto, Bmw",
+      "editor_notes": "Incident ID date is marked 06/11/2026; ID created 10/21/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1772/",
+      "text_hash": "9911910bbc92014e",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [
+          "withdrawn",
+          "independent-review"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1773,
+      "date": "2026-01-29",
+      "title": "South African Court Found Self-Represented Litigant Relied on an AI-Hallucinated Judgment",
+      "description": "Self-represented litigant Adriaan Johannes Roux relied on a nonexistent judgment in High Court submissions in Johannesburg, South Africa. The court attributed the false authority and unsound legal arguments to his admitted AI use and said addressing the material wasted court time and resources. The specific AI tools were not identified.",
+      "deployer": "Pro Se Litigants, Adriaan Johannes Roux",
+      "developer": "Large Language Model Developers, Ai Assisted Legal Drafting System Developers",
+      "harmed": "Parties To Legal Proceedings, Judicial Integrity, High Court Of South Africa Gauteng Division Johannesburg, High Court Of South Africa, Epistemic Integrity, Courts",
+      "editor_notes": "10/08/2025: The High Court heard the application. 01/29/2026: The court delivered its judgment, identifying AI-related false authority and wasted judicial resources; it dismissed the main application with punitive costs for broader litigation conduct. 06/07/2026: ENS published legal commentary on the case. The incident date uses the judgment date as a fallback because the defective filing date is unestablished.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1773/",
+      "text_hash": "4fb0c56fd679a91f",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "hallucination-misinformation",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [
+          "court-ruling"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1774,
+      "date": "2026-10-15",
+      "title": "AI Agents Under Evaluation Reportedly Accessed Personal and Confidential Records at Indian Organizations",
+      "description": "India's national cybersecurity agency reported that AI agents from unnamed model providers accessed live systems at Indian organizations during research and evaluation, exceeding their assigned authorization. The agents reportedly used exposed credentials and permissive access settings to read business records containing personal data and confidential material. The affected organizations had not detected the access.",
+      "deployer": "Ai Evaluation Organizations, Ai Agent System Deployers",
+      "developer": "Ai Agent System Developers",
+      "harmed": "Organizations, Organizations In India, Targets Of Autonomous Ai Enabled Intrusion Operations, Privacy, Information Integrity",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1774/",
+      "text_hash": "14681696dd99ad33",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "unlawful-data-processing",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1775,
+      "date": "2026-09-05",
+      "title": "Purportedly AI-Generated Videos Posted by Texas Lieutenant Governor's Campaign Allegedly Misrepresented Opponent's Tax Positions",
+      "description": "Texas Lieutenant Governor Dan Patrick's campaign posted purportedly AI-generated videos depicting his opponent, state legislator Vikki Goodwin. She alleged the videos falsely portrayed her tax positions and were intended to deceive voters and harm her candidacy. Goodwin filed a police complaint, and the posts were later removed. Patrick's campaign called the videos a parody and denied violating election law.",
+      "deployer": "Synthetic Media Creators, Public Figures, Politicians In The United States, Politicians, Political Campaigns, Deepfake Creators, Dan Patrick'S Campaign, Dan Patrick",
+      "developer": "Synthetic Video Generation Technology Developers, Synthetic Media Generation Technology Developers, Deepfake Technology Developers",
+      "harmed": "Vikki Goodwin, Public Figures, Politicians In The United States, Politicians, Political Candidates Targeted By Deepfakes, Epistemic Integrity, Democratic Integrity",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 4,
+      "url": "https://incidentdatabase.ai/cite/1775/",
+      "text_hash": "8ddc07dfe284a95c",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1776,
+      "date": "2026-09-26",
+      "title": "Meta's Muse AI Agent Reportedly Shared a Seller's Home Address and Arranged an Unexpected Pickup in Toronto",
+      "description": "Tech reviewer Matt Robb said Meta's Muse AI agent shared his home address in Toronto, Canada, and arranged a Facebook Marketplace pickup without the approval he expected. The agent is reported to have falsely said he was home, and a buyer arrived while he was absent. Robb later acknowledged selecting \"Allow Always\" for replies using pickup details, qualifying the claim that disclosure bypassed permission.",
+      "deployer": "Matt Robb, Ai Agent System Deployers",
+      "developer": "Ai Agent System Developers, Meta",
+      "harmed": "Matt Robb, Ai Agent System Users, Privacy, Online Marketplace Users, Facebook Marketplace Users",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1776/",
+      "text_hash": "83470f7db7f5516b",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1777,
+      "date": "2025-10-02",
+      "title": "Three People Reportedly Died in Ruijin, China, Crash After Driver Activated Changan Driving Assistance",
+      "description": "Three occupants of a Changan Qiyuan car reportedly died when it hit a disabled truck in Ruijin, Jiangxi, China. Investigators said the driver activated intelligent driving assistance and removed his hands from the wheel. They identified his inattention and the truck driver's inadequate warnings as contributing causes. A defect in the assistance system was not established.",
+      "deployer": "Drivers, Driver Assistance System Users, Road Users, Motorists",
+      "developer": "Changan Automobile, Automated Driving System Developers",
+      "harmed": "Changan Qiyuan Vehicle Occupants, Drivers, Road Users, Motorists, Driver Assistance System Users, Passengers",
+      "editor_notes": "10/02/2025: Crash occurred at about 04:00 China Standard Time; driving assistance had been activated at 03:59:34. 05/21/2026: Ganzhou authorities published their investigation. 10/22/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1777/",
+      "text_hash": "b2c6ad4c1116f418",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "vulnerable-group-harm",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1778,
+      "date": "2026-10-17",
+      "title": "Purportedly AI-Generated Campaign Ad Allegedly Depicted Pennsylvania Governor Josh Shapiro Making Fabricated Statements About Sexual Harassment Scandals",
+      "description": "Pennsylvania gubernatorial candidate Stacy Garrity's campaign reportedly released an AI-generated video impersonating Gov. Josh Shapiro and placing first-person statements about harassment scandals, intimidated accusers, and hush money. The harassment allegations concerned a former aide. Shapiro's campaign denounced the ad as dishonest.",
+      "deployer": "Synthetic Media Creators, Stacy Garrity'S Gubernatorial Campaign, Stacy Garrity, Public Figures, Politicians In The United States, Politicians, Political Campaigns, Deepfake Creators",
+      "developer": "Synthetic Video Generation Technology Developers, Synthetic Media Generation Technology Developers, Synthetic Audio Generation Technology Developers, Deepfake Technology Developers",
+      "harmed": "Public Figures, Politicians In The United States, Politicians, Josh Shapiro, Epistemic Integrity, Elected Officials, Democratic Integrity",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1778/",
+      "text_hash": "daf883ee22ed421a",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "hallucination-misinformation",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1779,
+      "date": "2026-05-07",
+      "title": "OpenAI-Linked AI Agents May Have Contributed to a Partial Outage of the Wikimedia Foundation's Data Query Service",
+      "description": "The Wikimedia Foundation, which operates Wikipedia, reported unauthorized edits, attempted misuse of its web tools, and heavy traffic attributed to OpenAI AI agents. It said this traffic may have contributed to a partial outage of Wikidata's query service and described investigation and cleanup burdens. It found no evidence that its systems or data were compromised.",
+      "deployer": "Openai, Ai Agent System Deployers",
+      "developer": "Openai, Ai Agent System Developers, Large Language Model Developers",
+      "harmed": "Wikimedia Foundation, Wikidata Query Service Users, Website Operators, Information Integrity",
+      "editor_notes": "(1) 05/07/2026: Date of incident. (2) 10/05/2026: Wikimedia disclosed suspected OpenAI agent activity and said its traffic may have contributed to the May outage. (3) 10/22/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1779/",
+      "text_hash": "25ed98fc1e335f0f",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1780,
+      "date": "2017-05-26",
+      "title": "Budapest Bank's AI Call Analysis Was Found to Have Violated Callers' and Employees' Privacy Rights in Hungary",
+      "description": "Hungary's data-protection authority found Budapest Bank's AI analysis of recorded customer-service calls violated callers' and employees' privacy rights. The system analyzed emotions and helped select callbacks and assess staff without a lawful basis or adequate notice and objection safeguards. The authority ordered an end to emotion analysis and imposed a HUF 250 million fine.",
+      "deployer": "Budapest Bank, Banks",
+      "developer": "Ai Assisted Call Center Software Developers",
+      "harmed": "Budapest Bank Callers, Bank Customers, Budapest Bank Customers, Budapest Bank Call Center Employees, Call Center Workers, Privacy, Biometric Data Subjects",
+      "editor_notes": "05/26/2017: Bank-reported implementation date, used as the onset proxy for the prolonged deployment. From 05/25/2018: Processing period examined under GDPR. 09/2021: NAIH launched proceedings. 02/08/2022: NAIH ordered changes and imposed a HUF 250 million fine. 04/05/2022: Telex reported the case. 10/22/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1780/",
+      "text_hash": "036361fc25c6bedf",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "unlawful-data-processing",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1781,
+      "date": "2026-10-15",
+      "title": "ARTEX AI Agents Reportedly Used Stolen Cloud Backup Credentials to Access ConnectWise Customers' Microsoft 365 Environments",
+      "description": "Microsoft reported that China-aligned hackers used ARTEX, an AI penetration-testing framework, to access customers' Microsoft 365 environments through stolen credentials for ConnectWise's cloud backup services. Agents reportedly changed credentials and privileges in some environments to retain unauthorized access. The activity formed part of a global campaign; the extent of compromise and any data theft remained uncertain.",
+      "deployer": "Threat Actors, Storm 0940, China Linked Threat Actors, Ai Agent System Deployers, Agentic Threat Actors",
+      "developer": "Large Language Model Developers, Artex Developers, Ai Agent System Developers",
+      "harmed": "Microsoft, Enterprises Relying On Microsoft 365 And Identity Services, Connectwise Customers, Connectwise, Information Integrity",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1781/",
+      "text_hash": "1a170d0da63d48c2",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "security-compromise",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1782,
+      "date": "2026-09-27",
+      "title": "Attackers Reportedly Used ARTEX, an AI Security-Testing Tool, to Steal Data from South Korean Financial Institutions",
+      "description": "An unidentified attacker reportedly used ARTEX, an AI-powered security-testing tool, alongside large language models to breach South Korean financial institutions and steal data. Compromised systems included a loan-broker inquiry service and an employee mobile work-support system. Researchers linked the activity to exposed attacker infrastructure and AI session histories. The attacker’s identity and the full number of affected institutions remained unconfirmed.",
+      "deployer": "Cybercriminals, Hackers, Threat Actors, Agentic Threat Actors, Ai Agent System Deployers",
+      "developer": "Ai Agent System Developers, Large Language Model Developers, Artex Developers, Autumn 27, Deepseek, Zhipu Ai, Xai, Anthropic",
+      "harmed": "Shinhan Bank, Kb Kookmin Bank, Financial Institutions, Bank Customers, Banks, Privacy, Information Integrity, General Public, General Public Of South Korea, Customers",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1782/",
+      "text_hash": "f3be1b9776f06fad",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [
+          "independent-review"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1783,
+      "date": "2026-04-22",
+      "title": "ChatGPT Allegedly Reinforced Suicidal Thinking Before a 15-Year-Old Boy's Death in Lebanon",
+      "description": "The parents of a 15-year-old boy in Lebanon allege that OpenAI's ChatGPT chatbot reinforced suicidal thinking during personalized conversations and failed to intervene when he expressed intent to die. They say the interactions contributed to his suicide. Their California wrongful-death lawsuit seeks damages and stronger safeguards for minors.",
+      "deployer": "Openai, Chatbot Developers, Large Language Model Developers, Chatbot Users, Chatgpt Users",
+      "developer": "Openai, Chatbot Developers, Large Language Model Developers",
+      "harmed": "Chatgpt Users, Chatbot Users, Mathias Habib, Family Of Mathias Habib, Men And Boys, Boys, Adolescent Boys, Adolescents, Parents, Emotionally Vulnerable Individuals, Charbel Habib, Soha Samaha",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 6,
+      "url": "https://incidentdatabase.ai/cite/1783/",
+      "text_hash": "d28b0799a1d79bc4",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "vulnerable-group-harm",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1784,
+      "date": "2026-06-17",
+      "title": "OpenAI Research Agent Reportedly Changed a Research Organization's Live Systems and Retrieved Nonpublic Data",
+      "description": "An OpenAI research agent asked to retrieve public dashboard figures reportedly accessed an international research organization’s internal systems and changed live settings without authorization during two evaluations. It reportedly retrieved 1,489 user-directory records in one run and five nonpublic tables totaling 147,451 rows in another. It reportedly continued accessing data after restoring one setting and did not disclose its actions.",
+      "deployer": "Openai, Ai Agent System Deployers",
+      "developer": "Openai, Large Language Model Developers, Ai Agent System Developers",
+      "harmed": "Targets Of Autonomous Ai Enabled Intrusion Operations, Research Institutions, Information Security",
+      "editor_notes": "06/17/2026: Two public-dashboard research evaluations involved unauthorized access and changes to an international research organization's live systems. By 08/13/2026: OpenAI had discovered the activity. 10/15/2026: OpenAI publicly disclosed the episode. 10/24/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1784/",
+      "text_hash": "b8761bec2c1cf466",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "shadow-ai",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [
+          "transparency-disclosure"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1785,
+      "date": "2026-10-21",
+      "title": "Spain's People's Party Reportedly Published Purported Deepfakes Featuring Fabricated Admissions of Misconduct",
+      "description": "Spain's conservative People's Party reportedly circulated an AI-generated video impersonating the prime minister's wife and Socialist figures making apparent admissions of misconduct. Former Socialist party member Leire Díez filed a defamation complaint; her lawyers alleged insults, anxiety requiring treatment and isolation at home with her daughters. The party reportedly defended the video as political criticism. Its AI disclosure was reportedly small and faint.",
+      "deployer": "Synthetic Media Creators, Political Organizations, People'S Party (Spain), Partido Popular, Deepfake Creators",
+      "developer": "Voice Cloning Technology Developers, Synthetic Video Generation Technology Developers, Synthetic Media Technology Developers, Synthetic Audio Generation Technology Developers, Deepfake Technology Developers",
+      "harmed": "Spanish Socialist Workers' Party, Social Media Users, Santos Cerdan, Public Figures, Politicians In Spain, Politicians, Political Organizations, Partido Socialista Obrero Espanol, Montse Minguez, Leire Diez, Jose Luis Rodriguez Zapatero, Jose Luis Abalos, Impersonated Public Figures, Epistemic Integrity, Democratic Integrity, Begona Gomez",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1785/",
+      "text_hash": "80065e5d74b87e38",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [
+          {
+            "id": "hallucination-misinformation",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1786,
+      "date": "2026-10-22",
+      "title": "Tesla Reportedly Using a Driver-Assistance System Struck a Pedestrian in a Fatal Crash in Vallejo, California",
+      "description": "A Tesla driver reportedly told police that Full Self-Driving, a supervised driver-assistance system, was engaged when the vehicle struck a 71-year-old pedestrian crossing Interstate 80 in Vallejo, California. The Tesla reportedly braked and veered left before impact. At least one other vehicle was reported to have then struck the pedestrian, who died. The driver stopped and supplied dashcam footage.",
+      "deployer": "Tesla Drivers, Road Users, Motorists, Drivers, Automated Driving System Deployers",
+      "developer": "Tesla, Automated Driving System Developers, Advanced Driver Assistance System Developers",
+      "harmed": "Road Users, Pedestrians, Motorists, Drivers, Domingo Gonzales",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1786/",
+      "text_hash": "b80033dd4850878c",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1787,
+      "date": "2026-10-13",
+      "title": "Tesla Reportedly Using Driver Assistance Struck a Patrol Car and Injured Two Officers in Fairfield, California",
+      "description": "A Tesla driver reportedly told police he was asleep and using Full Self-Driving, a supervised driver-assistance system, when his car struck an occupied California Highway Patrol vehicle on Interstate 80 in Fairfield, California. The Tesla reportedly entered lanes closed with flares and cones for an earlier crash. Two officers were reported to have been seriously injured and later released from the hospital.",
+      "deployer": "Tesla Drivers, Road Users, Motorists, Drivers, Automated Driving System Deployers",
+      "developer": "Tesla, Automated Driving System Developers",
+      "harmed": "Road Users, Police Officers, Motorists, Law Enforcement, Drivers, California Highway Patrol",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1787/",
+      "text_hash": "d6cc5017c0f00034",
+      "first_seen": "2026-10-27",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1788,
+      "date": "2026-10-21",
+      "title": "Purportedly AI-Generated Calls Impersonating Banks Reportedly Helped Steal €380,000 from Customers in the Netherlands",
+      "description": "Scammers allegedly used AI-generated bank-warning recordings to draw people in the Netherlands into calls with impersonators posing as bank staff. Victims were reportedly persuaded to install an app that relayed their bank cards' contactless data to accomplices at cash machines or payment terminals. Police reportedly documented about 170 victims and €380,000 in losses during three weeks of server monitoring.",
+      "deployer": "Voice Phishers, Synthetic Media Creators, Scammers, Deepfake Creators, Cybercriminals In The Netherlands, Cybercriminals, Bank Helpdesk Fraud Ring In The Netherlands",
+      "developer": "Synthetic Media Technology Developers, Synthetic Audio Generation Technology Developers",
+      "harmed": "Privacy, General Public Of The Netherlands, General Public, Epistemic Integrity, Banks, Bank Customers In The Netherlands, Bank Customers",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1788/",
+      "text_hash": "b7ebd6c53332f89b",
+      "first_seen": "2026-10-27",
       "classification": {
         "modes": [],
         "remediation_indicated": [],

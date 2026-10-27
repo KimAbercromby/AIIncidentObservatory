@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-20T11:48:45.138Z",
+  "generated_at": "2026-10-27T12:23:38.931Z",
   "taxonomy_version": "2.1",
   "suite_baseline": "AI Governance Suite v3.9.10 (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
   "export": {
-    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261019.xlsx",
-    "export_date": "2026-10-19",
-    "file": "AIID_Excel_Export-20261019.xlsx",
-    "sha256": "41758b56b948f62f75385108977f58af8e1faefad03bb0203cda03b889660ae2",
-    "bytes": 2573292
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261026.xlsx",
+    "export_date": "2026-10-26",
+    "file": "AIID_Excel_Export-20261026.xlsx",
+    "sha256": "bb6168db872882b295252b6ed75da56ffe50cd54be02e0bfabd670410b488c98",
+    "bytes": 2603378
   },
   "coverage": {
     "collected": [
@@ -24,13 +24,13 @@
     "statement": "This observatory reads AI Incident Database (weekly Excel export) and Curated public-sector cases (cases.json). It does not read Find Case Law (UK court judgments) (licence-required); OECD AI Incidents and Hazards Monitor (excluded); AIAAIC Repository (unverified); Database of AI Litigation (DAIL) (unverified); ICO enforcement action (covered-elsewhere). Counts describe what these sources recorded, not how often failures happen in the world. Media-sourced incidents are allegations unless an authority made a finding."
   },
   "totals": {
-    "incidents": 1749,
-    "public_sector": 191,
+    "incidents": 1775,
+    "public_sector": 194,
     "cases": 9,
     "judgments": 0,
     "judgments_public": 0,
-    "unclassified": 605,
-    "unclassified_public": 44
+    "unclassified": 616,
+    "unclassified_public": 45
   },
   "modes": [
     {
@@ -101,13 +101,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 203,
-      "public": 26,
+      "global": 206,
+      "public": 27,
       "cases": 1,
       "court": 0,
       "by_basis": {
         "mit": 0,
-        "text": 203,
+        "text": 206,
         "llm": 0
       }
     },
@@ -127,13 +127,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 155,
+      "global": 158,
       "public": 20,
       "cases": 4,
       "court": 0,
       "by_basis": {
         "mit": 88,
-        "text": 113,
+        "text": 116,
         "llm": 0
       }
     },
@@ -151,13 +151,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 299,
+      "global": 302,
       "public": 15,
       "cases": 1,
       "court": 0,
       "by_basis": {
         "mit": 196,
-        "text": 180,
+        "text": 183,
         "llm": 0
       }
     },
@@ -201,13 +201,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 85,
+      "global": 86,
       "public": 7,
       "cases": 0,
       "court": 0,
       "by_basis": {
         "mit": 39,
-        "text": 61,
+        "text": 62,
         "llm": 0
       }
     },
@@ -226,13 +226,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 11,
-      "public": 3,
+      "global": 12,
+      "public": 4,
       "cases": 2,
       "court": 0,
       "by_basis": {
         "mit": 4,
-        "text": 7,
+        "text": 8,
         "llm": 0
       }
     },
@@ -277,13 +277,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 24,
+      "global": 29,
       "public": 2,
       "cases": 0,
       "court": 0,
       "by_basis": {
         "mit": 3,
-        "text": 22,
+        "text": 27,
         "llm": 0
       }
     },
@@ -333,13 +333,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 19,
+      "global": 20,
       "public": 0,
       "cases": 0,
       "court": 0,
       "by_basis": {
         "mit": 0,
-        "text": 19,
+        "text": 20,
         "llm": 0
       }
     },
@@ -597,15 +597,15 @@
     "vendor-model-substitution"
   ],
   "remediation": {
-    "none_indicated": 1601,
-    "none_indicated_public": 172,
-    "none_indicated_share": 91.5,
-    "none_indicated_public_share": 90.1,
+    "none_indicated": 1619,
+    "none_indicated_public": 173,
+    "none_indicated_share": 91.2,
+    "none_indicated_public_share": 89.2,
     "by_type": [
       {
         "id": "withdrawn",
         "label": "System withdrawn",
-        "indicated": 14,
+        "indicated": 15,
         "documented": 1
       },
       {
@@ -623,7 +623,7 @@
       {
         "id": "human-review-added",
         "label": "Human review added",
-        "indicated": 9,
+        "indicated": 10,
         "documented": 0
       },
       {
@@ -635,7 +635,7 @@
       {
         "id": "redress-compensation",
         "label": "Compensation or redress",
-        "indicated": 32,
+        "indicated": 33,
         "documented": 1
       },
       {
@@ -653,25 +653,25 @@
       {
         "id": "court-ruling",
         "label": "Court ruling",
-        "indicated": 19,
+        "indicated": 21,
         "documented": 3
       },
       {
         "id": "independent-review",
         "label": "Inquiry or independent review",
-        "indicated": 8,
+        "indicated": 10,
         "documented": 1
       },
       {
         "id": "transparency-disclosure",
         "label": "Transparency or disclosure",
-        "indicated": 9,
+        "indicated": 11,
         "documented": 1
       }
     ]
   },
   "determinations": {
-    "alleged": 1749,
+    "alleged": 1775,
     "acknowledged": 3,
     "determined": 6
   }
