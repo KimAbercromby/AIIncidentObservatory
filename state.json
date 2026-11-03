@@ -7,10 +7,10 @@
     "bytes": 2603378
   },
   "last_run": {
-    "at": "2026-10-27T12:23:38.718Z",
-    "status": "collected",
+    "at": "2026-11-03T14:26:45.258Z",
+    "status": "no-new-export",
     "incidents": 1775,
-    "new_incidents": 26,
+    "new_incidents": 0,
     "baseline": false
   }
 }
