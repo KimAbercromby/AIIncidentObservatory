@@ -1,11 +1,11 @@
 {
   "source": "AI Incident Database weekly Excel export (CC BY-SA 4.0). Titles and descriptions are AIID editors' text; classification is this tool's.",
   "export": {
-    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261026.xlsx",
-    "export_date": "2026-10-26",
-    "file": "AIID_Excel_Export-20261026.xlsx",
-    "sha256": "bb6168db872882b295252b6ed75da56ffe50cd54be02e0bfabd670410b488c98",
-    "bytes": 2603378
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261102.xlsx",
+    "export_date": "2026-11-02",
+    "file": "AIID_Excel_Export-20261102.xlsx",
+    "sha256": "3d6077706b46cc26b06f8950bd0cf60e52e119029edd9e56e909dcbdca5363bb",
+    "bytes": 2611619
   },
   "taxonomy_version": "2.1",
   "incidents": [
@@ -22600,9 +22600,9 @@
       "date": "2024-05-29",
       "title": "American Asylum Seeker John Mark Dougan in Russia Reportedly Spreads Disinformation via AI Tools and Fake News Network",
       "description": "John Mark Dougan, a former Florida sheriff's deputy granted asylum in Russia, has been implicated in spreading disinformation. Utilizing AI tools like OpenAI's ChatGPT and DALL-E 3, Dougan created over 160 fake news sites, disseminating false narratives to millions worldwide. His actions align with Russian disinformation strategies targeting Western democracies. See also Incident 734.",
-      "deployer": "John Mark Dougan, Deepfake Creators, Information Manipulation Actors, Pro Russian Information Manipulation Actors",
-      "developer": "Openai, Deepfake Technology Developers, Synthetic Media Generation Technology Developers",
-      "harmed": "Journalistic Integrity, Information Integrity, General Public, American Citizens",
+      "deployer": "Pro Russian Information Manipulation Actors, John Mark Dougan, Information Manipulation Actors, Deepfake Creators",
+      "developer": "Synthetic Media Generation Technology Developers, Openai, Deepfake Technology Developers",
+      "harmed": "Journalistic Integrity, General Public, American Citizens, Epistemic Integrity",
       "editor_notes": "Please also refer to NewsGuard's Dougan Russian Disinformation Depository: https://www.newsguardrealitycheck.com/s/disinformation-depository. Refer as well to Incident 968 for information on the Pravda network. John Mark Dougan's GRU liaison is reportedly Yury Khoroshenky (AKA Yury Khoroshevsky) of GRU Unit 29155, and he reportedly answers to Valery Korovin of the Moscow-based institute Center for Geopolitical Expertise (see Incident 884). Dougan also goes by the alias BadVolf.",
       "mit_domain": "Malicious Actors & Misuse",
       "mit_subdomain": "Disinformation, surveillance, and influence at scale",
@@ -37544,7 +37544,7 @@
       "description": "In July 2025, the Tea dating advice app, which purportedly uses AI-assisted tools for user verification and reverse image search, reportedly suffered a breach of a legacy storage system. Hackers allegedly accessed about 72,000 images, including selfies, photo IDs, and other content, which were purportedly circulated on 4chan. The incident reportedly exposed sensitive data of users who signed up before February 2024.",
       "deployer": "Tea Dating Advice",
       "developer": "Tea Dating Advice",
-      "harmed": "Women And Girls, Women, Tea App Users, Privacy, Information Integrity, General Public, Tea Dating Advice Users",
+      "harmed": "Women And Girls, Women, Tea Dating Advice Users, Tea App Users, Privacy, General Public, Information Security",
       "editor_notes": "",
       "mit_domain": "Privacy & Security",
       "mit_subdomain": "AI system security vulnerabilities and attacks",
@@ -38042,8 +38042,8 @@
       "title": "Reported Public Exposure of Over 100,000 LLM Conversations via Share Links Indexed by Search Engines and Archived",
       "description": "Across 2024 and 2025, the share features in multiple LLM platforms, including ChatGPT, Claude, Copilot, Qwen, Mistral, and Grok, allegedly exposed user conversations marked \"discoverable\" to search engines and archiving services. Over 100,000 chats were reportedly indexed and later scraped, purportedly revealing API keys, access tokens, personal identifiers, and sensitive business data.",
       "deployer": "Xai, Openai, Mistral, Microsoft, Anthropic, Alibaba",
-      "developer": "Xai, Openai, Mistral, Microsoft, Anthropic, Alibaba, Chatbot Developers, Large Language Model Developers",
-      "harmed": "Privacy, Grok Users, General Public, Copilot Users, Claude Users, Chatgpt Users, Mistral Users, Qwen Users, Information Integrity",
+      "developer": "Xai, Openai, Mistral, Microsoft, Large Language Model Developers, Chatbot Developers, Anthropic, Alibaba",
+      "harmed": "Qwen Users, Privacy, Mistral Users, Grok Users, General Public, Copilot Users, Claude Users, Chatgpt Users, Information Security",
       "editor_notes": "Timeline note: According to reporting, a lot of the \"discoverable\" chats were archived by the Internet Archive by at least June 2024, but actual reporting on the incident did not appear to arise until the end of July and early August 2025. This incident ID was created 08/25/2025 to capture the range of reporting on this cluster of related harms. See also Incident 1172: Meta AI Bug in Deployed Service Reportedly Allowed Potential Access to Other Users' Prompts and Responses. See also: Incident 1621: Publicly Shared Claude Artifacts Reportedly Became Discoverable Through Google Search (https://incidentdatabase.ai/cite/1621).",
       "mit_domain": "Privacy & Security",
       "mit_subdomain": "Compromise of privacy by obtaining, leaking or correctly inferring sensitive information",
@@ -51005,7 +51005,7 @@
       "public_sector_field": "",
       "sector": "",
       "country": "",
-      "report_count": 11,
+      "report_count": 12,
       "url": "https://incidentdatabase.ai/cite/1604/",
       "text_hash": "07cb10977e440118",
       "first_seen": "2026-10-11",
@@ -52889,7 +52889,7 @@
       "public_sector_field": "",
       "sector": "",
       "country": "",
-      "report_count": 2,
+      "report_count": 3,
       "url": "https://incidentdatabase.ai/cite/1668/",
       "text_hash": "83ea1a2da731a29b",
       "first_seen": "2026-10-11",
@@ -54021,7 +54021,7 @@
       "public_sector_field": "",
       "sector": "",
       "country": "",
-      "report_count": 5,
+      "report_count": 6,
       "url": "https://incidentdatabase.ai/cite/1707/",
       "text_hash": "fb714950f9324126",
       "first_seen": "2026-10-11",
@@ -54103,7 +54103,7 @@
       "description": "During summer 2026, an AI agent appearing to originate from OpenAI reportedly attempted to hack a U.S. Department of Education Office for Civil Rights website but did not succeed. Transluce identified the activity; OpenAI said it was still investigating the episode, and the department said reviews found no evidence of impact to its website or databases.",
       "deployer": "Openai, Ai Agent System Deployers",
       "developer": "Openai, Ai Agent System Developers",
-      "harmed": "United States Department Of Education Office For Civil Rights, United States Department Of Education, Information Integrity, Government Of The United States",
+      "harmed": "United States Department Of Education Office For Civil Rights, United States Department Of Education, Government Of The United States, Information Security",
       "editor_notes": "The incident ID date is 09/25/2026, used as a first-public-report fallback because reporting places the underlying activity during summer 2026 but does not establish a specific event date. This incident ID centers on the U.S. Department of Education episode because it is the clearest bounded near-harm event in the reporting: an AI agent reportedly attempted unauthorized access to the Office for Civil Rights website but did not succeed. Reporting also described a broader cluster of unexpected AI-agent activity, including retrieval of public Census Bureau data using login credentials found online, republication of public SEC data on an online forum, and acquisition of public information from a Chicago municipal website. Transluce reported additional probing of government sites, including Navy and Office of Management and Budget systems, although attribution in those cases was uncertain. OpenAI confirmed the Commerce and SEC episodes and said it was still investigating Education; affected agencies reported no known access to nonpublic information or operational impact. The other episodes are preserved here as context for the broader pattern rather than treated as part of the same bounded event. The incident ID was created on 09/26/2026.",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -54221,7 +54221,7 @@
       "description": "Developers reported that Z.ai's ZCode AI coding assistant uploaded local code repositories to Alibaba Cloud without consent. Z.ai said a default-enabled Codebase Indexing feature caused the behavior, apologized, patched the vulnerability, and later disabled the upload path. One company retracted a separate claim that six workspaces containing sensitive data had been uploaded; Z.ai said independent reviews found no code data retained.",
       "deployer": "Z.Ai, Ai Service Providers",
       "developer": "Z.Ai, Ai Software Developers",
-      "harmed": "Zcode Users, Information Integrity, Privacy, Software Developers, Ai Coding Assistant Users",
+      "harmed": "Zcode Users, Software Developers, Privacy, Ai Coding Assistant Users, Information Security",
       "editor_notes": "",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -55385,9 +55385,9 @@
       "date": "2026-07-12",
       "title": "Woman in Kyrgyzstan Alleged a Former Classmate Used an AI Bot to Create a Nude Image From Her Instagram Photo",
       "description": "A 23-year-old woman in Kyrgyzstan said a former classmate used a Telegram AI bot to create a nude image from her Instagram photo without consent; it reached his contacts. She reported reputational and psychological harm. He acknowledged bot use but attributed circulation to a hack of his Telegram account. Creation timing and responsibility for sharing remain disputed.",
-      "deployer": "Deepfake Creators, Synthetic Media Creators, Chynybek Aaliev",
-      "developer": "Deepfake Technology Developers, Synthetic Image Generation Technology Developers, Synthetic Media Generation Technology Developers",
-      "harmed": "Women, Women And Girls, Victims Of Non Consensual Deepfakes, Privacy, Epistemic Integrity, Aima Yunusbaeva",
+      "deployer": "Synthetic Media Creators, Deepfake Creators",
+      "developer": "Synthetic Media Generation Technology Developers, Synthetic Image Generation Technology Developers, Deepfake Technology Developers",
+      "harmed": "Women And Girls, Women, Victims Of Non Consensual Deepfakes, Privacy, Epistemic Integrity",
       "editor_notes": "May-June 2022: Creation period claimed by former classmate; disputed. 07/12/2026: Circulation date in his written account (Bishkek time). 07/19/2026: Woman said he notified her. 07/21/2026: Woman filed police complaint. 10/09/2026: Baseline report published. 10/15/2026: Incident ID date created.",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -55947,7 +55947,7 @@
       "description": "India's national cybersecurity agency reported that AI agents from unnamed model providers accessed live systems at Indian organizations during research and evaluation, exceeding their assigned authorization. The agents reportedly used exposed credentials and permissive access settings to read business records containing personal data and confidential material. The affected organizations had not detected the access.",
       "deployer": "Ai Evaluation Organizations, Ai Agent System Deployers",
       "developer": "Ai Agent System Developers",
-      "harmed": "Organizations, Organizations In India, Targets Of Autonomous Ai Enabled Intrusion Operations, Privacy, Information Integrity",
+      "harmed": "Targets Of Autonomous Ai Enabled Intrusion Operations, Privacy, Organizations In India, Organizations, Information Security",
       "editor_notes": "",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -56110,8 +56110,8 @@
       "title": "OpenAI-Linked AI Agents May Have Contributed to a Partial Outage of the Wikimedia Foundation's Data Query Service",
       "description": "The Wikimedia Foundation, which operates Wikipedia, reported unauthorized edits, attempted misuse of its web tools, and heavy traffic attributed to OpenAI AI agents. It said this traffic may have contributed to a partial outage of Wikidata's query service and described investigation and cleanup burdens. It found no evidence that its systems or data were compromised.",
       "deployer": "Openai, Ai Agent System Deployers",
-      "developer": "Openai, Ai Agent System Developers, Large Language Model Developers",
-      "harmed": "Wikimedia Foundation, Wikidata Query Service Users, Website Operators, Information Integrity",
+      "developer": "Openai, Large Language Model Developers, Ai Agent System Developers",
+      "harmed": "Wikimedia Foundation, Wikidata Query Service Users, Website Operators, Information Security",
       "editor_notes": "(1) 05/07/2026: Date of incident. (2) 10/05/2026: Wikimedia disclosed suspected OpenAI agent activity and said its traffic may have contributed to the May outage. (3) 10/22/2026: Incident ID created.",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -56177,7 +56177,7 @@
       "description": "Microsoft reported that China-aligned hackers used ARTEX, an AI penetration-testing framework, to access customers' Microsoft 365 environments through stolen credentials for ConnectWise's cloud backup services. Agents reportedly changed credentials and privileges in some environments to retain unauthorized access. The activity formed part of a global campaign; the extent of compromise and any data theft remained uncertain.",
       "deployer": "Threat Actors, Storm 0940, China Linked Threat Actors, Ai Agent System Deployers, Agentic Threat Actors",
       "developer": "Large Language Model Developers, Artex Developers, Ai Agent System Developers",
-      "harmed": "Microsoft, Enterprises Relying On Microsoft 365 And Identity Services, Connectwise Customers, Connectwise, Information Integrity",
+      "harmed": "Microsoft, Enterprises Relying On Microsoft 365 And Identity Services, Connectwise Customers, Connectwise, Information Security",
       "editor_notes": "",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -56214,9 +56214,9 @@
       "date": "2026-09-27",
       "title": "Attackers Reportedly Used ARTEX, an AI Security-Testing Tool, to Steal Data from South Korean Financial Institutions",
       "description": "An unidentified attacker reportedly used ARTEX, an AI-powered security-testing tool, alongside large language models to breach South Korean financial institutions and steal data. Compromised systems included a loan-broker inquiry service and an employee mobile work-support system. Researchers linked the activity to exposed attacker infrastructure and AI session histories. The attacker’s identity and the full number of affected institutions remained unconfirmed.",
-      "deployer": "Cybercriminals, Hackers, Threat Actors, Agentic Threat Actors, Ai Agent System Deployers",
-      "developer": "Ai Agent System Developers, Large Language Model Developers, Artex Developers, Autumn 27, Deepseek, Zhipu Ai, Xai, Anthropic",
-      "harmed": "Shinhan Bank, Kb Kookmin Bank, Financial Institutions, Bank Customers, Banks, Privacy, Information Integrity, General Public, General Public Of South Korea, Customers",
+      "deployer": "Threat Actors, Hackers, Cybercriminals, Ai Agent System Deployers, Agentic Threat Actors",
+      "developer": "Zhipu Ai, Xai, Large Language Model Developers, Deepseek, Autumn 27, Artex Developers, Anthropic, Ai Agent System Developers",
+      "harmed": "Shinhan Bank, Privacy, Kb Kookmin Bank, General Public Of South Korea, General Public, Financial Institutions, Customers, Banks, Bank Customers, Information Security",
       "editor_notes": "",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -56411,6 +56411,311 @@
       "classification": {
         "modes": [],
         "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1789,
+      "date": "2026-10-26",
+      "title": "Cybersecurity Firm Cathedral Reportedly Used AI Agents to Access Anthropic's Internal Business Systems",
+      "description": "Cybersecurity firm Cathedral reportedly used AI agents to exploit third-party software and access internal systems at AI developer Anthropic during invited security testing. Cathedral reported routes to personnel data and internal messages. Anthropic confirmed limited access to business systems holding contact details and basic account records, blocked access, and said Cathedral had not fully followed testing rules.",
+      "deployer": "Cathedral, Ai Agent System Deployers",
+      "developer": "Ai Agent System Developers",
+      "harmed": "Privacy, Information Integrity, Companies, Anthropic Customers, Anthropic",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1789/",
+      "text_hash": "c2dd41005adcac2a",
+      "first_seen": "2026-11-10",
+      "classification": {
+        "modes": [
+          {
+            "id": "security-compromise",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "supplier-opacity",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1790,
+      "date": "2024-01-29",
+      "title": "Purported AI Bots Flooded a UK Government Tobacco and Vaping Consultation with Reportedly Fraudulent Responses",
+      "description": "Purported AI bots reportedly submitted 90,835 fraudulent responses to a UK government consultation on tobacco and vaping, mostly opposing disposable-vape restrictions. The submissions made up 76% of responses and distorted the apparent balance of public opinion. The Department of Health and Social Care excluded them from its analysis. The operators and underlying AI technology were not identified.",
+      "deployer": "Information Manipulation Actors",
+      "developer": "Ai Assisted Public Consultation Response Generator Developers",
+      "harmed": "Department Of Health And Social Care, Government Agencies, Governments, Government Of The United Kingdom, Epistemic Integrity, Public Consultation Integrity",
+      "editor_notes": "10/12/2023-12/06/2023: consultation period; exact bot-submission dates are unknown. 01/29/2024: the government response documented and excluded 90,835 automated submissions; used as the incident-date fallback. 10/27/2026: AI-bot involvement was reported. The operator and underlying technology are unidentified.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1790/",
+      "text_hash": "6ab8074f8747f9bc",
+      "first_seen": "2026-11-10",
+      "classification": {
+        "modes": [
+          {
+            "id": "hallucination-misinformation",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1791,
+      "date": "2026-08-09",
+      "title": "Dartmouth College Provost's Undisclosed AI-Assisted Writing Was Found to Have Breached Publication Policies",
+      "description": "A faculty review at Dartmouth College in Hanover, New Hampshire, found that provost Santiago Schnell used ChatGPT and Claude in published writing without required disclosure and fell short of institutional standards. The review examined AI logs and correspondence rather than detector scores. Schnell resigned and was leaving the college after the findings were released.",
+      "deployer": "Santiago Schnell, Academics, Chatbot Users",
+      "developer": "Openai, Anthropic, Large Language Model Developers",
+      "harmed": "Dartmouth College, Universities, Educational Communities, Academic Integrity, Santiago Schnell",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1791/",
+      "text_hash": "959c9045e898f700",
+      "first_seen": "2026-11-10",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1792,
+      "date": "2026-09-21",
+      "title": "A Johns Hopkins Bayview Hospital Employee in Baltimore Reportedly Uploaded Patient Data to an Unapproved AI Tool",
+      "description": "An employee at Johns Hopkins Bayview Medical Center in Baltimore, Maryland, reportedly uploaded a spreadsheet containing patient information to an unapproved public AI tool. The hospital notified 3,182 patients of potential exposure, sought deletion of the data, and reinforced staff training. The tool and its developer were not identified; further disclosure or misuse has not been established.",
+      "deployer": "Johns Hopkins Bayview Medical Center, Healthcare Workers, Hospitals, Chatbot Users",
+      "developer": "Chatbot Developers, Large Language Model Developers",
+      "harmed": "Johns Hopkins Bayview Medical Center Patients, Patients, Privacy",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1792/",
+      "text_hash": "24d39968c958034e",
+      "first_seen": "2026-11-10",
+      "classification": {
+        "modes": [
+          {
+            "id": "vulnerable-group-harm",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1793,
+      "date": "2026-10-20",
+      "title": "Purported Deepfake Videos Allegedly Impersonated a Former Student to Falsely Accuse Texas U.S. Senate Candidate James Talarico of Sexual Assault",
+      "description": "Two purported deepfake videos circulated on X using former student Zyon Lewis's identity to allegedly falsely accuse Texas U.S. Senate candidate James Talarico of sexual assault. Lewis said the person depicted was not him and denied the allegation. Researchers linked the videos to the Russia-aligned Storm-1516 influence operation. The original account was suspended, but copies continued to circulate.",
+      "deployer": "Storm 1516, Information Manipulation Actors, Deepfake Creators, Synthetic Media Creators, Information Manipulation Actors In Russia",
+      "developer": "Deepfake Technology Developers, Synthetic Video Generation Technology Developers, Synthetic Media Generation Technology Developers",
+      "harmed": "James Talarico, Zyon Lewis, Political Candidates, Politicians, Politicians In The United States, Public Figures, Epistemic Integrity, Privacy, Targets Of Online Impersonation, Voters, Voters In The United States, Democratic Integrity",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1793/",
+      "text_hash": "0d738f98a4e08de1",
+      "first_seen": "2026-11-10",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [
+          "suspended"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1794,
+      "date": "2026-10-17",
+      "title": "China-Linked Espionage Group VAPOR PANDA Reportedly Used ARTEX AI Agents to Breach Government and Corporate Systems Worldwide",
+      "description": "CrowdStrike reported that VAPOR PANDA, a China-linked espionage group, used ARTEX, an AI penetration-testing framework, with a DeepSeek language model and an unidentified commercial model to attack government and corporate systems worldwide. Investigators confirmed unauthorized access and follow-on activity at nine organizations, including backdoor deployment. More than 200 organizations were reportedly targeted.",
+      "deployer": "Vapor Panda, Threat Actors, Hackers, China Linked Threat Actors, Ai Agent System Deployers, Agentic Threat Actors",
+      "developer": "Large Language Model Developers, Deepseek, Artex Developers, Ai Agent System Developers",
+      "harmed": "Telecommunications Providers, Privacy, Pharmaceutical Companies, Organizations, Information Integrity, Governments, Government Agencies, Companies",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1794/",
+      "text_hash": "c1a9fe7e8719d0a6",
+      "first_seen": "2026-11-10",
+      "classification": {
+        "modes": [
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1795,
+      "date": "2026-10-30",
+      "title": "Attacker Reportedly Used AI Agents to Breach Blockchain Analytics Firm Chainalysis and Access Customer Data",
+      "description": "Blockchain analytics firm Chainalysis reported that an attacker used agentic AI techniques to access its systems and customer account information, including names, email addresses, user IDs, and organizational roles. The company said it found no evidence of access to investigation content or authentication credentials. The AI tools used and number of affected users were not disclosed.",
+      "deployer": "Agentic Threat Actors, Threat Actors, Cybercriminals",
+      "developer": "Ai Agent System Developers",
+      "harmed": "Chainalysis, Chainalysis Users",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1795/",
+      "text_hash": "48123a795a7d9419",
+      "first_seen": "2026-11-10",
+      "classification": {
+        "modes": [
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1796,
+      "date": "2026-05-19",
+      "title": "Attacker Reportedly Used AI Agents to Breach Healthcare Organizations and Steal Medical Records in Argentina",
+      "description": "An attacker reportedly used Claude Code in a two-agent workflow to compromise at least 15 healthcare organizations in Argentina. Credentials and medical records were reportedly stolen from at least one victim. The organizations and affected patient count were not disclosed.",
+      "deployer": "Agentic Threat Actors, Threat Actors, Cybercriminals, Ai Agent System Deployers",
+      "developer": "Anthropic, Ai Agent System Developers, Large Language Model Developers",
+      "harmed": "Healthcare Organizations In Argentina, Healthcare Organizations, Patients, Information Security, Privacy",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1796/",
+      "text_hash": "5d0d9b8fd0914add",
+      "first_seen": "2026-11-10",
+      "classification": {
+        "modes": [
+          {
+            "id": "vulnerable-group-harm",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1797,
+      "date": "2026-05-11",
+      "title": "OpenAI AI Agents Reportedly Flooded RubyGems Software Registry With Malicious Packages",
+      "description": "Researchers linked a malicious-package campaign against RubyGems, a software registry, and RubyDoc.info, a documentation service, to OpenAI agents. RubyGems suspended new registrations for four days and removed over 500 packages. OpenAI confirmed platform use but had not verified the malicious-upload claims; RubyGems could not confirm AI authorship. Attempts to steal users' access keys were reported, with no evidence of success.",
+      "deployer": "Openai, Ai Agent System Deployers",
+      "developer": "Openai, Ai Agent System Developers, Large Language Model Developers",
+      "harmed": "Rubydoc.Info, Rubygems, Rubygems Users, Software Developers, Information Security, Targets Of Autonomous Ai Enabled Intrusion Operations",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 6,
+      "url": "https://incidentdatabase.ai/cite/1797/",
+      "text_hash": "41773077d162f5a1",
+      "first_seen": "2026-11-10",
+      "classification": {
+        "modes": [
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [
+          "suspended"
+        ],
         "public_sector": false,
         "public_sector_basis": "no public-sector signal",
         "determination": "alleged"

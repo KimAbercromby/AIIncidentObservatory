@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-03T14:26:45.447Z",
+  "generated_at": "2026-11-10T15:00:03.230Z",
   "taxonomy_version": "2.1",
   "suite_baseline": "AI Governance Suite v3.9.10 (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
   "export": {
-    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261026.xlsx",
-    "export_date": "2026-10-26",
-    "file": "AIID_Excel_Export-20261026.xlsx",
-    "sha256": "bb6168db872882b295252b6ed75da56ffe50cd54be02e0bfabd670410b488c98",
-    "bytes": 2603378
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261102.xlsx",
+    "export_date": "2026-11-02",
+    "file": "AIID_Excel_Export-20261102.xlsx",
+    "sha256": "3d6077706b46cc26b06f8950bd0cf60e52e119029edd9e56e909dcbdca5363bb",
+    "bytes": 2611619
   },
   "coverage": {
     "collected": [
@@ -24,12 +24,12 @@
     "statement": "This observatory reads AI Incident Database (weekly Excel export) and Curated public-sector cases (cases.json). It does not read Find Case Law (UK court judgments) (licence-required); OECD AI Incidents and Hazards Monitor (excluded); AIAAIC Repository (unverified); Database of AI Litigation (DAIL) (unverified); ICO enforcement action (covered-elsewhere). Counts describe what these sources recorded, not how often failures happen in the world. Media-sourced incidents are allegations unless an authority made a finding."
   },
   "totals": {
-    "incidents": 1775,
+    "incidents": 1784,
     "public_sector": 194,
     "cases": 9,
     "judgments": 0,
     "judgments_public": 0,
-    "unclassified": 616,
+    "unclassified": 618,
     "unclassified_public": 45
   },
   "modes": [
@@ -101,13 +101,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 206,
+      "global": 208,
       "public": 27,
       "cases": 1,
       "court": 0,
       "by_basis": {
         "mit": 0,
-        "text": 206,
+        "text": 208,
         "llm": 0
       }
     },
@@ -151,13 +151,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 302,
+      "global": 303,
       "public": 15,
       "cases": 1,
       "court": 0,
       "by_basis": {
         "mit": 196,
-        "text": 183,
+        "text": 184,
         "llm": 0
       }
     },
@@ -201,13 +201,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 86,
+      "global": 87,
       "public": 7,
       "cases": 0,
       "court": 0,
       "by_basis": {
         "mit": 39,
-        "text": 62,
+        "text": 63,
         "llm": 0
       }
     },
@@ -277,13 +277,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 29,
+      "global": 34,
       "public": 2,
       "cases": 0,
       "court": 0,
       "by_basis": {
         "mit": 3,
-        "text": 27,
+        "text": 32,
         "llm": 0
       }
     },
@@ -428,13 +428,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 2,
+      "global": 3,
       "public": 0,
       "cases": 0,
       "court": 0,
       "by_basis": {
         "mit": 0,
-        "text": 2,
+        "text": 3,
         "llm": 0
       }
     },
@@ -597,9 +597,9 @@
     "vendor-model-substitution"
   ],
   "remediation": {
-    "none_indicated": 1619,
+    "none_indicated": 1626,
     "none_indicated_public": 173,
-    "none_indicated_share": 91.2,
+    "none_indicated_share": 91.1,
     "none_indicated_public_share": 89.2,
     "by_type": [
       {
@@ -611,7 +611,7 @@
       {
         "id": "suspended",
         "label": "Suspended or paused",
-        "indicated": 23,
+        "indicated": 25,
         "documented": 1
       },
       {
@@ -671,7 +671,7 @@
     ]
   },
   "determinations": {
-    "alleged": 1775,
+    "alleged": 1784,
     "acknowledged": 3,
     "determined": 6
   }
