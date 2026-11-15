@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-11-10T15:00:03.230Z",
   "taxonomy_version": "2.1",
-  "suite_baseline": "AI Governance Suite v3.9.10 (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
+  "suite_baseline": "AI Governance Suite version 1.0 draft (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
   "export": {
     "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261102.xlsx",
     "export_date": "2026-11-02",
