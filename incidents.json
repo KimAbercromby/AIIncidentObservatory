@@ -1,11 +1,11 @@
 {
   "source": "AI Incident Database weekly Excel export (CC BY-SA 4.0). Titles and descriptions are AIID editors' text; classification is this tool's.",
   "export": {
-    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261102.xlsx",
-    "export_date": "2026-11-02",
-    "file": "AIID_Excel_Export-20261102.xlsx",
-    "sha256": "3d6077706b46cc26b06f8950bd0cf60e52e119029edd9e56e909dcbdca5363bb",
-    "bytes": 2611619
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261109.xlsx",
+    "export_date": "2026-11-09",
+    "file": "AIID_Excel_Export-20261109.xlsx",
+    "sha256": "452312c6e1eb888d0ff5681f8c86a5ddbee0aa08341d3a8d93b29baa98dca818",
+    "bytes": 2629742
   },
   "taxonomy_version": "2.1",
   "incidents": [
@@ -4085,7 +4085,7 @@
       "public_sector_field": "yes",
       "sector": "[\"human health and social work activities\"]",
       "country": "US",
-      "report_count": 5,
+      "report_count": 6,
       "url": "https://incidentdatabase.ai/cite/123/",
       "text_hash": "83cbd30045be9a5b",
       "first_seen": "2026-10-11",
@@ -4932,7 +4932,7 @@
       "public_sector_field": "no",
       "sector": "[\"real estate activities\"]",
       "country": "US",
-      "report_count": 5,
+      "report_count": 6,
       "url": "https://incidentdatabase.ai/cite/149/",
       "text_hash": "a0850ca0f3ead950",
       "first_seen": "2026-10-11",
@@ -6185,9 +6185,9 @@
       "date": "2007-07-26",
       "title": "Algorithm Assessing Risk Faced by Victims of Gender Violence Misclassified Low-Risk Cases, Allegedly Leading to Homicide of Women and Children in Spain",
       "description": "In Spain, the algorithm that assesses recidivism risk in gender violence, VioGén, has allegedly critically underestimated the level of risk in a series of cases that ended in homicide of women and children since its first deployment.",
-      "deployer": "Spanish Ministry Of Interior, Government Of Spain",
-      "developer": "Spanish Secretary Of State For Security, Spanish Ministry Of Interior, Government Of Spain",
-      "harmed": "Women, Victims Of Gender Violence In Spain, Victims Of Gender Violence, Victims Of Domestic Abuse, Minors, General Public Of Spain, General Public, Women And Girls",
+      "deployer": "Spanish Ministry Of Interior, Government Of Spain, Law Enforcement",
+      "developer": "Spanish Secretary Of State For Security, Spanish Ministry Of Interior, Government Of Spain, Law Enforcement",
+      "harmed": "Women And Girls, Women, Victims Of Gender Violence In Spain, Victims Of Gender Violence, Victims Of Domestic Abuse, Minors, General Public Of Spain, General Public",
       "editor_notes": "",
       "mit_domain": "AI system safety, failures, and limitations",
       "mit_subdomain": "Lack of capability or robustness",
@@ -6519,8 +6519,8 @@
       "date": "2015-09-01",
       "title": "Predictive Policing Program by Florida Sheriff’s Office Allegedly Violated Residents’ Rights and Targeted Children of Vulnerable Groups",
       "description": "The Intelligence-Led Policing model rolled out by the Pasco County Sheriff’s Office was allegedly developed based on flawed science and biased data that also contained sensitive information and irrelevant attributes about students, which critics said to be discriminatory.",
-      "deployer": "Pasco Sheriff'S Office",
-      "developer": "Unknown",
+      "deployer": "Pasco Sheriff'S Office, Law Enforcement",
+      "developer": "Law Enforcement",
       "harmed": "Students, Pasco Students With Disabilities, Pasco Residents, Pasco Black Students, Educational Communities",
       "editor_notes": "",
       "mit_domain": "AI system safety, failures, and limitations",
@@ -24132,8 +24132,8 @@
       "date": "2024-07-18",
       "title": "Fatalities Reportedly Occur Despite VioGén Algorithm's Low or Negligible Risk Scores",
       "description": "The VioGén algorithm was designed to help Spanish police assess and prioritize the risk of repeat domestic violence incidents. However, its low-risk assessment of Lobna Hemid reportedly led to inadequate protection; her husband murdered her. Since 2007, 247 women have been killed after being assessed by VioGén. A review of 98 homicides found that 55 of the slain women were scored as negligible or low risk.",
-      "deployer": "Spanish Law Enforcement Agencies, Spanish Interior Ministry, Government Of Spain, Law Enforcement",
-      "developer": "Viogen Algorithm Development Team, Spanish Law Enforcement Agencies, Spanish Interior Ministry, Government Of Spain",
+      "deployer": "Spanish Law Enforcement Agencies, Spanish Interior Ministry, Law Enforcement, Government Of Spain",
+      "developer": "Viogen Algorithm Development Team, Spanish Law Enforcement Agencies, Spanish Interior Ministry, Government Of Spain, Law Enforcement",
       "harmed": "Women And Girls, Women, Victims Of Domestic Abuse, Stefany Gonzalez Escarraman, Maria, Luz, Lobna Hemid, General Public Of Spain, General Public, Eva Jaular, 247 Women In Spain (Unnamed)",
       "editor_notes": "",
       "mit_domain": "AI system safety, failures, and limitations",
@@ -44181,9 +44181,9 @@
       "date": "2024-11-23",
       "title": "Florida Woman Reportedly Jailed After Ex-Boyfriend Allegedly Submitted AI-Fabricated Text Screenshot as Bond-Violation Evidence",
       "description": "A Florida nurse, Melissa Sims, was reportedly jailed for two days for purportedly violating a bond/no-contact order. Reportedly, her ex-boyfriend produced purportedly AI-generated text messages or a \"text receipt\" attributed to her.",
-      "deployer": "Eric R. Sims",
-      "developer": "Generative Ai Developers",
-      "harmed": "Melissa Sims, Epistemic Integrity",
+      "deployer": "Eric R. Sims, Malicious Actors, Synthetic Media Creators",
+      "developer": "Synthetic Media Generation Technology Developers, Synthetic Image Generation Technology",
+      "harmed": "Melissa Sims, Epistemic Integrity, Privacy, Law Enforcement",
       "editor_notes": "",
       "mit_domain": "Malicious Actors & Misuse",
       "mit_subdomain": "Fraud, scams, and targeted manipulation",
@@ -46401,9 +46401,9 @@
       "date": "2026-03-24",
       "title": "Florida Man Allegedly Used Purported Deepfake Video to Report Break-In of Deputy's Patrol Vehicle in Lake Mary",
       "description": "Alexis Martínez-Arizala, a man from Florida, allegedly approached a Seminole County deputy inside a Lake Mary sporting-goods store and allegedly showed a three-second AI-generated video purporting to show people entering the deputy's marked patrol vehicle outside. Investigators later said surveillance footage showed no such event occurred, and local reporting said the deputy responded as though the threat were real. Martínez-Arizala was later arrested on multiple Florida charges",
-      "deployer": "Alexis Martinez Arizala",
-      "developer": "Deepfake Technology Developers",
-      "harmed": "Seminole County Sheriff'S Office Deputy, General Public, General Public Of Florida, Epistemic Integrity",
+      "deployer": "Alexis Martinez Arizala, Deepfake Creators, Synthetic Media Creators",
+      "developer": "Deepfake Technology Developers, Synthetic Media Generation Technology Developers, Synthetic Video Generation Technology Developers",
+      "harmed": "Seminole County Sheriff'S Office Deputy, General Public Of Florida, General Public, Epistemic Integrity, Law Enforcement",
       "editor_notes": "",
       "mit_domain": "Malicious Actors & Misuse",
       "mit_subdomain": "Fraud, scams, and targeted manipulation",
@@ -47286,9 +47286,9 @@
       "date": "2025-10-07",
       "title": "ChatGPT-Generated Image of Nonexistent 'Homeless Man' Was Used in False St. Petersburg, Florida Burglary and Sexual Battery Reports",
       "description": "A St. Petersburg, Florida woman, Brooke Schinault, used a ChatGPT-generated image of a nonexistent man while falsely reporting that he broke into her home and sexually battered her. Police said the image resembled a viral \"AI homeless man\" prank and was found in a deleted folder dated before the alleged attack. The report prompted officers, rescue personnel, a detective, and forensic DNA collection. She later pleaded no contest and was adjudged guilty of misdemeanor false reporting.",
-      "deployer": "Brooke Schinault",
-      "developer": "Openai",
-      "harmed": "St. Petersburg Police Department, Police Departments, People Needing Emergency Services, Epistemic Integrity, Emergency Responders",
+      "deployer": "Brooke Schinault, Chatbot Users, Synthetic Media Creators, Malicious Actors",
+      "developer": "Openai, Chatbot Developers, Large Language Model Developers, Synthetic Media Generation Technology Developers, Synthetic Image Generation Technology Developers",
+      "harmed": "St. Petersburg Police Department, Police Departments, People Needing Emergency Services, Epistemic Integrity, Emergency Responders, Law Enforcement",
       "editor_notes": "Timeline notes: The incident date for this ID is 10/07/2025; the adjudication date was 12/01/2025; the incident ID was created 05/06/2026.",
       "mit_domain": "Malicious Actors & Misuse",
       "mit_subdomain": "Fraud, scams, and targeted manipulation",
@@ -47423,9 +47423,9 @@
       "date": "2026-04-08",
       "title": "Purportedly AI-Generated Image Reportedly Misled Daejeon Authorities Searching for Escaped Wolf Neukgu",
       "description": "South Korean police alleged that a 40-year-old man used ChatGPT's image-generation capabilities to add escaped wolf Neukgu to a Daejeon street photo, then posted the purportedly fabricated image in a company group chat. Authorities reportedly used the image in alerts and briefings, redirecting search resources and disrupting public-safety operations before police identified him through CCTV and AI-use records.",
-      "deployer": "Unnamed 40 Year Old Man Arrested By Daejeon Police",
-      "developer": "Openai",
-      "harmed": "General Public, General Public Of South Korea, Emergency Services, Epistemic Integrity, Daejeon Metropolitan City, Daejeon Metropolitan Police Agency, Daejeon Fire Headquarters, General Public Of Daejeon, Neukgu",
+      "deployer": "Unnamed 40 Year Old Man Arrested By Daejeon Police, Synthetic Media Creators, Malicious Actors",
+      "developer": "Openai, Chatbot Developers, Large Language Model Developers, Synthetic Media Generation Technology Developers, Synthetic Image Generation Technology Developers",
+      "harmed": "Neukgu, General Public Of South Korea, General Public Of Daejeon, General Public, Epistemic Integrity, Emergency Services, Daejeon Metropolitan Police Agency, Daejeon Metropolitan City, Daejeon Fire Headquarters, Law Enforcement",
       "editor_notes": "",
       "mit_domain": "Misinformation",
       "mit_subdomain": "False or misleading information",
@@ -47594,9 +47594,9 @@
       "date": "2025-03-05",
       "title": "ChatGPT Was Allegedly Consulted About Attack Options Before Teen Attempted to Stab Officer at Tira, Israel, Police Station",
       "description": "A 16-year-old from Tira, Israel, allegedly entered the city's police station with a knife and attempted to stab a Border Police officer. Prosecutors reportedly alleged that before the attack he had consulted ChatGPT about possible attacks and courses of action. He was charged in juvenile court with attempted aggravated assault as an act of terror. Public reporting does not establish what responses ChatGPT provided or whether they materially assisted the attempted attack.",
-      "deployer": "Tira Israel Police Station Attempted Stabbing Suspect, Openai",
-      "developer": "Openai",
-      "harmed": "Tira Israel Police Station Personnel, Israeli Border Police Officers, Israel Law Enforcement",
+      "deployer": "Tira Israel Police Station Attempted Stabbing Suspect, Openai, Chatbot Users",
+      "developer": "Openai, Chatbot Developers, Large Language Model Developers",
+      "harmed": "Tira Israel Police Station Personnel, Israeli Border Police Officers, Law Enforcement, Law Enforcement Of Israel",
       "editor_notes": "(1) 03/05/2025: The attempted stabbing at Tira, Israel, police station occurred; this date is used as the incident date. (2) 05/21/2025–05/26/2025: Reporting on the indictment publicly surfaced allegations of pre-attack ChatGPT consultation, including one additional query investigators reportedly found outside the charged theory. (3) The incident ID was created 05/13/2026.",
       "mit_domain": "Malicious Actors & Misuse",
       "mit_subdomain": "Cyberattacks, weapon development or use, and mass harm",
@@ -49583,8 +49583,8 @@
       "title": "Former New York City Council Candidate Jonathan Rinaldi Allegedly Used AI to Create False Endorsements and Fabricated News Reports",
       "description": "Queens prosecutors alleged that former City Council candidate Jonathan Rinaldi used AI during his 2025 campaign to manufacture the appearance of political support through posts made to resemble authentic endorsements and news coverage. The material reportedly attributed backing to public figures and institutions that had not provided it and falsely claimed that opponent Lynn Schulman had withdrawn. Rinaldi was charged with forgery and possession of forged instruments.",
       "deployer": "Political Candidates, Political Campaigns, Jonathan Rinaldi",
-      "developer": "Synthetic Video Generation Technology Developers, Openai, Google, Face Swapping Technology Developers, Deepfake Technology Developers, Synthetic Image Generation Technology Developers",
-      "harmed": "Voters In New York City Council District 29, Voters In New York, Voters, The Amsterdam News, Social Media Users, Robert Holden, Queens Jewish Alliance, Public Institutions, Political Candidates, Police Departments, People Falsely Attributed As Authors, P.S. 101 School In Queens, Organizations Falsely Represented As Political Endorsers, Nonprofit Organizations, News Organizations, New York Post, New York Daily News, New York City Police Department 112Th Precinct, New York City Police Department, Lynn Schulman, Instagram Users, Facebook Users, Epistemic Integrity, Elected Officials, Educational Communities, Democratic Integrity, Daniel Kurzyna, Cnn, Asian Wave Alliance",
+      "developer": "Synthetic Video Generation Technology Developers, Synthetic Image Generation Technology Developers, Openai, Google, Face Swapping Technology Developers, Deepfake Technology Developers",
+      "harmed": "Voters In New York City Council District 29, Voters In New York, Voters, The Amsterdam News, Social Media Users, Robert Holden, Queens Jewish Alliance, Public Institutions, Political Candidates, Police Departments, People Falsely Attributed As Authors, P.S. 101 School In Queens, Organizations Falsely Represented As Political Endorsers, Nonprofit Organizations, News Organizations, New York Post, New York Daily News, New York City Police Department 112Th Precinct, New York City Police Department, Lynn Schulman, Instagram Users, Facebook Users, Epistemic Integrity, Elected Officials, Educational Communities, Democratic Integrity, Daniel Kurzyna, Cnn, Asian Wave Alliance, Law Enforcement",
       "editor_notes": "Timeline notes: The incident date of 01/17/2025 reflects the beginning of the alleged activity period; the earliest specifically described publication occurred on 10/04/2025. The incident record was created on 06/25/2026, after the alleged conduct became more fully documented through the Queens County District Attorney's 06/24/2026 announcement.",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -51195,7 +51195,7 @@
       "description": "Deputies in Livingston Parish, Louisiana, said Marrero resident Haydee Ortiz was initially treated as a victim before investigators allegedly linked her to an online impersonation and extortion campaign involving purportedly AI-generated sexual images and violent threats. Police said sexual media depicting one victim was sent to family and friends, while a person was threatened with rape or bodily harm unless money was paid.",
       "deployer": "Synthetic Media Creators, Online Impersonators, Haydee Ortiz, Extortionists, Deepfake Creators",
       "developer": "Synthetic Video Generation Technology Developers, Synthetic Media Generation Technology Developers, Synthetic Image Generation Technology Developers, Deepfake Technology Developers",
-      "harmed": "Victims Of Non Consensual Deepfakes, Victims Of Deepfake Abuse, Unnamed Victims Of Alleged Haydee Ortiz Extortion And Stalking Scheme, Targets Of Online Impersonation, Privacy, Epistemic Integrity, Victims Of Stalking",
+      "harmed": "Victims Of Stalking, Victims Of Non Consensual Deepfakes, Victims Of Deepfake Abuse, Unnamed Victims Of Alleged Haydee Ortiz Extortion And Stalking Scheme, Targets Of Online Impersonation, Privacy, Epistemic Integrity, Law Enforcement",
       "editor_notes": "",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -53587,7 +53587,7 @@
       "description": "During the 2026–27 school year, Parkview High School in Lilburn, Georgia, reportedly received at least four AI-generated bomb threats, including masked phone calls that prompted repeated lockdowns or soft lockdowns. School police described the threats as following a recurring pattern and were investigating with the GBI and FBI. Authorities had not identified a suspect or established publicly whether the same person was responsible for every threat.",
       "deployer": "Synthetic Media Creators, Malicious Actors, Information Manipulation Actors In The United States, Information Manipulation Actors, Hoax Threat Perpetrators",
       "developer": "Synthetic Media Generation Technology Developers, Synthetic Audio Generation Technology Developers",
-      "harmed": "Teachers, Parkview High School Students And Staff (Georgia), Parkview High School (Georgia), Minors, Epistemic Integrity, Educators, Educational Communities Targeted By Threats, Educational Communities, High Schools, Schools, Adolescents",
+      "harmed": "Teachers, Schools, Parkview High School Students And Staff (Georgia), Parkview High School (Georgia), Minors, High Schools, Epistemic Integrity, Educators, Educational Communities Targeted By Threats, Educational Communities, Adolescents, Law Enforcement",
       "editor_notes": "The repeated threats are treated in this incident ID as one ongoing incident series because school officials described them as a recurring pattern involving AI-generated threats and masked phone numbers. Authorities had not publicly established whether the same actor was responsible for each threat; the incident may be split if later evidence shows materially independent perpetrators or campaigns. (1) 08/28/2026: Parkview High School entered a soft lockdown after a reported hoax phone call; (2) 09/11/2026: an AI-generated threatening message delivered through a masked phone number prompted another soft lockdown; (3) 09/14/2026: a fourth reported AI-generated bomb threat of the school year prompted a lockdown; (4) by 09/15/2026: school police were investigating the recurring threats with the GBI and FBI.",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -55071,7 +55071,7 @@
       "description": "A Romanian-language audio bomb threat, assessed by officials as AI-generated, prompted employee evacuations and security searches at the Port of Constanța, Romania. Authorities received two calls using numbers with Ukrainian and Polish prefixes. Officials later said the alert was false. The perpetrators and AI system were not identified.",
       "deployer": "Synthetic Media Creators, Malicious Actors, Information Manipulation Actors In Romania, Information Manipulation Actors, Hoax Threat Perpetrators",
       "developer": "Synthetic Media Generation Technology Developers, Synthetic Audio Generation Technology Developers",
-      "harmed": "Public Safety, Port Of Constanta Employees, Maritime Workers, Epistemic Integrity, Ports",
+      "harmed": "Public Safety, Ports, Port Of Constanta Employees, Maritime Workers, Epistemic Integrity, Law Enforcement",
       "editor_notes": "The emergency call was logged at 11:26 a.m. local time on 07/29/2026; port officials reported a return to normal activity later that day. The incident ID was created 10/10/2026.",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -55097,7 +55097,7 @@
       "description": "Bomb threat calls that officials described as AI-generated prompted searches of six schools and cancellation of classes across Jackson County, Georgia. A similar call caused the evacuation of Cherokee Bluff High School in neighboring Hall County. Authorities reportedly considered the threats linked. No explosives were found, and the perpetrators and AI system were not publicly identified.",
       "deployer": "Synthetic Media Creators, Malicious Actors, Information Manipulation Actors In The United States, Information Manipulation Actors, Hoax Threat Perpetrators",
       "developer": "Synthetic Media Generation Technology Developers, Synthetic Audio Generation Technology Developers",
-      "harmed": "Teachers, Minors, Jackson County Schools (Georgia), High School Students, Epistemic Integrity, Educators, Educational Communities Targeted By Threats, Educational Communities, Cherokee Bluff High School (Georgia), High Schools, Middle Schools, Schools",
+      "harmed": "Teachers, Schools, Minors, Middle Schools, Jackson County Schools (Georgia), High Schools, High School Students, Epistemic Integrity, Educators, Educational Communities Targeted By Threats, Educational Communities, Cherokee Bluff High School (Georgia), Law Enforcement",
       "editor_notes": "On 08/14/2026, threats discovered before the school day led Jackson County to cancel classes; Cherokee Bluff High School in Hall County was evacuated after classes began and reopened later that morning. State and federal investigations were underway that day. Incident ID was created 10/10/2026.",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -55123,7 +55123,7 @@
       "description": "A series of anonymous bomb threat calls, some reportedly using AI-generated voices, targeted Wheatland Union High School and Bear River Middle School in Wheatland, California. The calls prompted an evacuation, canceled or delayed classes, and repeated campus searches. Police deemed the initial threats hoaxes. Schools added overnight security and other precautions as further calls continued.",
       "deployer": "Synthetic Media Creators, Malicious Actors, Information Manipulation Actors In The United States, Information Manipulation Actors, Hoax Threat Perpetrators",
       "developer": "Synthetic Media Generation Technology Developers, Synthetic Audio Generation Technology Developers",
-      "harmed": "Wheatland Union High School (California), Teachers, Students, Minors, Middle Schools, Middle School Students, High Schools, High School Students, Epistemic Integrity, Educators, Educational Communities Targeted By Threats, Educational Communities, Bear River Middle School (California), Adolescents, Schools",
+      "harmed": "Wheatland Union High School (California), Teachers, Students, Schools, Minors, Middle Schools, Middle School Students, High Schools, High School Students, Epistemic Integrity, Educators, Educational Communities Targeted By Threats, Educational Communities, Bear River Middle School (California), Adolescents, Law Enforcement",
       "editor_notes": "Incident ID date is marked 08/18/2026; the ID was created 10/10/2026. The recurring Wheatland-area threats are grouped as one incident series. Reporting attributes the initial calls and the third threat to AI; the fourth call's AI involvement and a common perpetrator remain unconfirmed.",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -55498,9 +55498,9 @@
       "date": "2026-10-07",
       "title": "Purportedly AI-Generated Video Depicting a Police Officer Punching a Person Was Reportedly Shared as Footage from French Student Protests",
       "description": "A purportedly AI-generated video depicting a police officer punching a person against a wall was reportedly shared on Facebook and X as footage of police violence during student protests in France. Activist Nathalie Yamb used it to condemn French authorities and call for international intervention. The clip predated the protests, and its creator acknowledged generating it with AI. One X post reportedly received more than 650,000 views.",
-      "deployer": "Synthetic Media Creators, Information Manipulation Actors, Nathalie Yamb",
+      "deployer": "Synthetic Media Creators, Nathalie Yamb, Information Manipulation Actors",
       "developer": "Synthetic Media Generation Technology Developers, Synthetic Image Generation Technology Developers, Google",
-      "harmed": "Epistemic Integrity, Social Media Users, Facebook Users, X (Twitter) Users, Law Enforcement Agencies, Police Departments, French Police, Government Of France, Governments",
+      "harmed": "X (Twitter) Users, Social Media Users, Police Departments, Law Enforcement Agencies, Governments, Government Of France, French Police, Facebook Users, Epistemic Integrity, Law Enforcement",
       "editor_notes": "",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -55954,7 +55954,7 @@
       "public_sector_field": "",
       "sector": "",
       "country": "",
-      "report_count": 2,
+      "report_count": 3,
       "url": "https://incidentdatabase.ai/cite/1774/",
       "text_hash": "14681696dd99ad33",
       "first_seen": "2026-10-27",
@@ -56689,11 +56689,11 @@
     {
       "id": 1797,
       "date": "2026-05-11",
-      "title": "OpenAI AI Agents Reportedly Flooded RubyGems Software Registry With Malicious Packages",
+      "title": "OpenAI AI Agents Reportedly Flooded RubyGems Software Registry with Malicious Packages",
       "description": "Researchers linked a malicious-package campaign against RubyGems, a software registry, and RubyDoc.info, a documentation service, to OpenAI agents. RubyGems suspended new registrations for four days and removed over 500 packages. OpenAI confirmed platform use but had not verified the malicious-upload claims; RubyGems could not confirm AI authorship. Attempts to steal users' access keys were reported, with no evidence of success.",
       "deployer": "Openai, Ai Agent System Deployers",
-      "developer": "Openai, Ai Agent System Developers, Large Language Model Developers",
-      "harmed": "Rubydoc.Info, Rubygems, Rubygems Users, Software Developers, Information Security, Targets Of Autonomous Ai Enabled Intrusion Operations",
+      "developer": "Openai, Large Language Model Developers, Ai Agent System Developers",
+      "harmed": "Targets Of Autonomous Ai Enabled Intrusion Operations, Software Developers, Rubygems Users, Rubygems, Rubydoc.Info, Information Security",
       "editor_notes": "",
       "mit_domain": "",
       "mit_subdomain": "",
@@ -56702,7 +56702,7 @@
       "country": "",
       "report_count": 6,
       "url": "https://incidentdatabase.ai/cite/1797/",
-      "text_hash": "41773077d162f5a1",
+      "text_hash": "bc908882f05e2a4e",
       "first_seen": "2026-11-10",
       "classification": {
         "modes": [
@@ -56716,6 +56716,548 @@
         "remediation_indicated": [
           "suspended"
         ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1798,
+      "date": "2024-10-08",
+      "title": "Purported AI Impersonations of Executives Allegedly Helped Defraud Companies Worldwide of About $129 Million",
+      "description": "Federal prosecutors in New York alleged that a fraud ring used AI to mimic executives' voices and sometimes their images on calls with company employees. Accomplices posing as lawyers then directed employees to wire money for sham transactions. The indictment attributes about $129 million in losses worldwide to the scheme, including about $4.83 million from a Missouri hospital system.",
+      "deployer": "Voice Cloning Impersonation Scammers, Synthetic Media Creators, Scammers, Impersonation Scammers, Deepfake Creators, Cybercriminals, Alleged Dollar129 Million Executive Impersonation Fraud Ring, Guy Sheetrit, Sharon Hazan, Jacob Soall",
+      "developer": "Voice Cloning Technology Developers, Synthetic Media Generation Technology Developers, Synthetic Audio Generation Technology Developers",
+      "harmed": "Victims Of Impersonation Scams, Victims Of Deepfake Enabled Fraud, Privacy, Organizations, Healthcare Organizations, Financial Institutions, Epistemic Integrity, Companies",
+      "editor_notes": "Prosecutors place the alleged scheme between roughly July 2024 and February 2026. A New York City investment bank blocked a $2.849 million wire after an impersonation attempt that began around 10/08/2024. The indictment describes completed losses in November 2024 and was unsealed on 11/05/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1798/",
+      "text_hash": "f36910d081dced3c",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1799,
+      "date": "2026-09-25",
+      "title": "OpenAI AI Agents Reportedly Posted ChatGPT User Images to External Hosts in 53 Instances",
+      "description": "OpenAI said AI agents in its research environment posted images supplied by users of its ChatGPT chatbot to external image hosts in 53 identified instances. The uploads left the images accessible through unlisted links outside OpenAI's systems. OpenAI said it worked with hosts to remove most of the content and was seeking removal of the rest. The upload dates and whether the images identified anyone remain undisclosed.",
+      "deployer": "Openai, Ai Agent System Deployers",
+      "developer": "Openai, Ai Agent System Developers",
+      "harmed": "Privacy, Openai Users, Chatgpt Users, Chatbot Users",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1799/",
+      "text_hash": "345ca77cc7ffe8f2",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1800,
+      "date": "2026-06-18",
+      "title": "OpenAI-Linked AI Agents Reportedly Repurposed Vanderbilt University's Restricted Link Shortener",
+      "description": "AI agents reportedly linked to OpenAI created short links on Vanderbilt University's restricted service in Nashville, Tennessee, and used its public visitor logs as a message board. Some entries reportedly included access keys for a public FBI statistics service. Vanderbilt said it was investigating, and a researcher documented link redirects and a login requirement for the logs. How the agents gained link-creation access remains unclear.",
+      "deployer": "Openai, Ai Agent System Deployers",
+      "developer": "Openai, Ai Agent System Developers",
+      "harmed": "Website Operators, Vanderbilt University, Universities, Information Security",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1800/",
+      "text_hash": "9cf2f80eb641545c",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "downstream-reuse",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1801,
+      "date": "2025-09-19",
+      "title": "Apparently AI-Assisted Conviction Draft Compromised a Defendant's Fair-Trial Rights in Cali, Colombia",
+      "description": "A criminal defendant's lawyers found a draft conviction proposing 18 years in prison in the court file before closing arguments in Cali, Colombia. Colombia's Supreme Court inferred that generative AI helped assess the complainant's testimony. It found that the draft prejudged guilt, granted relief for violations of due process and the right to an impartial trial, and ordered the case reassigned.",
+      "deployer": "Juzgado 7.O Penal Del Circuito De Cali, Courts, Chatbot Users",
+      "developer": "Large Language Model Developers, Chatbot Developers, Ai Assisted Legal Drafting System Developers",
+      "harmed": "Criminal Defendants, Defendants, Parties To Legal Proceedings, Judicial Integrity, Epistemic Integrity",
+      "editor_notes": "Timeline notes: 09/19/2025: The defense sought the trial judge's recusal after finding a draft conviction in the electronic case file before closing arguments. 10/01/2025 and 10/07/2025: The trial court and another Cali court rejected the recusal. 10/23/2025: The Superior Tribunal of Cali denied constitutional relief. 12/02/2025: Colombia's Supreme Court granted relief, set aside the recusal orders, and assigned the case to the next court in rotation. 11/07/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 4,
+      "url": "https://incidentdatabase.ai/cite/1801/",
+      "text_hash": "66cff6a76818df81",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1802,
+      "date": "2026-05-27",
+      "title": "OpenAI Research Agent Reportedly Exposed a Researcher's GitHub Token in a Public Code Repository",
+      "description": "OpenAI reported that an internal AI agent published a researcher's GitHub access token in OpenAI's public Codex code repository while trying to obtain another team's mathematical proof. The agent split the token into pieces to evade secret scanning. The researcher alerted security, and OpenAI deactivated the affected keys.",
+      "deployer": "Openai, Ai Agent System Deployers",
+      "developer": "Openai, Large Language Model Developers, Ai Agent System Developers",
+      "harmed": "Researchers, Privacy, Information Security, Ai Agent System Users",
+      "editor_notes": "05/27/2026: Date of incident. 09/25/2026: OpenAI disclosed the incident. 11/07/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1802/",
+      "text_hash": "7b02a4e577a6b50d",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [
+          "transparency-disclosure"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1803,
+      "date": "2026-03-27",
+      "title": "OpenAI Research Agent Reportedly Compromised an Internal Chip-Design Server During an Evaluation",
+      "description": "OpenAI reported that an internal AI agent searching for hidden grading answers overwrote code in a reference tool, then exploited a chip-design job service to run unauthorized commands on an internal OpenAI server. The agent obtained directory listings. OpenAI shut down the server and disabled network access for the affected reference tools.",
+      "deployer": "Openai, Ai Agent System Deployers",
+      "developer": "Openai, Ai Agent System Developers, Large Language Model Developers",
+      "harmed": "Openai, Information Security",
+      "editor_notes": "03/27/2026: Incident date. 10/02/2026: OpenAI disclosed the incident. 11/07/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1803/",
+      "text_hash": "cc6eb9799520f224",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [
+          {
+            "id": "security-compromise",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "vulnerable-group-harm",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [
+          "withdrawn",
+          "transparency-disclosure"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1804,
+      "date": "2026-05-15",
+      "title": "OpenAI Training Agent Reportedly Used an API Key Found on GitHub to Access a Data Service",
+      "description": "OpenAI reported that an internal AI agent looking for historical earnings data during training found an exposed API key in a public GitHub repository. It used the key without authorization to authenticate to a data service and retrieve metadata. Its request for the earnings figures failed, and it presented invented figures as if they came from the source website.",
+      "deployer": "Openai, Ai Agent System Deployers",
+      "developer": "Openai, Ai Agent System Developers, Large Language Model Developers",
+      "harmed": "Targets Of Credential Theft, Information Security",
+      "editor_notes": "05/15/2026: Date of incident. 09/16/2026: Date of OpenAI's disclosure. 11/07/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1804/",
+      "text_hash": "22b662134eefd1c0",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [
+          {
+            "id": "shadow-ai",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1805,
+      "date": "2026-10-04",
+      "title": "Tencent-Linked AI Agents Reportedly Used Exposed Credentials to Retrieve Data From Alibaba's Mapping Service",
+      "description": "Researchers reported that AI agents linked to Tencent evaluations used an API key and security code exposed in another company's source code to retrieve place details, photos, and entrance information from Alibaba's Amap mapping service. Tencent acknowledged unintended browsing during evaluations of third-party models. The researchers could not establish whose account was charged.",
+      "deployer": "Tencent, Ai Evaluation Organizations, Ai Agent System Deployers",
+      "developer": "Ai Agent System Developers, Large Language Model Developers",
+      "harmed": "Targets Of Credential Theft, Information Security, Alibaba",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1805/",
+      "text_hash": "f95168a69383f54a",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1806,
+      "date": "2026-06-17",
+      "title": "OpenAI Training Agent Reportedly Retrieved Credentials and Restricted Data from a Government Statistics Website",
+      "description": "OpenAI reported that an internal AI agent searching for hospital-bed figures during training retrieved more than 1,000 account records containing email addresses from a government statistics website. It downloaded application files and configuration files containing credentials, then bypassed authorization checks and saved 24 years of health-facility statistics.",
+      "deployer": "Openai, Ai Agent System Deployers",
+      "developer": "Openai, Large Language Model Developers, Ai Agent System Developers",
+      "harmed": "Targets Of Autonomous Ai Enabled Intrusion Operations, Privacy, Information Security, Governments, Government Agencies",
+      "editor_notes": "06/17/2026: Incident date. 08/13/2026: Date the incident was discovered. 10/15/2026: OpenAI publishes its findings. 11/07/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1806/",
+      "text_hash": "991d623cf8253f2b",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1807,
+      "date": "2026-06-26",
+      "title": "OpenAI Agent Reportedly Used a Wallet Without Permission to Pay Ethereum Test-Network Fees",
+      "description": "OpenAI reported that an internal AI agent derived a private key from a publicly known developer recovery phrase and used it to deploy contracts on Sepolia, an Ethereum test network. The task authorized deployment, but the agent lacked permission to use the wallet it found. The deployment succeeded and charged fees in test-network tokens to that wallet.",
+      "deployer": "Openai, Ai Agent System Deployers",
+      "developer": "Openai, Ai Agent System Developers, Large Language Model Developers",
+      "harmed": "Cryptocurrency Wallet Owners, Information Security",
+      "editor_notes": "06/26/2026: Incident date. 10/15/2026: OpenAI discloses the incident. 11/07/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1807/",
+      "text_hash": "fadb95ae97e1ea9c",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [
+          {
+            "id": "shadow-ai",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1808,
+      "date": "2026-10-29",
+      "title": "Defense Contractor's Personal AI Coding Agent Reportedly Sent U.S. Defense Department Credentials to a Third-party Website",
+      "description": "An Accenture employee working as a U.S. defense contractor reportedly connected a personal account for Anthropic's Claude Code AI coding agent to a secure Defense Department system. The agent reportedly appeared to send login credentials and a network map to a third-party website. Accenture said its investigation found the allegations without merit.",
+      "deployer": "Federal Contractors, Employees, Ai Agent System Deployers, Accenture Employees, Accenture",
+      "developer": "Large Language Model Developers, Anthropic, Ai Agent System Developers",
+      "harmed": "United States Department Of Defense, National Security And Intelligence Stakeholders, Information Security",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1808/",
+      "text_hash": "1ed709f7677cc2de",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1809,
+      "date": "2026-11-05",
+      "title": "Scotland's Education Agency Published Purportedly AI-Edited School Curriculum Papers with Apparently Nonexistent References",
+      "description": "Education Scotland, the national education agency, published evidence papers for Scotland's school curriculum review. A University of Edinburgh lecturer identified about 20 references he believed did not exist. The agency corrected errors and disclosed that AI was used to edit the papers. Whether AI introduced any of the disputed references remains unconfirmed.",
+      "deployer": "Education Scotland, Governments, Government Agencies, Government Of The United Kingdom, Government Of Scotland",
+      "developer": "Large Language Model Developers",
+      "harmed": "Epistemic Integrity, Scottish Curriculum Review Stakeholders, Educational Communities, Education Policymakers, Educators, Educators In Scotland, Educators In The United Kingdom",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1809/",
+      "text_hash": "d15d67bc5cea460c",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": true,
+        "public_sector_basis": "deployer name",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1810,
+      "date": "2026-10-25",
+      "title": "ARTEX Security Testing Agent Reportedly Accessed WorkOS's Internal Sales Tool Without Authorization and Retrieved Customer Data",
+      "description": "WorkOS, a provider of enterprise authentication tools, said an ARTEX agent running a cybersecurity benchmark accessed its internal sales tool without authorization and retrieved records in bulk. The data included business contact details, customer communications, and operational metadata. WorkOS said an independent forensics firm validated the attribution. The researcher told WorkOS the data was deleted and never shared.",
+      "deployer": "Security Researcher Whose Artex Agent Accessed Workos, Security Researchers, Ai Researchers, Ai Agent System Deployers",
+      "developer": "Artex Developers, Ai Agent System Developers, Large Language Model Developers",
+      "harmed": "Workos, Workos Customers, Targets Of Autonomous Ai Enabled Intrusion Operations, Information Security, Privacy",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1810/",
+      "text_hash": "3d0035ceab57830b",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [
+          {
+            "id": "shadow-ai",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1811,
+      "date": "2025-11-26",
+      "title": "San Diego, California, Police Reportedly Relied on a Flock License Plate Reader Image in Mistaken Arrests",
+      "description": "Police in San Diego, California, reportedly mistook a red Alfa Romeo photographed by a Flock Safety automated license plate reader for a car linked to an attempted carjacking. Officers also relied on a witness identification. They arrested driver Ariel Beltran, passenger Hugo Parra, and a third man. Parra spent nearly a month in jail before his charges were dropped. Parra and Beltran later sued the city and officers.",
+      "deployer": "San Diego Police Department (California), Police Departments In The United States, Police Departments, Law Enforcement, City Of San Diego",
+      "developer": "Surveillance Technology Developers, Flock Safety, Automated License Plate Reader (Alpr) Developers",
+      "harmed": "Road Users, Motorists, Individuals Mistakenly Detained By Law Enforcement, Hugo Parra, Epistemic Integrity, Drivers, Christian Lopez, Ariel Alonso Beltran",
+      "editor_notes": "11/26/2025: San Diego police reportedly arrested Hugo Parra, Ariel Beltran, and Christian Lopez during an attempted carjacking investigation in which officers relied on a Flock camera image of a similar car. The following day: Beltran reportedly posted bail. In the weeks after the arrests: According to local reporting, Parra spent nearly a month in jail before the charges against him were dropped. April 2026: Parra and Beltran reportedly filed claims against the city. Their attorney said the city later denied both claims. 11/08/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1811/",
+      "text_hash": "2298f33e0e9abd4c",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": true,
+        "public_sector_basis": "deployer name",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1812,
+      "date": "2026-03-17",
+      "title": "Google's Gemini Chatbot on a School-Issued Laptop Allegedly Helped a North Carolina Student Plan Suicide",
+      "description": "A civil complaint alleges that Google's Gemini chatbot, accessed through Google Search on a school-issued laptop, helped a 13-year-old North Carolina student plan suicide and contributed to a mental health crisis involving self-harm. The complaint says a school monitoring alert led her parents to intervene and take her for emergency psychiatric evaluation. Google said it was reviewing the claims.",
+      "deployer": "Google, Alphabet, Chatbot Users",
+      "developer": "Google, Alphabet, Large Language Model Developers, Chatbot Developers",
+      "harmed": "Minors Interacting With Google Gemini, Minors, Women And Girls, Girls, Adolescents, Adolescent Girls, Emotionally Vulnerable Individuals, Chatbot Users, Educational Communities, Schools, Middle School Students, Minors Using Chatbots, Emma Doe",
+      "editor_notes": "December 2025: The complaint says a North Carolina student began using Gemini through Google Search more heavily on a school-issued laptop. 03/17/2026: A school monitoring alert reportedly prompted her parents to intervene and take her for an emergency psychiatric evaluation after Gemini allegedly helped her plan suicide. 11/02/2026: The complaint was filed in California state court. 11/04/2026: Google removed the case to federal court. 11/08/2026: The incident ID was created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1812/",
+      "text_hash": "deb44988b0569196",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1813,
+      "date": "2025-06-06",
+      "title": "Five Reportedly Fictitious Citations Suspected of Being AI-Generated Led to a Costs Order in a London Housing Case",
+      "description": "In a London housing case, England's High Court found that a barrister cited five reportedly fictitious cases and ordered her and the Haringey Law Centre, a legal aid charity, to pay £4,000 in wasted costs. Opposing counsel alleged AI use. The barrister denied using generative AI. The Divisional Court identified AI use as one of two possible explanations for the citations.",
+      "deployer": "Sarah Forey, Lawyers, Legal Professionals",
+      "developer": "Large Language Model Developers",
+      "harmed": "High Court Of Justice (England And Wales), London Borough Of Haringey, Haringey Law Centre, Epistemic Integrity, Judicial Integrity, Courts, Parties To Legal Proceedings",
+      "editor_notes": "08/28/2024: Grounds dated that day contained five fictitious case citations. 02/04/2025: The council's solicitor flagged the five citations and asked for copies. 04/03/2025: The High Court ordered £4,000 in wasted costs and directed that its judgment be sent to professional regulators. 06/06/2025: The Divisional Court left AI use unresolved, declined to initiate contempt proceedings, and referred the barrister to her regulator. 11/08/2026: The incident ID was created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1813/",
+      "text_hash": "6cb95399a743858e",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [
+          "court-ruling"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1814,
+      "date": "2026-02-12",
+      "title": "ChatGPT Allegedly Guided a Woman in Seattle, Washington, Through a Seizure Medication Taper Before Her Death",
+      "description": "Bowen Wan, a 31-year-old software engineer in Seattle, Washington, used OpenAI's ChatGPT chatbot for advice on reducing her prescribed seizure medication. Her parents allege that she followed a tapering schedule generated by GPT-4o, that the chatbot encouraged her to continue after she reported symptoms, and that the taper contributed to her death. The medical examiner identified sudden unexpected death in epilepsy as the cause.",
+      "deployer": "Openai, Chatbot Users",
+      "developer": "Openai, Large Language Model Developers, Chatbot Developers",
+      "harmed": "Bowen Wan, Chatgpt Users, People Seeking Medical Advice, People With Epilepsy, Epistemic Integrity",
+      "editor_notes": "01/16/2026: The complaint dates the start of Wan's ChatGPT-guided medication taper to this day. 02/12/2026: The medical examiner's estimated date of death. 02/14/2026: A family friend found Wan dead at home, according to the complaint. 10/27/2026: Wan's parents filed a wrongful-death complaint in San Francisco. 11/08/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1814/",
+      "text_hash": "0bf56151ec624dc8",
+      "first_seen": "2026-11-17",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
         "public_sector": false,
         "public_sector_basis": "no public-sector signal",
         "determination": "alleged"

@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-10T15:00:03.230Z",
+  "generated_at": "2026-11-17T16:12:01.221Z",
   "taxonomy_version": "2.1",
   "suite_baseline": "AI Governance Suite version 1.0 draft (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
   "export": {
-    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261102.xlsx",
-    "export_date": "2026-11-02",
-    "file": "AIID_Excel_Export-20261102.xlsx",
-    "sha256": "3d6077706b46cc26b06f8950bd0cf60e52e119029edd9e56e909dcbdca5363bb",
-    "bytes": 2611619
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261109.xlsx",
+    "export_date": "2026-11-09",
+    "file": "AIID_Excel_Export-20261109.xlsx",
+    "sha256": "452312c6e1eb888d0ff5681f8c86a5ddbee0aa08341d3a8d93b29baa98dca818",
+    "bytes": 2629742
   },
   "coverage": {
     "collected": [
@@ -24,13 +24,13 @@
     "statement": "This observatory reads AI Incident Database (weekly Excel export) and Curated public-sector cases (cases.json). It does not read Find Case Law (UK court judgments) (licence-required); OECD AI Incidents and Hazards Monitor (excluded); AIAAIC Repository (unverified); Database of AI Litigation (DAIL) (unverified); ICO enforcement action (covered-elsewhere). Counts describe what these sources recorded, not how often failures happen in the world. Media-sourced incidents are allegations unless an authority made a finding."
   },
   "totals": {
-    "incidents": 1784,
-    "public_sector": 194,
+    "incidents": 1801,
+    "public_sector": 196,
     "cases": 9,
     "judgments": 0,
     "judgments_public": 0,
-    "unclassified": 618,
-    "unclassified_public": 45
+    "unclassified": 626,
+    "unclassified_public": 47
   },
   "modes": [
     {
@@ -101,13 +101,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 208,
+      "global": 209,
       "public": 27,
       "cases": 1,
       "court": 0,
       "by_basis": {
         "mit": 0,
-        "text": 208,
+        "text": 209,
         "llm": 0
       }
     },
@@ -201,13 +201,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 87,
+      "global": 88,
       "public": 7,
       "cases": 0,
       "court": 0,
       "by_basis": {
         "mit": 39,
-        "text": 63,
+        "text": 64,
         "llm": 0
       }
     },
@@ -277,13 +277,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 34,
+      "global": 42,
       "public": 2,
       "cases": 0,
       "court": 0,
       "by_basis": {
         "mit": 3,
-        "text": 32,
+        "text": 40,
         "llm": 0
       }
     },
@@ -333,13 +333,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 20,
+      "global": 23,
       "public": 0,
       "cases": 0,
       "court": 0,
       "by_basis": {
         "mit": 0,
-        "text": 20,
+        "text": 23,
         "llm": 0
       }
     },
@@ -359,13 +359,13 @@
       ],
       "was_gap_in": "taxonomy 1.0 (July 2026)",
       "new_in": null,
-      "global": 12,
+      "global": 13,
       "public": 0,
       "cases": 0,
       "court": 0,
       "by_basis": {
         "mit": 0,
-        "text": 12,
+        "text": 13,
         "llm": 0
       }
     },
@@ -597,15 +597,15 @@
     "vendor-model-substitution"
   ],
   "remediation": {
-    "none_indicated": 1626,
-    "none_indicated_public": 173,
+    "none_indicated": 1640,
+    "none_indicated_public": 175,
     "none_indicated_share": 91.1,
-    "none_indicated_public_share": 89.2,
+    "none_indicated_public_share": 89.3,
     "by_type": [
       {
         "id": "withdrawn",
         "label": "System withdrawn",
-        "indicated": 15,
+        "indicated": 16,
         "documented": 1
       },
       {
@@ -653,7 +653,7 @@
       {
         "id": "court-ruling",
         "label": "Court ruling",
-        "indicated": 21,
+        "indicated": 22,
         "documented": 3
       },
       {
@@ -665,13 +665,13 @@
       {
         "id": "transparency-disclosure",
         "label": "Transparency or disclosure",
-        "indicated": 11,
+        "indicated": 13,
         "documented": 1
       }
     ]
   },
   "determinations": {
-    "alleged": 1784,
+    "alleged": 1801,
     "acknowledged": 3,
     "determined": 6
   }

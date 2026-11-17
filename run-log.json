@@ -89,6 +89,17 @@
         "workforce-algorithmic-management"
       ],
       "note": "9 new incidents."
+    },
+    {
+      "at": "2026-11-17T16:12:01.221Z",
+      "collect": "collected",
+      "export_file": "AIID_Excel_Export-20261109.xlsx",
+      "incidents": 1801,
+      "new_incidents": 17,
+      "gaps_observed": [
+        "workforce-algorithmic-management"
+      ],
+      "note": "17 new incidents."
     }
   ]
 }
