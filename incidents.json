@@ -1,11 +1,11 @@
 {
   "source": "AI Incident Database weekly Excel export (CC BY-SA 4.0). Titles and descriptions are AIID editors' text; classification is this tool's.",
   "export": {
-    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261109.xlsx",
-    "export_date": "2026-11-09",
-    "file": "AIID_Excel_Export-20261109.xlsx",
-    "sha256": "452312c6e1eb888d0ff5681f8c86a5ddbee0aa08341d3a8d93b29baa98dca818",
-    "bytes": 2629742
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261123.xlsx",
+    "export_date": "2026-11-23",
+    "file": "AIID_Excel_Export-20261123.xlsx",
+    "sha256": "de7ab7d04498d0b1e0053af422c3f06fb132c98872eefd6464be90e5965eb99c",
+    "bytes": 2668576
   },
   "taxonomy_version": "2.1",
   "incidents": [
@@ -29000,10 +29000,10 @@
       "date": "2025-01-13",
       "title": "Alleged Misuse of Facial Recognition Technology by Law Enforcement Reportedly Leading to Wrongful Arrests and Violations of Investigative Standards",
       "description": "Law enforcement agencies across the U.S. have allegedly been misusing AI-powered facial recognition technology, leading to wrongful arrests and significant harm to at least eight individuals. Officers have reportedly been bypassing investigative standards, relying on uncorroborated AI matches to build cases, allegedly resulting in prolonged detentions, reputational damage, and personal trauma.",
-      "deployer": "Florence Kentucky Police Department, Evansville Indiana Police Department, Detroit Police Department, Coral Springs Florida Police Department, Bradenton Florida Police Department, Austin Police Department",
+      "deployer": "Florence Kentucky Police Department, Evansville Indiana Police Department, Detroit Police Department, Coral Springs Florida Police Department, Bradenton Florida Police Department, Austin Police Department, Law Enforcement, Police Departments, Police Departments In The United States",
       "developer": "Facial Recognition System Developers, Developers Of Mugshot Recognition Software, Clearview Ai",
-      "harmed": "Wrongfully Arrested Individuals, Vulnerable Communities, Robert Williams, Quran Reid, Porcha Woodruff, People Of Color, Nijeer Parks, Jason Vernau, Christopher Gatlin, Black People, Alonzo Sawyer",
-      "editor_notes": "Editor Notes: This collective incident ID, based on a Washington Post investigation, tracks alleged misuse of facial recognition technology by law enforcement across the U.S., similar to Incident 815: Police Use of Facial Recognition Software Causes Wrongful Arrests Without Defendant Knowledge. While that incident focuses on allegations of withholding information regarding arrests, this incident focuses on reports of law enforcement allegedly relying primarily on facial recognition technology without sufficient corroborative investigative procedures. Some reported incidents include: (1) December 2020: Facial recognition technology reportedly misidentified Christopher Gatlin in Missouri, resulting in his arrest and over 16 months in jail before charges were dropped in March 2024. (2) 2022: Maryland police allegedly misidentified Alonzo Sawyer for assault using facial recognition; his wife later provided evidence that reportedly cleared his name. (3) 2022: Detroit police arrested Robert Williams based on a reported facial recognition error; the city later settled a lawsuit in 2023 for $300,000 without admitting liability. (4) July 2024: Miami police reportedly relied on facial recognition to identify Jason Vernau for check fraud; he was jailed for three days before charges were dropped. (5) January 13, 2025: The Washington Post published its investigation, detailing at least eight wrongful arrests reportedly linked to the use of facial recognition technology and alleged failures to corroborate AI-generated matches. See the full report at The Washington Post for more details on specific cases, timelines, and deployers of this technology.",
+      "harmed": "Wrongfully Arrested Individuals, Vulnerable Communities, Robert Williams, Quran Reid, Porcha Woodruff, People Of Color, Nijeer Parks, Jason Vernau, Christopher Gatlin, Black People, Alonzo Sawyer, Privacy, Epistemic Integrity, People Misidentified By Facial Recognition Systems",
+      "editor_notes": "This collective incident ID, based on a Washington Post investigation, tracks alleged misuse of facial recognition technology by law enforcement across the U.S., similar to Incident 815: Police Use of Facial Recognition Software Causes Wrongful Arrests Without Defendant Knowledge. While that incident focuses on allegations of withholding information regarding arrests, this incident focuses on reports of law enforcement allegedly relying primarily on facial recognition technology without sufficient corroborative investigative procedures. Some reported incidents include: (1) December 2020: Facial recognition technology reportedly misidentified Christopher Gatlin in Missouri, resulting in his arrest and over 16 months in jail before charges were dropped in March 2024. (2) 2022: Maryland police allegedly misidentified Alonzo Sawyer for assault using facial recognition; his wife later provided evidence that reportedly cleared his name. (3) 2022: Detroit police arrested Robert Williams based on a reported facial recognition error; the city later settled a lawsuit in 2023 for $300,000 without admitting liability. (4) July 2024: Miami police reportedly relied on facial recognition to identify Jason Vernau for check fraud; he was jailed for three days before charges were dropped. (5) January 13, 2025: The Washington Post published its investigation, detailing at least eight wrongful arrests reportedly linked to the use of facial recognition technology and alleged failures to corroborate AI-generated matches. See the full report at The Washington Post for more details on specific cases, timelines, and deployers of this technology.",
       "mit_domain": "AI system safety, failures, and limitations",
       "mit_subdomain": "Lack of capability or robustness",
       "public_sector_field": "",
@@ -29011,7 +29011,7 @@
       "country": "",
       "report_count": 1,
       "url": "https://incidentdatabase.ai/cite/896/",
-      "text_hash": "cc389c72b94b3c70",
+      "text_hash": "518af56d4c347a4b",
       "first_seen": "2026-10-11",
       "classification": {
         "modes": [
@@ -57257,6 +57257,937 @@
       "first_seen": "2026-11-17",
       "classification": {
         "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1815,
+      "date": "2026-11-04",
+      "title": "Attacker Reportedly Used BOSSAI AI Agents to Extract Emergency Dispatch Records in Taipei, Taiwan",
+      "description": "According to Acronis researchers, a Taiwan-based attacker used a coordinated network of AI agents called BOSSAI to access an emergency-dispatch system in Taipei, Taiwan, and extract case records from seven city districts. The records included incident times, response types, status fields, and street-level locations. The researchers described the extraction as part of a wider AI-assisted cyberattack campaign.",
+      "deployer": "Cybercriminals, Hackers, Ai Agent System Deployers",
+      "developer": "Ai Agent System Developers",
+      "harmed": "Emergency Services, Privacy, People Whose Information Was Extracted From Taipei Taiwan'S Emergency Dispatch System",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1815/",
+      "text_hash": "5b28c85f60ea626c",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1816,
+      "date": "2025-01-09",
+      "title": "Kentucky Police Detective Allegedly Relied on False AI Facial Recognition Match, Leading to Nebraska Man's Arrest and Detention",
+      "description": "A Nebraska man alleges that a Florence, Kentucky, police detective relied solely on an AI facial-recognition match to identify him as a check-fraud suspect. He was arrested in Florida and jailed for more than two weeks before being released. Prosecutors later dismissed the charges after he proved he was working in Nebraska during the alleged offense. A federal judge allowed his civil-rights lawsuit to proceed.",
+      "deployer": "Ryan Kilmer, Police Departments In The United States, Police Departments, Law Enforcement, Florence Police Department (Kentucky)",
+      "developer": "Facial Recognition System Developers",
+      "harmed": "Wrongfully Arrested Individuals, Privacy, People Misidentified By Facial Recognition Systems, Epistemic Integrity, Alain Vizcay Osorio",
+      "editor_notes": "08/30/2024: A suspect attempted to cash a suspected fraudulent check at a bank in Florence, Kentucky. 01/09/2025: Officers arrested Alain Vizcay Osorio in Florida following a facial-recognition-based identification allegedly relied on by a Kentucky detective. 01/24/2025: Osorio was released on bond after detention in Kentucky. 05/07/2025: Prosecutors dismissed the indictment with prejudice after Osorio documented working in Nebraska at the time of the alleged offense. 01/08/2026: Osorio filed a federal civil-rights lawsuit against Detective Ryan Kilmer. 11/09/2026: The federal court permitted an amended complaint and denied the detective's motion for judgment on the pleadings; no final liability determination was made. 11/12/2026: Incident ID created. See also: Incident 896.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1816/",
+      "text_hash": "844786e1c7ae810f",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [
+          "court-ruling"
+        ],
+        "public_sector": true,
+        "public_sector_basis": "deployer name",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1817,
+      "date": "2026-10-29",
+      "title": "Hackers Reportedly Used Internal AI Tool in $6.34 Billion Breach of Cryptocurrency Exchange Binance",
+      "description": "Cryptocurrency exchange Binance reported that attackers used a compromised internal AI tool to gain control of additional developer workstations before using stolen credentials to reach wallet-signing infrastructure. The exchange said approximately $6.34 billion in digital assets were affected, of which $2.85 billion was frozen or intercepted. The FBI attributed the attack to North Korean hackers. The precise AI-tool exploit mechanism was not disclosed.",
+      "deployer": "North Korean Threat Actors, Threat Actors, Cybercriminals, Hackers, Government Of North Korea, Ai Agent System Deployers",
+      "developer": "Ai Agent System Developers, Ai Software Developers",
+      "harmed": "Binance, Cryptocurrency Exchanges, Cryptocurrency Wallet Owners",
+      "editor_notes": "06/2026: A wallet engineer reportedly downloaded a tampered Homebrew installer while trying to install an AI coding tool; Binance detected and remediated that infection. 09/2026: Another engineer reportedly ran malicious code from a bogus recruitment exercise. 10/20/2026: Attackers reportedly used a compromised internal AI tool to access two additional engineers' workstations. 10/29/2026: Attackers reportedly used stolen credentials and wallet-signing access to transfer digital assets; Binance began containment. 10/31/2026: The FBI attributed the theft to North Korean TraderTraitor activity. 11/03/2026: Binance issued its initial findings and response update. 11/09/2026: Palo Alto Networks published a technical analysis. 11/12/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 4,
+      "url": "https://incidentdatabase.ai/cite/1817/",
+      "text_hash": "78d0a92d9b849aac",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [
+          {
+            "id": "security-compromise",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": true,
+        "public_sector_basis": "deployer name",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1818,
+      "date": "2026-06-02",
+      "title": "ChatGPT Allegedly Advised Danish Tenant to Withhold Rent and Reinforced False Business Claims Before His Eviction in Vordingborg, Denmark",
+      "description": "A tenant in Vordingborg, Denmark, alleges that ChatGPT wrongly assured him he could withhold rent during a landlord dispute and drafted notices he sent. His landlord terminated his lease, Danish courts upheld the eviction, and he lost his home. In a lawsuit, he also alleges that extended chatbot conversations reinforced fictitious business ventures and promises of imminent wealth while disregarding his concerns about losing his housing.",
+      "deployer": "Openai, Chatbot Users, Klaus Elmfelt Aerenlund",
+      "developer": "Openai, Chatbot Developers, Large Language Model Developers",
+      "harmed": "Klaus Elmfelt Aerenlund, Chatbot Users, Chatgpt Users, Tenants",
+      "editor_notes": "01/2025 (late): According to his complaint, Elmfelt began using ChatGPT; 03/2025–05/2025: A landlord dispute reportedly developed, during which ChatGPT allegedly provided repeated legal assurances; 05/28/2025: ChatGPT allegedly advised Elmfelt to withhold rent and drafted a notice he reportedly sent to his landlord; 08/2025: According to the complaint, the landlord demanded payment and terminated the lease; 02/02/2026: A Danish bailiff's court reportedly ordered the eviction to proceed; 04/16/2026: Denmark's Eastern High Court reportedly affirmed the eviction order; 06/02/2026: According to the complaint, Elmfelt was evicted from his apartment in Vordingborg, Denmark; 11/02/2026: The plaintiff's California civil complaint was dated; 11/12/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 4,
+      "url": "https://incidentdatabase.ai/cite/1818/",
+      "text_hash": "7544967d7883324b",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [
+          {
+            "id": "vulnerable-group-harm",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1819,
+      "date": "2026-04-17",
+      "title": "Purportedly AI-Altered Video Reportedly Falsely Portrayed a Slovenian Surgeon Endorsing Detoxil Water, a Supposed Parasite Remedy",
+      "description": "The Medical Chamber of Slovenia reported that an AI-altered video falsely depicted oncology surgeon Erik Brecelj endorsing Detoxil Water, a product promoted with unsubstantiated claims about parasites. The chamber said the video reused genuine footage but changed its audio and message, and later stated that it had filed a criminal complaint. The advertisers have not been identified, and consumer injuries from this video have not been verified.",
+      "deployer": "Scammers, Impersonation Scammers, Synthetic Media Creators, Deepfake Creators",
+      "developer": "Deepfake Technology Developers, Synthetic Media Generation Technology Developers, Synthetic Video Generation Technology Developers, Synthetic Audio Generation Technology Developers",
+      "harmed": "Victims Of Impersonation Scams, People Seeking Medical Advice, Epistemic Integrity, Erik Brecelj, Viewers Of Deceptive Medical Advertising",
+      "editor_notes": "04/17/2026: The Medical Chamber of Slovenia reported that an AI-altered video appeared to depict surgeon Erik Brecelj endorsing Detoxil Water and said it had notified authorities; 05/18/2026: The chamber stated that it had filed a criminal complaint on 04/17/2026 and had contacted health and market regulators; 05/19/2026: N1 reported a separate AI-altered joint-cream advertisement featuring Brecelj, while also discussing the earlier Detoxil Water case. 11/14/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 5,
+      "url": "https://incidentdatabase.ai/cite/1819/",
+      "text_hash": "1c8b3f657dfd9bf3",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1820,
+      "date": "2025-12-23",
+      "title": "AI-Assisted Promotional Images for Panama City Snow Attraction Allegedly Misled Ticket Buyers Before Deceptive-Advertising Fine",
+      "description": "Organizers of Snowland Panamá, a ticketed winter-themed attraction in Panama City, used purportedly AI-assisted promotional images that allegedly portrayed an experience substantially different from what the venue delivered. Ticket buyers complained that the advertising misrepresented the attraction, and the event was canceled. Panama's consumer-protection authority subsequently fined the responsible business for deceptive advertising and facilitated refunds.",
+      "deployer": "Synthetic Media Creators, Snowland Panama Organizers, Event Organizers, Bar Y Discoteca Una Flor, Advertisers",
+      "developer": "Synthetic Media Generation Technology Developers, Synthetic Image Generation Technology Developers",
+      "harmed": "Snowland Panama Ticket Purchasers, Snowland Panama Event Attendees, Epistemic Integrity, Consumers Misled By Fraudulent Ads, Consumers",
+      "editor_notes": "12/23/2025: Snowland Panamá opened in Panama City; ticket holders reported a mismatch between AI-assisted promotional visuals and the attraction. 12/24/2025: Panama's consumer-protection authority Acodeco inspected the site after complaints. 12/26/2025: Organizers announced cancellation. 03/23/2026: Acodeco identified Bar y Discoteca Una Flor as the sanctioned business and reported a $15,000 misleading-advertising fine; 27 complainants had received $4,548.57 in refunds. 09/23/2026: TVN reported closure of the proceedings, a $25,000 fine, and $7,342.44 recovered by 41 complainants. The relationship between the two reported fine amounts is not independently established. 11/14/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1820/",
+      "text_hash": "3a63b58aabbf2c46",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [
+          "redress-compensation",
+          "regulatory-enforcement"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1821,
+      "date": "2024-08-09",
+      "title": "Students at Guatemala City School Allegedly Created and Shared AI-Generated Nude Images of Female Classmates",
+      "description": "At Colegio Continental Americano, a private school in Guatemala City, students allegedly used classmates' social-media photos to create and circulate purportedly AI-altered nude images. Families filed complaints, and authorities investigated. A juvenile court subsequently opened proceedings against four former students over alleged sexual-privacy violations and offenses involving sexual images of minors. The AI software has not been identified.",
+      "deployer": "Synthetic Media Creators, Students, Minors, Men And Boys, Deepfake Creators, Boys, Adolescents, Adolescent Boys",
+      "developer": "Synthetic Media Generation Technology Developers, Synthetic Image Generation Technology Developers, Deepfake Technology Developers",
+      "harmed": "Women And Girls, Victims Of Deepfake Child Abuse, Victims Of Deepfake Abuse, Students, Girls, Educational Communities, Adolescents, Adolescent Girls",
+      "editor_notes": "08/09/2024: Students at Colegio Continental Americano in Guatemala City reportedly discovered AI-altered nude images of classmates on a peer's phone and circulating online. 08/10/2024: Prosecutors received an initial complaint; six complaints were being investigated by August 13. 08/12/2024–08/13/2024: Authorities announced legal and child-protection measures; the education ministry began investigating. 01/23/2025: A juvenile court initiated formal proceedings against four former students on allegations involving sexual privacy and sexual images of minors. 11/14/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 4,
+      "url": "https://incidentdatabase.ai/cite/1821/",
+      "text_hash": "56c1d937c68e56a4",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [
+          {
+            "id": "unlawful-data-processing",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "vulnerable-group-harm",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1822,
+      "date": "2025-03-02",
+      "title": "Paraguay Convenience Store Customer Reportedly Accused of Theft and Denied Service After Facial Recognition False Match",
+      "description": "At a Biggie Express convenience store in San Lorenzo, Paraguay, medical student Pablo Servín said employees publicly accused him of theft and refused service after a facial-recognition system reportedly matched him to a robbery suspect with 90% similarity. He said a subsequent review of security footage showed he was not the suspect. Servín described humiliation and questioned the chain's handling of biometric data. The system's developer was not identified.",
+      "deployer": "Facial Recognition System Deployers, Businesses Using Biometrics, Biggie Express",
+      "developer": "Surveillance Technology Developers, Facial Recognition System Developers",
+      "harmed": "Shoppers, Privacy, People Misidentified By Facial Recognition Systems, Pablo Servin, Epistemic Integrity, Customers, Consumers, Biometric Data Subjects",
+      "editor_notes": "On or before 03/02/2025: At a Biggie Express convenience store in San Lorenzo, Paraguay, staff reportedly accused Pablo Servín of theft and denied him service after a facial-recognition match; a subsequent footage review reportedly showed that he was not the suspect. 03/02/2025: Servín publicly described the episode on X. 03/05/2025: Diario HOY and El Nacional published reports, including a reported 90% facial-similarity score and criticism of biometric surveillance. 11/14/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1822/",
+      "text_hash": "5b8f216641879fd8",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1823,
+      "date": "2026-06-10",
+      "title": "Weill Cornell Medicine Radiology Research in New York City Reportedly Used Patient Data in AI Tools Without Authorization",
+      "description": "Weill Cornell Medicine disclosed that protected health information from NewYork-Presbyterian facilities in New York City was processed by unidentified AI tools during radiology research without authorization. The data included medical record identifiers and clinical details. The institution suspended the research and requested deletion; it reported no evidence of unauthorized viewing or subsequent misuse.",
+      "deployer": "Weill Cornell Medicine, Research Institutions, Researchers, Healthcare Organizations",
+      "developer": "Ai Software Developers",
+      "harmed": "Weill Cornell Medicine Radiology Patients, Patients, Privacy, Biometric Data Subjects",
+      "editor_notes": "06/10/2026–06/20/2026: Protected radiology patient information was reportedly processed by AI tools without authorization. 09/06/2026: Weill Cornell Medicine learned of the incident and began investigating. 11/05/2026: Weill Cornell publicly disclosed the incident, reported suspending the research, and said it had requested deletion of the involved data. 11/14/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 4,
+      "url": "https://incidentdatabase.ai/cite/1823/",
+      "text_hash": "261a64c572b69e51",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [
+          {
+            "id": "shadow-ai",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "vulnerable-group-harm",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [
+          "suspended",
+          "transparency-disclosure"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1824,
+      "date": "2026-09-02",
+      "title": "Taiwanese Romance Scam Ring Allegedly Used AI Voice-Changing Software to Defraud More Than 20,000 People",
+      "description": "Taiwanese prosecutors alleged that a romance-fraud ring used custom AI voice-changing software to impersonate women during phone calls with men contacted through dating apps. The operation reportedly defrauded more than 20,000 people of at least NT$900 million (about US$28.3 million) through deceptive relationships and demands for money and gifts. Prosecutors indicted 57 people in connection with the scheme.",
+      "deployer": "Scammers, Cybercriminals, Romance Scammers, Impersonation Scammers, Scammers In Taiwan, Cybercriminals In Taiwan, Synthetic Media Creators, Deepfake Creators, Voice Cloning Impersonation Scammers, Taiwanese Romance Scam Ring Led By Huang And Hsu",
+      "developer": "Synthetic Media Generation Technology Developers, Synthetic Audio Generation Technology Developers, Voice Cloning Technology Developers, Deepfake Technology Developers, Ai Voice Conversion Technology Developers",
+      "harmed": "General Public, General Public Of Taiwan, Men And Boys, Men, Victims Of Impersonation Scams, Victims Of Romance Scams, Victims Of Romance Scams In Taiwan, Epistemic Integrity, Victims Of Voice Cloning Impersonation Scams",
+      "editor_notes": "2022: The alleged ring began using fake dating profiles; the precise start of its AI voice-changing activity is not established. 09/02/2026: Taipei prosecutors indicted 57 defendants and reported losses of at least NT$900 million. The incident ID uses the indictment date as a documented fallback, not as the onset of harm. 11/14/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 4,
+      "url": "https://incidentdatabase.ai/cite/1824/",
+      "text_hash": "73287083f8c1d8a4",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1825,
+      "date": "2026-11-09",
+      "title": "Autonomous a2z ROii Bus Struck Roadside Stone Wall During Passenger Trial in Toyooka, Japan",
+      "description": "A Level 2 autonomous ROii bus developed by South Korea's Autonomous a2z struck a roadside stone wall in Toyooka, Hyogo Prefecture, Japan, after moving left in response to an oncoming large vehicle. The bus was carrying six passengers and two crew members, none of whom was injured. The city suspended the demonstration pending safety checks and an investigation into the cause.",
+      "deployer": "Toyooka City, Zentan Bus Co. Ltd., Automated Driving System Deployers, Autonomous Vehicle Fleet Operators",
+      "developer": "Autonomous A2Z Corporation, Automated Driving System Developers",
+      "harmed": "Bus Passengers, Passengers, Public Transit Passengers, Road Users, Public Safety",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 5,
+      "url": "https://incidentdatabase.ai/cite/1825/",
+      "text_hash": "8bf195bac09a3b6c",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [
+          "suspended"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1826,
+      "date": "2026-04-15",
+      "title": "Rhode Island Youth Athletics Instructor Allegedly Used AI to Create Sexual Abuse Imagery of Children",
+      "description": "Federal prosecutors alleged that Joseph L. Mello III, a former gymnastics and dance instructor in Rhode Island and southeastern Massachusetts, used photographs of children he knew to generate sexually abusive synthetic images and videos with AI tools including SwapX and Grok. Investigators said more than 50 girls were identified as subjects of the alleged imagery. Mello was federally charged, and the allegations have not been adjudicated.",
+      "deployer": "Synthetic Media Creators, Joseph L. Mello Iii, Deepfake Creators, Ai Generated Csam Creators",
+      "developer": "Xai, Synthetic Video Generation Technology Developers, Synthetic Media Generation Technology Developers, Synthetic Image Generation Technology Developers, Deepfake Technology Developers, Ai Face Swapping Technology Developers",
+      "harmed": "Women And Girls, Victims Of Child Sexual Abuse Material, Privacy, Minors Depicted In Synthetic Sexual Content, Minors, Girls, Epistemic Integrity, Educational Communities",
+      "editor_notes": "12/2025–04/2026: Investigators alleged that AI-generated abusive images and videos of children were created during this period. 04/15/2026: Mello was arrested on a separate state video-voyeurism charge and his devices were seized. 11/09/2026: He was arrested on federal child-exploitation charges. 11/10/2026: Federal allegations were publicly announced. 11/12/2026: A federal detention hearing addressed the allegations and testimony from affected families. 11/14/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1826/",
+      "text_hash": "35f9905915bc3713",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [
+          {
+            "id": "vulnerable-group-harm",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1827,
+      "date": "2026-11-12",
+      "title": "Autonomous Haul Truck Reportedly Went Down an Embankment After Communications Loss at Copper Mine in Antofagasta, Chile",
+      "description": "An autonomous haul truck designated unit 207 at Minera Centinela, a copper mine in Chile's Antofagasta Region, reportedly lost communications before going down an embankment during a mining operation. The mine activated emergency protocols and isolated the area. No injuries were reported. Investigators had not determined the cause or the extent of vehicle damage, and a causal link to the communications loss remained unconfirmed.",
+      "deployer": "Minera Centinela, Autonomous Vehicle Fleet Operators, Antofagasta Minerals",
+      "developer": "Autonomous Mobile Robot Developers, Autonomous Mining Truck System Developers",
+      "harmed": "Mining Companies, Minera Centinela, Industrial Facility Operators",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1827/",
+      "text_hash": "7db8cb71139f11e0",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1828,
+      "date": "2026-10-20",
+      "title": "AI Agents Operated by Safety-Testing Firm Trajectory Labs Attempted Website Exploits and Impersonated Staff at AI Research Organization Epoch AI",
+      "description": "During safety evaluations run by Trajectory Labs, AI agents given an impossible benchmark task probed the live website of AI research organization Epoch AI, attempted SQL injection and access to nonpublic endpoints, and impersonated employees to request benchmark information. Agents reached the live site again during a subsequent unapproved test after bypassing a DNS redirect. Epoch reported that no private or confidential information was accessed.",
+      "deployer": "Trajectory Labs, Ai Agent System Deployers, Ai Evaluation Organizations",
+      "developer": "Ai Agent System Developers, Google Deepmind, Large Language Model Developers",
+      "harmed": "Epoch Ai, Ai Research Labs, Website Operators, Epoch Ai Employees, Information Security",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 6,
+      "url": "https://incidentdatabase.ai/cite/1828/",
+      "text_hash": "f5dd27aca1df3c9b",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [
+          {
+            "id": "agentic-overreach",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1829,
+      "date": "2026-10-29",
+      "title": "Arizona Court Releases DUI Suspect After AI-Assisted Police Report Raises Probable-Cause Questions",
+      "description": "An Arizona Department of Public Safety trooper used Truleo AI, a police report-drafting tool, to help prepare a probable-cause statement after arresting a driver near Phoenix. At an initial hearing, a Maricopa County court commissioner said he could not determine how much of the narrative was authored by AI without the officer's original account and ordered the driver released. Charges remained pending; no fabricated facts were established.",
+      "deployer": "Arizona Department Of Public Safety, Law Enforcement, Police Departments, Police Departments In The United States, Police Officers",
+      "developer": "Truleo, Large Language Model Developers, Ai Police Report Writing System Developers",
+      "harmed": "Legal System, Judicial Integrity, Epistemic Integrity, Criminal Defendants, Anthony Edward Rene Quidera",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1829/",
+      "text_hash": "be61cc49b71695c6",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [
+          {
+            "id": "hallucination-misinformation",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": true,
+        "public_sector_basis": "deployer name",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1830,
+      "date": "2026-11-08",
+      "title": "Purportedly AI-Generated Impersonation of Actor Ioan Gruffudd Allegedly Convinced a Fan They Had a Romantic Relationship",
+      "description": "An impersonator allegedly used AI-generated images and videos of Welsh actor Ioan Gruffudd to convince a woman she was in a relationship with him for more than a year. Contact reportedly began through an Elsbeth Facebook page and continued on Telegram. Gruffudd described the material as explicit and disturbing, warned fans, and said he reported the matter to police. He clarified that no money had been requested or sent.",
+      "deployer": "Synthetic Media Creators, Scammers, Impersonation Scammers, Deepfake Creators, Cybercriminals, Catfishers",
+      "developer": "Synthetic Video Generation Technology Developers, Synthetic Media Generation Technology Developers, Synthetic Image Generation Technology Developers, Deepfake Technology Developers",
+      "harmed": "Victims Of Impersonation Scams, Victims Of Catfishing, Telegram Users, Social Media Users, Public Figures, Privacy, People Depicted In Non Consensual Intimate Imagery, Ioan Gruffudd, Facebook Users, Epistemic Integrity, Celebrities, Actors",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1830/",
+      "text_hash": "450fd5d7d4a0f334",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1831,
+      "date": "2026-10-26",
+      "title": "Bus Passengers Reportedly Injured After Starship Delivery Robot Entered a Crossing Against a Red Light in Tallinn, Estonia",
+      "description": "A Starship delivery robot reportedly entered a crossing against a red light in Tallinn, Estonia. A city bus braked sharply and collided with it, causing passengers to fall; the transit operator reported up to nine injuries. Starship said lighting conditions had affected the robot's traffic-light recognition and announced software changes.",
+      "deployer": "Starship Technologies, Autonomous Mobile Robot Operators, Delivery Robot Operators",
+      "developer": "Starship Technologies, Autonomous Mobile Robot Developers, Delivery Robot Developers",
+      "harmed": "Bus Passengers, Passengers, Road Users, Tallinna Linnatransport, Transit Systems",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 5,
+      "url": "https://incidentdatabase.ai/cite/1831/",
+      "text_hash": "b2f5d3fcfd582ce8",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1832,
+      "date": "2026-11-05",
+      "title": "Autonomous Shuttle Operated by Grab Reportedly Nearly Struck a Schoolgirl at a Crossing in Punggol, Singapore",
+      "description": "A Grab-operated autonomous shuttle reportedly came close to a schoolgirl crossing a road in Punggol, Singapore. The transport regulator said the vehicle had tracked the pedestrians and begun braking and steering away before a safety operator took control. Grab was directed to pause testing at such junctions pending investigation. The vehicle was testing a route for an on-demand service.",
+      "deployer": "Grab, Autonomous Vehicle Fleet Operators, Automated Driving System Deployers",
+      "developer": "Weride, Automated Driving System Developers",
+      "harmed": "Pedestrians, Road Users, Minors, Women And Girls, Girls",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 4,
+      "url": "https://incidentdatabase.ai/cite/1832/",
+      "text_hash": "b8feb737f1c9435d",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1833,
+      "date": "2024-10-29",
+      "title": "Pennsylvania Health System Allegedly Recorded Patient Visits with Abridge AI Scribe Without Informed Consent",
+      "description": "A Pennsylvania patient alleges that Allegheny Health Network and its parent, Highmark Health, used Abridge’s AI medical scribe to record her visits and send the audio to Abridge without adequately disclosing either step. She says learning how the tool worked caused emotional distress. The claim of commercial model training on her visit data is pleaded on information and belief.",
+      "deployer": "Allegheny Health Network, Healthcare Institutions, Highmark Health, Medical Personnel",
+      "developer": "Abridge, Ai Enabled Healthcare System Developers, Ai Transcription Technology Developers",
+      "harmed": "Allegheny Health Network Patients, Patients, People Recorded Without Consent, Privacy",
+      "editor_notes": "By 03/2024: The complaint alleges AHN had begun using Abridge. 10/29/2024: Earliest visit the complaint alleges was recorded, on or about this date. 08/12/2025: Highmark and Abridge announced an enterprise rollout. 06/01/2026: Last visit listed by the plaintiff. 11/03/2026: Date on the signed complaint and reported filing date. 11/18/2026: Incident ID created.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 2,
+      "url": "https://incidentdatabase.ai/cite/1833/",
+      "text_hash": "e139024809af1025",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [
+          {
+            "id": "vulnerable-group-harm",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1834,
+      "date": "2026-09-18",
+      "title": "UK Domain Registrar 123 Reg Reported Customer Data Exposure in Cyberattack Involving ARTEX AI Tool",
+      "description": "123 Reg, a UK domain registrar owned by GoDaddy, reported unauthorized access to customer data, including names, phone numbers, and business tax registration numbers. A spokesperson said that the company observed the ARTEX AI security-testing tool during the intrusion. The registrar said access was limited to reading the data and that the intruder may have made copies.",
+      "deployer": "Threat Actors, Hackers, Cybercriminals, Agentic Threat Actors, Ai Agent System Deployers",
+      "developer": "Artex Developers, Ai Agent System Developers",
+      "harmed": "123 Reg, Customers, Privacy, 123 Reg Customers, Information Security, Godaddy Sites, Godaddy, Domain Registrars",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1834/",
+      "text_hash": "9469d893c856a680",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1835,
+      "date": "2026-11-18",
+      "title": "Driverless Waymo Taxis Reportedly Stalled and Blocked Traffic on Flooded Streets in San Francisco",
+      "description": "A Waymo driverless taxi reportedly stopped in a traffic lane during flooding in San Francisco, California. A passenger waited about 30 minutes for staff to move it remotely. Other stalled Waymo taxis reportedly blocked traffic. Drivers steered into deeper water to get around one of them. Waymo paused Bay Area service and resumed it the next morning. What caused the vehicles to stop remains unclear.",
+      "deployer": "Waymo, Robotaxi Operators",
+      "developer": "Waymo, Automated Driving System Developers",
+      "harmed": "Waymo Passengers, Passengers, Road Users, San Francisco Road Users",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 3,
+      "url": "https://incidentdatabase.ai/cite/1835/",
+      "text_hash": "67914afaa970e9bb",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [
+          "suspended"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1836,
+      "date": "2026-11-17",
+      "title": "U.S. National Security Agency's Classified Network Disrupted During Patching Reportedly Prompted by AI-Assisted Security Research",
+      "description": "The U.S. National Security Agency reported degraded internal systems during maintenance. Staff lost access to its classified communications network and faced staggered arrivals. The U.S. director of national intelligence linked the disruption to patching vulnerabilities in PHP, which researchers reportedly investigated with AI assistance. The agency said mission-critical capabilities remained operational.",
+      "deployer": "Wiz, Security Researchers, Cybersecurity Firms, Calif",
+      "developer": "Wiz, Openai, Large Language Model Developers, Google Deepmind",
+      "harmed": "National Security And Intelligence Stakeholders, National Security Agency, Information Security, Government Workers, Government Agencies",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 14,
+      "url": "https://incidentdatabase.ai/cite/1836/",
+      "text_hash": "9c37b8847eefb0c7",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [
+          {
+            "id": "performance-drift",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1837,
+      "date": "2026-08-28",
+      "title": "Google Search AI Mode Reportedly Attributed Another Person's Criminal Conviction to a German Physician",
+      "description": "Google Search's AI Mode is reported to have falsely attributed another person's conviction for sexual coercion to a physician in Germany, putting his professional reputation at risk. After Google declined his removal request, the Aachen Regional Court issued a preliminary injunction barring Google Ireland Limited from repeating the statements in AI Mode.",
+      "deployer": "Google",
+      "developer": "Google",
+      "harmed": "Doctors, Epistemic Integrity, Privacy, Medical Personnel",
+      "editor_notes": "",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1837/",
+      "text_hash": "6872b7835248a0e2",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1838,
+      "date": "2026-01-20",
+      "title": "Google AI Overviews Alleged to Have Falsely Linked Two German Publishers to Fraud Schemes",
+      "description": "Google Search's AI Overviews reportedly drew on material about other businesses and is alleged to have falsely linked two affiliated publishers in Munich, Germany, to fraud schemes and subscription traps, putting their reputations at risk. The Munich I Regional Court granted a preliminary injunction covering specified claims. The parties later settled after Google appealed, rendering the first-instance ruling moot.",
+      "deployer": "Google",
+      "developer": "Google",
+      "harmed": "Publishers, Geranova Bruckmann Verlagshaus Gmbh, Publishers In Germany, Geramond Media Gmbh, Epistemic Integrity",
+      "editor_notes": "Incident ID date 01/20/2026. ID created 11/21/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1838/",
+      "text_hash": "8bc49aba0601f385",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [
+          "redress-compensation"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1839,
+      "date": "2025-11-20",
+      "title": "Berlin Appeals Court Reportedly Had to Check Suspect Citations in Apparently AI-Assisted Family Law Filings",
+      "description": "After extensive checking, the Berlin Court of Appeal in Germany reportedly found that a ruling cited in a family law appeal over legal aid did not exist. It could not locate another ruling cited in the original application. The panel described both filings as apparently AI-assisted. It denied the appeal because the applicant had not shown an urgent need for a temporary custody order.",
+      "deployer": "Legal Professionals, Lawyers",
+      "developer": "Large Language Model Developers, Ai Assisted Legal Drafting System Developers",
+      "harmed": "Kammergericht Berlin, Judicial Integrity, Epistemic Integrity, Courts, Legal Clients",
+      "editor_notes": "Incident ID date is 11/20/2025; ID was created 11/21/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1839/",
+      "text_hash": "09d5b764aa54f028",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1840,
+      "date": "2025-06-30",
+      "title": "German Family Court Reportedly Had to Check False Citations in a Filing with Apparently AI-Generated Legal Claims",
+      "description": "A family court in Cologne, Germany, reportedly had to check a lawyer's citations in a parenting-time case and found that several were invented or misattributed. The judge said some of the legal claims appeared to have been generated with AI and directed the lawyer to stop making such submissions.",
+      "deployer": "Lawyers, Legal Professionals",
+      "developer": "Ai Assisted Legal Drafting System Developers, Large Language Model Developers",
+      "harmed": "Courts, Amtsgericht Koln, Judicial Integrity, Epistemic Integrity, Legal Clients",
+      "editor_notes": "Incident ID date is 06/30/2025; ID was created 11/21/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1840/",
+      "text_hash": "3a3e18614e42d955",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1841,
+      "date": "2025-08-06",
+      "title": "Grok Chatbot Reportedly Posted a False Claim on X That German Advocacy Group Campact Received Substantial Federal Funding",
+      "description": "The Grok chatbot reportedly posted a public X reply claiming that Campact, a German advocacy group, received a large share of its funding from federal sources. The Hamburg Regional Court treated the claim as false and damaging to Campact's reputation in a preliminary injunction barring xAI, the account's operator, from repeating it.",
+      "deployer": "Xai, X (Twitter) Users",
+      "developer": "Xai, Large Language Model Developers, Chatbot Developers",
+      "harmed": "Campact, Political Advocacy Organizations, Civil Society Groups, Epistemic Integrity",
+      "editor_notes": "Incident ID date is 08/08/2025; ID was created 11/21/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1841/",
+      "text_hash": "6ae28a454b79a02d",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1842,
+      "date": "2025-05-26",
+      "title": "Swiss Mobile Brand Gomo's Chatbot Reportedly Gave Wrong Roaming Advice Before a Teenager Received an Unexpected Bill",
+      "description": "A chatbot for Swiss mobile brand Gomo reportedly told a father that his teenage daughter's plan included up to 3 GB of data for a school trip to France. She received a roaming bill of about CHF 44 despite using less than 3 GB. Her father said he would have bought a data package had he known one was required. Salt Mobile, which operates Gomo, confirmed the chatbot error and said it would reimburse the charges.",
+      "deployer": "Salt Mobile, Gomo, Telecommunications Providers, Chatbot Users",
+      "developer": "Ai Customer Support System Developers, Chatbot Developers",
+      "harmed": "Gomo Customers, Consumers, Minors, Ai Customer Support System Users, Chatbot Users",
+      "editor_notes": "Incident ID date is 05/26/2025; ID was created 11/21/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1842/",
+      "text_hash": "75438f1bc701e301",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [
+          {
+            "id": "vulnerable-group-harm",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [
+          "redress-compensation"
+        ],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1843,
+      "date": "2026-06-01",
+      "title": "Retiree in Germany Reportedly Lost at Least €150,000 in Investment Scam Involving a Purported AI Imitation of Economist Hans-Werner Sinn's Voice",
+      "description": "A 73-year-old in Gilching, Bavaria, Germany, reportedly transferred at least €150,000 to a fake brokerage account that showed fictitious gains. He had reportedly seen a Facebook post with purported investment tips from economist Hans-Werner Sinn. Local police reportedly said a caller used an AI imitation of Sinn's voice to impersonate him. The transfers included funds belonging to the retiree's wife.",
+      "deployer": "Scammers Impersonating Hans Werner Sinn, Investment Scam Operators, Scammers, Cybercriminals, Synthetic Media Creators, Deepfake Creators, Voice Cloning Impersonation Scammers",
+      "developer": "Voice Cloning Technology Developers, Synthetic Media Generation Technology Developers, Synthetic Audio Generation Technology Developers",
+      "harmed": "Victims Of Investment Scams, Hans Werner Sinn, Impersonated Public Figures, Epistemic Integrity, Retirees Seeking Investment Opportunities, Facebook Users, Social Media Users, Elderly Individuals, Elderly Individuals In Germany",
+      "editor_notes": "06/01/2026 is an approximate incident ID date. ID was created 11/21/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1843/",
+      "text_hash": "92faba136333bdc9",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1844,
+      "date": "2025-09-30",
+      "title": "German Financial Firm Reportedly Gave Inadequate Explanations for Automated Credit Card Denials",
+      "description": "Hamburg's data protection regulator reportedly found that an unnamed financial firm in Germany automatically rejected several credit card applications from people with good credit. The firm's explanations were reportedly too general for applicants to understand why they were denied, making the decisions harder to challenge. The firm accepted a €492,000 fine.",
+      "deployer": "Financial Institutions, Credit Card Issuers, Unnamed Financial Firm In Hamburg'S 2025 Credit Card Case",
+      "developer": "Automated Credit Decision System Developers",
+      "harmed": "Credit Card Applicants, Consumers, Financial Services Customers, Privacy, Epistemic Integrity",
+      "editor_notes": "Incident ID date of 09/30/2025; ID was created 11/21/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1844/",
+      "text_hash": "6bd63807f92aa050",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [
+          {
+            "id": "unlawful-data-processing",
+            "basis": [
+              "text"
+            ]
+          },
+          {
+            "id": "solely-automated-decision",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
+        "remediation_indicated": [],
+        "public_sector": false,
+        "public_sector_basis": "no public-sector signal",
+        "determination": "alleged"
+      }
+    },
+    {
+      "id": 1845,
+      "date": "2022-12-19",
+      "title": "Valencian International University Reportedly Required AI Facial Recognition for Online Exams in Spain Without a Viable Alternative",
+      "description": "Valencian International University in Spain reportedly required students to undergo continuous AI facial verification to take online exams. Spain's data protection authority reportedly found that students had no viable alternative and that the university processed their biometric data without a valid legal basis. It imposed fines totaling €650,000 for unlawful processing and excessive data collection.",
+      "deployer": "Universitat Internacional Valenciana, Valencian International University, Universities, Facial Recognition System Deployers",
+      "developer": "Remote Proctoring Software Developers, Smowltech, Biometric Identity Verification Technology Developers",
+      "harmed": "Universitat Internacional Valenciana Students, Students, Privacy, Biometric Data Subjects, Valencian International University Students, Educational Communities, University Students, Individuals Affected By Unauthorized Biometric Data Use",
+      "editor_notes": "Incident ID date is 12/19/2022; ID was created 11/21/2026.",
+      "mit_domain": "",
+      "mit_subdomain": "",
+      "public_sector_field": "",
+      "sector": "",
+      "country": "",
+      "report_count": 1,
+      "url": "https://incidentdatabase.ai/cite/1845/",
+      "text_hash": "e0fdf074518241bd",
+      "first_seen": "2026-11-24",
+      "classification": {
+        "modes": [
+          {
+            "id": "unlawful-data-processing",
+            "basis": [
+              "text"
+            ]
+          }
+        ],
         "remediation_indicated": [],
         "public_sector": false,
         "public_sector_basis": "no public-sector signal",

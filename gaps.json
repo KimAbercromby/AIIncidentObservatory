@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-17T16:12:01.221Z",
+  "generated_at": "2026-11-24T17:54:47.826Z",
   "taxonomy_version": "2.1",
   "suite_baseline": "AI Governance Suite version 1.0 draft (52 artefacts, AIG-xx IDs), Playbook AIG-GOV-02",
   "export": {
-    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261109.xlsx",
-    "export_date": "2026-11-09",
-    "file": "AIID_Excel_Export-20261109.xlsx",
-    "sha256": "452312c6e1eb888d0ff5681f8c86a5ddbee0aa08341d3a8d93b29baa98dca818",
-    "bytes": 2629742
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/AIID_Excel_Export-20261123.xlsx",
+    "export_date": "2026-11-23",
+    "file": "AIID_Excel_Export-20261123.xlsx",
+    "sha256": "de7ab7d04498d0b1e0053af422c3f06fb132c98872eefd6464be90e5965eb99c",
+    "bytes": 2668576
   },
   "coverage": {
     "collected": [
@@ -24,13 +24,13 @@
     "statement": "This observatory reads AI Incident Database (weekly Excel export) and Curated public-sector cases (cases.json). It does not read Find Case Law (UK court judgments) (licence-required); OECD AI Incidents and Hazards Monitor (excluded); AIAAIC Repository (unverified); Database of AI Litigation (DAIL) (unverified); ICO enforcement action (covered-elsewhere). Counts describe what these sources recorded, not how often failures happen in the world. Media-sourced incidents are allegations unless an authority made a finding."
   },
   "totals": {
-    "incidents": 1801,
-    "public_sector": 196,
+    "incidents": 1832,
+    "public_sector": 199,
     "cases": 9,
     "judgments": 0,
     "judgments_public": 0,
-    "unclassified": 626,
-    "unclassified_public": 47
+    "unclassified": 644,
+    "unclassified_public": 48
   },
   "modes": [
     {
@@ -49,13 +49,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 343,
+      "global": 344,
       "public": 59,
       "cases": 0,
       "court": 0,
       "by_basis": {
         "mit": 305,
-        "text": 74,
+        "text": 75,
         "llm": 0
       }
     },
@@ -101,13 +101,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 209,
+      "global": 215,
       "public": 27,
       "cases": 1,
       "court": 0,
       "by_basis": {
         "mit": 0,
-        "text": 209,
+        "text": 215,
         "llm": 0
       }
     },
@@ -127,13 +127,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 158,
+      "global": 161,
       "public": 20,
       "cases": 4,
       "court": 0,
       "by_basis": {
         "mit": 88,
-        "text": 116,
+        "text": 119,
         "llm": 0
       }
     },
@@ -151,13 +151,37 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 303,
-      "public": 15,
+      "global": 304,
+      "public": 16,
       "cases": 1,
       "court": 0,
       "by_basis": {
         "mit": 196,
-        "text": 184,
+        "text": 185,
+        "llm": 0
+      }
+    },
+    {
+      "id": "security-compromise",
+      "label": "Security compromise of or through the AI",
+      "coverage": "mapped",
+      "coverage_note": "Security Review Checklist including agent threats; logging and incident detection controls.",
+      "sections": [
+        "4.3.4",
+        "4.7.12"
+      ],
+      "artefacts": [
+        "AIG-ASS-11"
+      ],
+      "was_gap_in": null,
+      "new_in": null,
+      "global": 89,
+      "public": 8,
+      "cases": 0,
+      "court": 0,
+      "by_basis": {
+        "mit": 39,
+        "text": 65,
         "llm": 0
       }
     },
@@ -188,30 +212,6 @@
       }
     },
     {
-      "id": "security-compromise",
-      "label": "Security compromise of or through the AI",
-      "coverage": "mapped",
-      "coverage_note": "Security Review Checklist including agent threats; logging and incident detection controls.",
-      "sections": [
-        "4.3.4",
-        "4.7.12"
-      ],
-      "artefacts": [
-        "AIG-ASS-11"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 88,
-      "public": 7,
-      "cases": 0,
-      "court": 0,
-      "by_basis": {
-        "mit": 39,
-        "text": 64,
-        "llm": 0
-      }
-    },
-    {
       "id": "solely-automated-decision",
       "label": "Solely automated significant decision",
       "coverage": "mapped",
@@ -226,13 +226,39 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 12,
+      "global": 13,
       "public": 4,
       "cases": 2,
       "court": 0,
       "by_basis": {
         "mit": 4,
-        "text": 8,
+        "text": 9,
+        "llm": 0
+      }
+    },
+    {
+      "id": "agentic-overreach",
+      "label": "Agent acted beyond its authority",
+      "coverage": "mapped",
+      "coverage_note": "Seventh escalation trigger (action without per-action human review), Agent Record, Authority Graph and Action Decision Record.",
+      "sections": [
+        "4.4.6"
+      ],
+      "artefacts": [
+        "AIG-AGT-01",
+        "AIG-AGT-04",
+        "AIG-AGT-05",
+        "AIG-AGT-06"
+      ],
+      "was_gap_in": null,
+      "new_in": null,
+      "global": 44,
+      "public": 2,
+      "cases": 0,
+      "court": 0,
+      "by_basis": {
+        "mit": 3,
+        "text": 42,
         "llm": 0
       }
     },
@@ -258,32 +284,6 @@
       "by_basis": {
         "mit": 38,
         "text": 4,
-        "llm": 0
-      }
-    },
-    {
-      "id": "agentic-overreach",
-      "label": "Agent acted beyond its authority",
-      "coverage": "mapped",
-      "coverage_note": "Seventh escalation trigger (action without per-action human review), Agent Record, Authority Graph and Action Decision Record.",
-      "sections": [
-        "4.4.6"
-      ],
-      "artefacts": [
-        "AIG-AGT-01",
-        "AIG-AGT-04",
-        "AIG-AGT-05",
-        "AIG-AGT-06"
-      ],
-      "was_gap_in": null,
-      "new_in": null,
-      "global": 42,
-      "public": 2,
-      "cases": 0,
-      "court": 0,
-      "by_basis": {
-        "mit": 3,
-        "text": 40,
         "llm": 0
       }
     },
@@ -333,13 +333,13 @@
       ],
       "was_gap_in": null,
       "new_in": null,
-      "global": 23,
+      "global": 24,
       "public": 0,
       "cases": 0,
       "court": 0,
       "by_basis": {
         "mit": 0,
-        "text": 23,
+        "text": 24,
         "llm": 0
       }
     },
@@ -597,10 +597,10 @@
     "vendor-model-substitution"
   ],
   "remediation": {
-    "none_indicated": 1640,
-    "none_indicated_public": 175,
-    "none_indicated_share": 91.1,
-    "none_indicated_public_share": 89.3,
+    "none_indicated": 1664,
+    "none_indicated_public": 177,
+    "none_indicated_share": 90.8,
+    "none_indicated_public_share": 88.9,
     "by_type": [
       {
         "id": "withdrawn",
@@ -611,7 +611,7 @@
       {
         "id": "suspended",
         "label": "Suspended or paused",
-        "indicated": 25,
+        "indicated": 28,
         "documented": 1
       },
       {
@@ -635,7 +635,7 @@
       {
         "id": "redress-compensation",
         "label": "Compensation or redress",
-        "indicated": 33,
+        "indicated": 36,
         "documented": 1
       },
       {
@@ -647,13 +647,13 @@
       {
         "id": "regulatory-enforcement",
         "label": "Regulatory enforcement",
-        "indicated": 21,
+        "indicated": 22,
         "documented": 2
       },
       {
         "id": "court-ruling",
         "label": "Court ruling",
-        "indicated": 22,
+        "indicated": 23,
         "documented": 3
       },
       {
@@ -665,13 +665,13 @@
       {
         "id": "transparency-disclosure",
         "label": "Transparency or disclosure",
-        "indicated": 13,
+        "indicated": 14,
         "documented": 1
       }
     ]
   },
   "determinations": {
-    "alleged": 1801,
+    "alleged": 1832,
     "acknowledged": 3,
     "determined": 6
   }
